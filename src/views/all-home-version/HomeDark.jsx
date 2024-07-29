@@ -12,7 +12,7 @@ import { useContext } from "react";
 import { Context } from "../../components/Wrapper";
 
 const menuItem = [
-  { icon: "fa-home", menuName: "Introduction" },
+  { icon: "fa-home", menuName: "Intro" },
   { icon: "fa-user", menuName: "CV" },
   { icon: "fa-briefcase", menuName: "Portfolio" },
   { icon: "fa-envelope-open", menuName: "Contact" },
