@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - npm install
+      - npm uninstall react-scripts
       - npm install react-scripts
   build:
     commands:
