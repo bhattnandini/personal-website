@@ -15,6 +15,6 @@ post_build:
       - aws s3 sync build/ s3://nandinibhatt.me/ --delete
 artifacts:
   files:
-    - '/**/*'
+    - '**/*'
   base-directory: build
   discard-paths: yes
