@@ -1,0 +1,10 @@
+version: 0.0
+Resources:
+  - myBucket:
+      Type: S3
+      Properties:
+        BucketName: nandinibhatt.me
+        BundleType: zip
+files:
+  - source: /
+    destination: /
