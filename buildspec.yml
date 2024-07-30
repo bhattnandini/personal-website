@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - npm run build
-post_build:
+  post_build:
     commands:
       - echo "Uploading build directory to S3..."
       - aws s3 sync build/ s3://nandinibhatt.me/ --delete
