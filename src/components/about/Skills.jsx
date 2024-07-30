@@ -1,7 +1,7 @@
 import React from "react";
 
 const skillsContent = [
-  { skillClass: "p90", skillPercent: "90", skillName: "DevOps" },
+  { skillClass: "p90", skillPercent: "95", skillName: "DevOps" },
   { skillClass: "p80", skillPercent: "80", skillName: "Power Bi" },
   { skillClass: "p80", skillPercent: "80", skillName: "Selenium" },
   { skillClass: "p70", skillPercent: "70", skillName: "Agile" },
