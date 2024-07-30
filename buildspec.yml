@@ -13,5 +13,6 @@ phases:
     commands:
       - echo "Uploading build directory to S3..."
       - aws s3 sync build/ s3://nandinibhatt.me/ --delete
+      - aws cloudfront create-invalidation --distribution-id E1JHKWLDY7Q5ZL --paths "/*"
      
 
