@@ -22,7 +22,7 @@ const Address = () => {
           id="Address.email"
           defaultMessage="Email me"
         /></span>{" "}
-        <a href="mailto:nandineebhatt07@gmail.com">nandineebhatt07@gmail.com</a>
+        <a href="mailto:reach@nandinibhatt.me">reach@nandinibhatt.me</a>
       </p>
       {/* End .custom-span-contact */}
 

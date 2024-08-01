@@ -9,7 +9,7 @@ const personalInfoContent = [
   { meta: "Freelance", metaInfo: "Available" },
   // { meta: "Address", metaInfo: "404-1160 Rue Saint-Mathieu, Montreal, Quebec, Canada - H3H 2P4" },
   { meta: "phone", metaInfo: "+1 (438) 722-3706" },
-  { meta: "Email", metaInfo: "nandineebhatt07@gmail.com" },
+  { meta: "Email", metaInfo: "reach@nandinibhatt.me" },
   // { meta: "Skype", metaInfo: " steve.milner" },
   { meta: "langages", metaInfo: "English (C1), French (B2), Hindi (Bilingual), Gujarati (Native)" },
 ];
@@ -137,7 +137,7 @@ const PersonalInfo = () => {
                 defaultMessage="Email"
               />: </span>
           <span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">
-            <a href="mailto:nandineebhatt07@gmail.com">
+            <a href="mailto:reach@nandinibhatt.me">
             <FormattedMessage
                 description="PIValue7"
                 id="PI.Value7"
