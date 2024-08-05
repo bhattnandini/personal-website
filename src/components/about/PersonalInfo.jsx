@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl'
 const personalInfoContent = [
   { meta: "first name", metaInfo: "Nandini" },
   { meta: "last name", metaInfo: "Bhatt" },
-  { meta: "Age", metaInfo: "25" },
+  { meta: "Age", metaInfo: "26" },
   { meta: "Nationality", metaInfo: "Indian" },
   { meta: "Freelance", metaInfo: "Available" },
   // { meta: "Address", metaInfo: "404-1160 Rue Saint-Mathieu, Montreal, Quebec, Canada - H3H 2P4" },

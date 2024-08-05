@@ -9,19 +9,19 @@ const experienceContent = [
     details: `Responsibilities: Find and manage projects and clients, analyze projects, plan, architect, develop, deploy and maintain solutions`,
   },
   {
-    year: "2021-2022",
+    year: "2020",
     position: "Software Developer",
     compnayName: "QTONZ INFOSOFT PVT. LTD",
     details: `Responsibilities: Find and manage Android based projects and clients, deploy and maintain solutions.`,
   },
   {
-    year: "2020",
+    year: "2019-2020",
     position: "Software Developer (Internship)",
     compnayName: "Hitech Transpower",
     details: `Responsibilities: Front-end development using JS, backend development and ML using Python, DBMS using SQL, code optimisation`,
   },
   {
-    year: "2018 - 2020",
+    year: "2021 - 2022",
     position: "Junior Software Tester",
     compnayName: "Bhaktee Software PVT LTD",
     details: `Responsibilities: Performed comprehensive software testing and test planning using tools like Selenium, JIRA and Postman.`,
@@ -43,7 +43,7 @@ const experienceContent = [
 const Experience = () => {
   return (
     <ul>
-      <li key={4}>
+      {/* <li key={4}>
         <div className="icon">
           <i className="fa fa-briefcase"></i>
         </div>
@@ -64,15 +64,15 @@ const Experience = () => {
             description="ExperienceDetails5"
             id="Experience.details5"
             defaultMessage="Responsibilities:  Implemented four new audit procedures, identified risks, collected and analysed data, communicated findings to leaders"
-            // value= {
-            //   {
-            //     details:experienceContent[0].details
-            //   }
-            // }
+            value= {
+              {
+                details:experienceContent[0].details
+              }
+            }
           /></p>
-      </li>
+      </li> */}
 
-      <li key={3}>
+      {/* <li key={3}>
         <div className="icon">
           <i className="fa fa-briefcase"></i>
         </div>
@@ -93,13 +93,13 @@ const Experience = () => {
             description="ExperienceDetails4"
             id="Experience.details4"
             defaultMessage="Responsibilities: Performed administrative tasks including data entry, file management, and document preparation. Improved data management system."
-            // value= {
-            //   {
-            //     details:experienceContent[0].details
-            //   }
-            // }
+            value= {
+              {
+                details:experienceContent[0].details
+              }
+            }
           /></p>
-      </li>
+      </li> */}
 
       {/* <li key={0}>
         <div className="icon">
@@ -130,6 +130,26 @@ const Experience = () => {
           /></p>
       </li> */}
 
+      <li key={2}>
+        <div className="icon">
+          <i className="fa fa-briefcase"></i>
+        </div>
+        <span className="time open-sans-font text-uppercase"> {experienceContent[3].year} </span>
+        <h5 className="poppins-font text-uppercase">
+          <FormattedMessage
+            description="ExperiencePos3"
+            id="Experience.pos3"
+            defaultMessage="Junior Software Tester"
+          />
+          <span className="place open-sans-font">{experienceContent[3].compnayName}</span>
+        </h5>
+        <p className="open-sans-font"> <FormattedMessage
+            description="ExperienceDetails3"
+            id="Experience.details3"
+            defaultMessage="Responsibilities: Performed comprehensive software testing and test planning using tools like Selenium, JIRA and Postman."
+          /></p>
+      </li>
+
       <li key={0}>
         <div className="icon">
           <i className="fa fa-briefcase"></i>
@@ -146,7 +166,7 @@ const Experience = () => {
         <p className="open-sans-font"> <FormattedMessage
             description="ExperienceDetails1"
             id="Experience.details1"
-            defaultMessage="Responsibilities: Front-end and android development, process optimisation using Agile methodology, DevOps with Azure."
+            defaultMessage="Responsibilities: Front-end and android development, process optimisation using Agile methodology, DevOps with AWS."
           /></p>
       </li>
       
@@ -167,26 +187,6 @@ const Experience = () => {
             description="ExperienceDetails2"
             id="Experience.details2"
             defaultMessage="Responsibilities: Front-end development using JS, backend development and ML using Python, DBMS using SQL, code optimisation"
-          /></p>
-      </li>
-
-      <li key={2}>
-        <div className="icon">
-          <i className="fa fa-briefcase"></i>
-        </div>
-        <span className="time open-sans-font text-uppercase"> {experienceContent[3].year} </span>
-        <h5 className="poppins-font text-uppercase">
-          <FormattedMessage
-            description="ExperiencePos3"
-            id="Experience.pos3"
-            defaultMessage="Junior Software Tester"
-          />
-          <span className="place open-sans-font">{experienceContent[3].compnayName}</span>
-        </h5>
-        <p className="open-sans-font"> <FormattedMessage
-            description="ExperienceDetails3"
-            id="Experience.details3"
-            defaultMessage="Responsibilities: Performed comprehensive software testing and test planning using tools like Selenium, JIRA and Postman."
           /></p>
       </li>
     </ul>
