@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm install
+      - npm install --force
       - npm uninstall react-scripts
       - npm install react-scripts
   build:
