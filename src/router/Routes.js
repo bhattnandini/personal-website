@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Preview from "../views/Preview";
+// import Preview from "../views/Preview";
 import HomeLight from "../views/all-home-version/HomeLight";
 import HomeDark from "../views/all-home-version/HomeDark";
 import NotFound from "../views/NotFound";
@@ -12,7 +12,7 @@ const Routes3 = () => {
       <Router>
         <ScrollTopBehaviour />
         <Routes>
-          <Route path="/" element={<HomeLight />} />
+          <Route path="/" element={<HomeDark />} />
           <Route path="/home-light" element={<HomeLight />} />
           <Route path="/home-dark" element={<HomeDark />} />
           <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}

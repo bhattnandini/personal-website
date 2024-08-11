@@ -26,13 +26,13 @@ const educationContent = [
     degree: "DIPLOMA in Computer Engineering",
     institute: "Gujarat Technological University",
     details: `GTU first / Gold medalist with a CGPA of 9.69/10.00`,
-  },
-  {
-    year: "2013 - 2014",
-    degree: "Secondary school certification",
-    institute: "GUJARAT SECONDARY AND HIGHER SECONDARY BOARD",
-    details: `Percentage: 89.90`,
-  },
+  }
+  // {
+  //   year: "2013 - 2014",
+  //   degree: "Secondary school certification",
+  //   institute: "GUJARAT SECONDARY AND HIGHER SECONDARY BOARD",
+  //   details: `Percentage: 89.90`,
+  // },
 ];
 
 const Education = () => {
@@ -109,7 +109,7 @@ const Education = () => {
             defaultMessage="GTU first / Gold medalist with a CGPA of 9.69/10.00"
           /></p>
       </li>
-
+{/* 
       <li key={3}>
         <div className="icon">
           <i className="fa fa-briefcase"></i>
@@ -132,7 +132,7 @@ const Education = () => {
             id="Education.details3"
             defaultMessage="Percentage: 89.90"
           /></p>
-      </li>
+      </li> */}
     </ul>
   );
 };

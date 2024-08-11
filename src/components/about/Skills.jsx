@@ -1,14 +1,18 @@
 import React from "react";
 
 const skillsContent = [
-  { skillClass: "p90", skillPercent: "95", skillName: "DevOps" },
-  { skillClass: "p80", skillPercent: "80", skillName: "Selenium" },
-  { skillClass: "p70", skillPercent: "70", skillName: "Agile" },
-  { skillClass: "p60", skillPercent: "65", skillName: "Programming" },
-  { skillClass: "p80", skillPercent: "80", skillName: "DBMS" },
-  { skillClass: "p85", skillPercent: "85", skillName: "Web app development" },
-  { skillClass: "p75", skillPercent: "75", skillName: "Mobile app development" },
-
+  { skillClass: "p85", skillPercent: "85", skillName: "Agile" },
+  { skillClass: "p80", skillPercent: "80", skillName: "AWS" },
+  { skillClass: "p75", skillPercent: "75", skillName: "C/C++/C#/Java/Python" },
+  { skillClass: "p85", skillPercent: "85", skillName: "Cypress/Selenium" },
+  { skillClass: "p60", skillPercent: "60", skillName: "Containers/Kubernetes" },
+  { skillClass: "p90", skillPercent: "90", skillName: "DevOps" },
+  { skillClass: "p90", skillPercent: "90", skillName: "GIT" },
+  { skillClass: "p70", skillPercent: "70", skillName: "HTML/CSS/JSS/React.js" },
+  { skillClass: "p75", skillPercent: "75", skillName: "Linux/SSH" },
+  { skillClass: "p60", skillPercent: "60", skillName: "Networking" },
+  { skillClass: "p75", skillPercent: "75", skillName: "Postman" },
+  { skillClass: "p65", skillPercent: "65", skillName: "SQL/NOSQL" },
 ];
 
 const Skills = () => {
