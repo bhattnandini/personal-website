@@ -1,8 +1,8 @@
 # Nandini Bhatt's Personal Website
 
-## Description
+## Architecture 
 
-Setup Procedure
+![Architecture Diagram](architecture.svg)
 
 ## Project setup
 
