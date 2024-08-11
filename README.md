@@ -7,7 +7,8 @@
 ## Project setup
 
 ```
-npm install
+Deploy the infrastructure with the provided main.tf terraform file.
+Install dependencies with npm install 
 ```
 
 ### Compiles and hot-reloads for development
