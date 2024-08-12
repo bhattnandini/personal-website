@@ -30,7 +30,7 @@ const Contact = ({}) => {
         email: email,
         mesg: message,
         subject: subject,
-        to: "nandineebhatt07@gmail.com"
+        to: "reach@nandinibhatt.me"
       })
     })
     alert("Message sent successfully!");
