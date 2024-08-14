@@ -40,6 +40,7 @@ const Index = () => {
     link.rel = 'noopener noreferrer'
     link.style.color = 'white';
     link.style.textDecoration = 'none';
+    link.setAttribute('data-cy', 'cv-link');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -87,7 +88,7 @@ const Index = () => {
                   className="img-fluid main-img-mobile"
                   alt="about avatar"
                 /> */}
-                <iframe title="Video Resume" style={{ borderRadius: 125 }} width="250" height="250"
+                <iframe title="Video Resume" style={{ borderRadius: 125 }} width="250" height="250" data-cy="v"
                   src="https://www.youtube.com/embed/wavzkI0Sztc">
                 </iframe>
               </div>
@@ -98,7 +99,7 @@ const Index = () => {
               </div>
               {/* End personal info */}
 
-              <div className="col-12 mt-1 button" onClick={handleToggle} >
+              <div className="col-12 mt-1 button" onClick={handleToggle} data-cy="dwnldcvbtn" >
                 {/* <a className="button" href="img/cv.pdf" download="cv_nandini_bhatt.pdf"> */}
                 <span className="button-text">CV</span>
                 <span className="button-icon fa fa-download"></span>
@@ -108,7 +109,7 @@ const Index = () => {
 
               {isOpen && (
                 <ul ref={dropdownRef} style={{ listStyle: 'none', padding: 0, margin: 0, backgroundColor: 'black', border: '1px solid #ccc' }}>
-                  <li onClick={() => handleSelect('en')} style={{ padding: '10px', cursor: 'pointer', textAlign: 'center', color:'white' }}>
+                  <li onClick={() => handleSelect('en')} style={{ padding: '10px', cursor: 'pointer', textAlign: 'center', color:'white' }} data-cy="dwnldcv_en">
                     {/* <a href="img/cv_en.pdf" download="cv_nandini_bhatt_en.pdf" style={{ color: "white", textDecoration: "none" }}> */}
                       <FormattedMessage
                         description="lang_eng"
@@ -146,7 +147,7 @@ const Index = () => {
         {/* Skills Starts */}
         <div className="row">
           <div className="col-12" style={{ paddingTop: 15 }}>
-            <h3 className="text-uppercase pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center ft-wt-600">
+            <h3 className="text-uppercase pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center ft-wt-600" data-cy="skills">
               <FormattedMessage
                 description="aboutMySkills"
                 id="About.myskills"

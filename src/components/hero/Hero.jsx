@@ -28,7 +28,7 @@ const Hero = () => {
         <div
           className="col-lg-4 bg position-fixed d-none d-lg-block"
         >
-          <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%"
+          <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%" data-cy="v"
             src="https://www.youtube.com/embed/wavzkI0Sztc">
           </iframe>
           {/* <video width="400" src="https://www.youtube.com/watch?v=wavzkI0Sztc" controls /> */}
@@ -47,13 +47,13 @@ const Hero = () => {
               </iframe>
             </div>
 
-            <h1 className="text-uppercase poppins-font">
+            <h1 className="text-uppercase poppins-font" data-cy="im">
               <FormattedMessage
                 description="title"
                 id="Hero.title"
                 defaultMessage="I'm Nandini Bhatt"
               />
-              <span>
+              {/* <span>
                 <FormattedMessage
                   description="designation"
                   id="Hero.designation"
@@ -63,7 +63,7 @@ const Hero = () => {
                       heroDesignation: heroContent.heroDesignation,
                     }
                   }
-                /></span>
+                /></span> */}
             </h1>
             <p className="open-sans-font" style={{ textAlign: 'justify' }}>
               <FormattedMessage
@@ -76,7 +76,7 @@ const Hero = () => {
                   }
                 }
               /></p>
-            <button className="button" onClick={toggleModalOne}>
+            <button className="button" onClick={toggleModalOne} data-cy="moreabout">
               <span className="button-text">
                 <FormattedMessage
                   description="heroBtn"

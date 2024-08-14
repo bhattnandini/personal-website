@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "cypress": "^13.13.2",
+    "cypress-iframe": "^1.0.1",
     "direction-reveal": "^2.0.2"
   }
 }

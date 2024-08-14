@@ -25,12 +25,12 @@ const HomeDark = () => {
   return (
     <div className="yellow">
       <div className="demo-sticker">
-        <a href="/home-light">
+        <a href="/home-light" data-cy="light">
           <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
         </a>
       </div>
       <div className="lang-selector demo-sticker2">
-        <select selected="en" value={context.locale} onChange={context.selectLanguage}>
+        <select selected="en" value={context.locale} onChange={context.selectLanguage} data-cy="l">
           <option value='en'>English (C1)</option>
           <option value='fr'>French (B2)</option>
         </select>
@@ -48,7 +48,7 @@ const HomeDark = () => {
               </h2>
             </Tab>
 
-            <Tab className="icon-box" key={1}>
+            <Tab className="icon-box" key={1} data-cy="cv">
               <i className={`fa ${menuItem[1].icon}`}></i>
               <h2> <FormattedMessage
                 description="HomeMenuName"
@@ -58,7 +58,7 @@ const HomeDark = () => {
               </h2>
             </Tab>
 
-            <Tab className="icon-box" key={2}>
+            <Tab className="icon-box" key={2} data-cy="portfolio">
               <i className={`fa ${menuItem[2].icon}`}></i>
               <h2> <FormattedMessage
                 description="HomeMenuName"
@@ -68,7 +68,7 @@ const HomeDark = () => {
               </h2>
             </Tab>
 
-            <Tab className="icon-box" key={4}>
+            <Tab className="icon-box" key={4} data-cy="blogs">
               <i className={`fa ${menuItem[4].icon}`}></i>
               <h2> <FormattedMessage
                 description="HomeMenuName"
@@ -78,7 +78,7 @@ const HomeDark = () => {
               </h2>
             </Tab>
 
-            <Tab className="icon-box" key={3}>
+            <Tab className="icon-box" key={3} data-cy="contact">
               <i className={`fa ${menuItem[3].icon}`}></i>
               <h2> <FormattedMessage
                 description="HomeMenuName"

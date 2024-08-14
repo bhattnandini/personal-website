@@ -160,7 +160,7 @@ const Contact = ({}) => {
 
           <div className="col-12">
             <button type="submit" className="button">
-              <span className="button-text"><FormattedMessage
+              <span className="button-text" data-cy="sendmsg"><FormattedMessage
                 description="sendMessage"
                 id="Address.sendMessage"
                 defaultMessage="Send Message"

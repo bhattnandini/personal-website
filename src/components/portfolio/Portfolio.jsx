@@ -80,10 +80,10 @@ const Portfolio = () => {
   return (
     <Tabs>
       <TabList className="portfolio-tab-list">
-      <Tab><FormattedMessage
+      <Tab data-cy="YouTube"><FormattedMessage
           description="portfolioItem7"
           id="Portfolio.item7"
-          defaultMessage="YouTube"
+          defaultMessage="YouTube" 
         /> </Tab>
          <Tab><FormattedMessage
           description="portfolioItem9"

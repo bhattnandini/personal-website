@@ -29,7 +29,7 @@ const HeroLight = () => {
         <div
           className="col-lg-4 bg position-fixed d-none d-lg-block"
         >
-          <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%"
+          <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%" data-cy="v"
             src="https://www.youtube.com/embed/wavzkI0Sztc">
           </iframe>
         </div>
@@ -52,7 +52,7 @@ const HeroLight = () => {
                 id="Hero.title"
                 defaultMessage="I'm Nandini Bhatt"
               />
-              <span>  <FormattedMessage
+              {/* <span>  <FormattedMessage
                 description="designation"
                 id="Hero.designation"
                 defaultMessage="{heroDesignation}"
@@ -61,7 +61,7 @@ const HeroLight = () => {
                     heroDesignation: heroContent.heroDesignation,
                   }
                 }
-              /></span>
+              /></span> */}
             </h1>
             <p className="open-sans-font" style={{ textAlign: 'justify' }}> <FormattedMessage
               description="heroDescriptions"

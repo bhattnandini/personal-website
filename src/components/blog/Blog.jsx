@@ -37,7 +37,7 @@ const Blog = () => {
           {/* End .thumb */}
           <div className="post-content">
             <div className="entry-header">
-              <h3> <a target="_blank" 
+              <h3 data-cy="blog-1"> <a target="_blank" 
               href="https://medium.com/@nandineebhatt07/the-hidden-pearls-of-a-masters-degree-d491566207dd">
               The hidden pearls of a master’s degree
               </a></h3>

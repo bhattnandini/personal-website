@@ -137,7 +137,7 @@ const PersonalInfo = () => {
                 defaultMessage="Email"
               />: </span>
           <span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">
-            <a href="mailto:reach@nandinibhatt.me">
+            <a href="mailto:reach@nandinibhatt.me" data-cy="email">
             <FormattedMessage
                 description="PIValue7"
                 id="PI.Value7"
