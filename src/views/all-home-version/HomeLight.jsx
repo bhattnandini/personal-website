@@ -11,7 +11,7 @@ import AnimatedCursor from "react-animated-cursor";
 import { useContext } from "react";
 import { Context } from "../../components/Wrapper";
 import { FormattedMessage } from 'react-intl'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const menuItem = [
   { icon: "fa-home", menuName: "Introduction" },
@@ -31,9 +31,12 @@ const HomeLight = () => {
         {/* <a href="/home-dark">
           <i className="fa fa-moon-o" aria-hidden="true"></i>
         </a> */}
-        <Link to="/home-dark" data-cy="light">
-          <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
-        </Link>
+        {/* <Link to="/home-dark" data-cy="light">
+          <i className="fa fa-moon-o" aria-hidden="true"></i>
+        </Link> */}
+          {/* <div onClick={handleClick}>
+          <i className="fa fa-moon-o" aria-hidden="true"></i>
+        </div> */}
       </div>
       <div className="lang-selector demo-sticker2">
         <select selected="en" value={context.locale} onChange={context.selectLanguage}>

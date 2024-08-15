@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }  from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Hero from "../../components/hero/Hero";
 import Index from "../../components/about/index";
@@ -10,7 +10,7 @@ import Social from "../../components/Social";
 import { FormattedMessage } from 'react-intl'
 import { useContext } from "react";
 import { Context } from "../../components/Wrapper";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const menuItem = [
   { icon: "fa-home", menuName: "Intro" },
@@ -22,16 +22,30 @@ const menuItem = [
 
 const HomeDark = () => {
   const context = useContext(Context);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleClick = () => {
+    document.body.classList.toggle('light');
+    document.body.classList.toggle('dark');
+    setIsVisible(!isVisible);
+  };
+
   // document.body.classList.remove("light");
   return (
     <div className="yellow">
-      <div className="demo-sticker">
+      <div onClick={handleClick} className="demo-sticker">
         {/* <a href="/home-light" data-cy="light">
           <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
         </a> */}
-        <Link to="/home-light" data-cy="light">
+        {/* <Link to="/home-light" data-cy="light">
           <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
-        </Link>
+        </Link> */}
+        <div style={{ display: isVisible ? 'block' : 'none' }}>
+          <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
+        </div>
+        <div style={{ display: isVisible ? 'none' : 'block' }}>
+          <i className="fa fa-moon-o" aria-hidden="true"></i>
+        </div>
       </div>
       <div className="lang-selector demo-sticker2">
         <select selected="en" value={context.locale} onChange={context.selectLanguage} data-cy="l">
