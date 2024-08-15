@@ -1,6 +1,6 @@
 describe('template spec', () => {
   it('passes', () => {
-    cy.visit('https://3000-nandineebha-personalweb-38oiw3d32av.ws-us115.gitpod.io')
+    cy.visit('/')
   })
 })
 // it("should load the homepage and check title", () => {
@@ -10,7 +10,7 @@ describe('template spec', () => {
 it("should play the video inside the iframe", () => {
   // check videos in iframe --> need to install an extra plugin
   // Can't play the video directly due to CORS errors so check the URL
-  cy.visit('https://3000-nandineebha-personalweb-38oiw3d32av.ws-us115.gitpod.io');
+  cy.visit('/')
   cy.get('[data-cy="v"]')
     .should("be.visible")
     .and("have.attr", "src", "https://www.youtube.com/embed/wavzkI0Sztc");
@@ -19,14 +19,14 @@ it("should open about me", () => {
   // test <button>
   // 1. Check the URL - but in our case the URLs are not changing
   // 2. Check the contents of the new page to see if this is the right page
-  cy.visit('https://3000-nandineebha-personalweb-38oiw3d32av.ws-us115.gitpod.io');
+  cy.visit('/')
   cy.get('[data-cy="moreabout"]').click();
   cy.get('[data-cy="skills"]').should("contain", "Skills");
 });
 it("should switch to light mode", () => {
   // 1. test <a> tag
   // 2. test CSS properties
-  cy.visit('https://3000-nandineebha-personalweb-38oiw3d32av.ws-us115.gitpod.io');
+  cy.visit('/')
   cy.get('[data-cy="light"]').should("exist");
   cy.get('[data-cy="light"]').should("have.attr", "href", "/home-light");
   cy.get('[data-cy="light"]').click();
@@ -35,13 +35,13 @@ it("should switch to light mode", () => {
 });
 it("should change to French", () => {
   // test drop down menu and <h1> tag
-  cy.visit('https://3000-nandineebha-personalweb-38oiw3d32av.ws-us115.gitpod.io');
+  cy.visit('/')
   cy.get('[data-cy="l"]').should("exist");
   cy.get('[data-cy="l"]').select("fr");
   cy.get('[data-cy="im"]').should("contain", "Je suis");
 });
 it("should navigate to all subpages", () => {
-  cy.visit('https://3000-nandineebha-personalweb-38oiw3d32av.ws-us115.gitpod.io');
+  cy.visit('/')
 
   cy.get('[data-cy="cv"]').click();
   cy.get('[data-cy="skills"]').should("contain", "Skills");
@@ -56,7 +56,7 @@ it("should navigate to all subpages", () => {
   cy.get('[data-cy="sendmsg"]').should("contain", "Send Message");
 });
 it("should be clickable email link", () => {
-  cy.visit('https://3000-nandineebha-personalweb-38oiw3d32av.ws-us115.gitpod.io');
+  cy.visit('/')
 
   cy.get('[data-cy="cv"]').click();
   cy.get('[data-cy="email"]')
@@ -79,7 +79,7 @@ it("should open english and french CVs in a new tab", () => {
   // but we can use invoke() instead of click()
   // The PDF file is downloading, there is no URL change or anything else
 
-  cy.visit('https://3000-nandineebha-personalweb-38oiw3d32av.ws-us115.gitpod.io');
+  cy.visit('/')
 
   cy.get('[data-cy="cv"]').click();
   cy.get('[data-cy="dwnldcvbtn"]').click();
@@ -132,3 +132,11 @@ it("should open english and french CVs in a new tab", () => {
   //     // Verify the request was made
   //     cy.wait("@frenchCV").its("response.statusCode").should("eq", 200);
 });
+
+  it("should be responsive", () => {
+    cy.visit('/')
+    cy.viewport("iphone-6");
+    cy.get("header").should("be.visible");
+    cy.viewport("macbook-15");
+    cy.get("header").should("be.visible");
+  });
