@@ -10,6 +10,7 @@ import Social from "../../components/Social";
 import { FormattedMessage } from 'react-intl'
 import { useContext } from "react";
 import { Context } from "../../components/Wrapper";
+import { Link } from 'react-router-dom';
 
 const menuItem = [
   { icon: "fa-home", menuName: "Intro" },
@@ -25,9 +26,12 @@ const HomeDark = () => {
   return (
     <div className="yellow">
       <div className="demo-sticker">
-        <a href="/home-light" data-cy="light">
+        {/* <a href="/home-light" data-cy="light">
           <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
-        </a>
+        </a> */}
+        <Link to="/home-light" data-cy="light">
+          <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
+        </Link>
       </div>
       <div className="lang-selector demo-sticker2">
         <select selected="en" value={context.locale} onChange={context.selectLanguage} data-cy="l">

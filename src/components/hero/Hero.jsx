@@ -28,24 +28,41 @@ const Hero = () => {
         <div
           className="col-lg-4 bg position-fixed d-none d-lg-block"
         >
-          <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%" data-cy="v"
+           <img
+                  src="img/nandini.webp"
+                  // width="82%" height="82%"
+                  style={{
+                    borderRadius: '20px',
+                    // marginLeft: '-5px',
+                    marginTop: '3%',
+                  }}
+                  className="img-fluid main-img-mobile"
+                  alt="about avatar"
+                />
+          {/* <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%" data-cy="v"
             src="https://www.youtube.com/embed/wavzkI0Sztc">
-          </iframe>
+          </iframe> */}
           {/* <video width="400" src="https://www.youtube.com/watch?v=wavzkI0Sztc" controls /> */}
         </div>
         <div className="col-12 col-lg-8 offset-lg-4 home-details text-center text-lg-start">
           <div>
-            {/* <img
-              src={`img/hero/${heroContent.heroMobileImage}.jpg`}
+            <img
+              src={"img/nandini-mobile.webp"}
+              // width="82%" height="82%"
+              style={{
+                borderRadius: '20px',
+                // marginLeft: '-5px',
+                marginTop: '3%',
+              }}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
-            /> */}
-            <div style={{ paddingTop: '50px' }}>
+            />
+            {/* <div style={{ paddingTop: '50px' }}>
               <iframe title="Video Resume" style={{ borderRadius: 125 }} width="250" height="250"
                 className="d-lg-none img-fluid main-img-mobile d-sm-block "
                 src="https://www.youtube.com/embed/wavzkI0Sztc">
               </iframe>
-            </div>
+            </div> */}
 
             <h1 className="text-uppercase poppins-font" data-cy="im">
               <FormattedMessage

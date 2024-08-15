@@ -83,14 +83,20 @@ const Index = () => {
               {/* End .col */}
 
               <div className="col-12 d-block text-center d-sm-none">
-                {/* <img
-                  src="img/hero/img-mobile.jpg"
+                <img
+                   src="img/nandini.webp"
+                   // width="82%" height="82%"
+                   style={{
+                     borderRadius: '20px',
+                     // marginLeft: '-5px',
+                     marginTop: '3%',
+                   }}
                   className="img-fluid main-img-mobile"
                   alt="about avatar"
-                /> */}
-                <iframe title="Video Resume" style={{ borderRadius: 125 }} width="250" height="250" data-cy="v"
+                />
+                {/* <iframe title="Video Resume" style={{ borderRadius: 125 }} width="250" height="250" data-cy="v"
                   src="https://www.youtube.com/embed/wavzkI0Sztc">
-                </iframe>
+                </iframe> */}
               </div>
               {/* image for mobile menu */}
 
