@@ -84,7 +84,7 @@ const Index = () => {
 
               <div className="col-12 d-block text-center d-sm-none">
                 <img
-                   src="img/nandini.webp"
+                   src="img/nandini-mobile.webp"
                    // width="82%" height="82%"
                    style={{
                      borderRadius: '20px',
