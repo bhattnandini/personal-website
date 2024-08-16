@@ -146,11 +146,7 @@ const HomeDark = () => {
             <Tab className="icon-box" key={3} data-cy="blogs">
               <i className={`fa ${menuItem[4].icon}`}></i>
               {/* <FontAwesomeIcon icon={faEnvelopeOpen} size="2x" /> */}
-              <h2> <FormattedMessage
-                description="HomeMenuName"
-                id="Home.menuitem4"
-                defaultMessage="Blogs"
-              />
+              <h2> Blogs
               </h2>
             </Tab>
 
