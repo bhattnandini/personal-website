@@ -28,7 +28,7 @@ it("should switch to light mode", () => {
   // 2. test CSS properties
   cy.visit('/')
   cy.get('[data-cy="light"]').should("exist");
-  cy.get('[data-cy="light"]').should("have.attr", "href", "/home-light");
+  // cy.get('[data-cy="light"]').should("have.attr", "href", "/home-light");
   cy.get('[data-cy="light"]').click();
   cy.get("body").should("have.class", "light");
   cy.get("body").should("not.have.class", "dark");

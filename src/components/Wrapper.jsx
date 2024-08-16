@@ -5,7 +5,7 @@ import French from '../lang/fr.json';
 import English from '../lang/en.json';
 
 export const Context = React.createContext();
-const local = navigator.language;
+const local = 'en' // navigator.language;
 
 let lang;
 switch (local) {
@@ -25,7 +25,11 @@ const Wrapper = (props) => {
     const [locale, setLocale] = useState(local);
     const [messages, setMessages] = useState(lang);
     function selectLanguage(e) {
-        const newLocale = e.target.value;
+        console.log('here')
+        console.log(e)
+        
+        // const newLocale = e.target.value;
+        const newLocale = e
         setLocale(newLocale);
         switch (newLocale) {
             case "en":

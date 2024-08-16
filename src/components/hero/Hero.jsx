@@ -93,7 +93,7 @@ const Hero = () => {
                   }
                 }
               /></p>
-            <button className="button" onClick={toggleModalOne} data-cy="moreabout">
+            {/* <button className="button" onClick={toggleModalOne} data-cy="moreabout">
               <span className="button-text">
                 <FormattedMessage
                   description="heroBtn"
@@ -106,7 +106,7 @@ const Hero = () => {
                   }
                 /></span>
               <span className="button-icon fa fa-arrow-right"></span>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

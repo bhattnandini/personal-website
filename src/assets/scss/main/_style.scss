@@ -475,6 +475,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   -webkit-transition: opacity 0.3s;
   transform: translateY(-50%);
   z-index: 10;
+  overflow: auto;
 
   @media (max-width: 991px) {
     left: 0;
@@ -624,6 +625,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   display: flex;
   align-items: center;
   min-height: 100%;
+  overflow: auto;
 }
 
 .home .home-details > div {
@@ -1355,10 +1357,12 @@ body.light .contact .custom-span-contact a {
 
   body.home .main-container {
     padding: 30px 0 !important;
+    overflow: auto;
   }
 
   .home .home-details-container {
     margin: 0 auto;
+    overflow: auto;
   }
 
   .home .home-details {
@@ -2039,4 +2043,38 @@ button:focus {
     cursor: pointer !important;
     text-decoration: none;
   }
+}
+
+.demo-sticker2 {
+  background: #2b2a2a;
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  // width: 50px;
+  // height: 50px;
+  // border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  // @media (max-width: 991px) {
+  //   right: 15px;
+  // }
+  // a {
+  //   color: #fff;
+  //   display: block;
+  //   font-size: 30px;
+  //   padding: 10px;
+  //   cursor: pointer !important;
+  //   text-decoration: none;
+  // }
+}
+
+.btn-lang{
+  border-radius: 50%;
+}
+
+.lightdark{
+  width: 50px;
+  height: 50px;
 }

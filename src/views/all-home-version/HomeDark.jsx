@@ -1,5 +1,6 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Link } from 'react-router-dom';
 import Hero from "../../components/hero/Hero";
 import Index from "../../components/about/index";
 import Address from "../../components/Address";
@@ -10,6 +11,8 @@ import Social from "../../components/Social";
 import { FormattedMessage } from 'react-intl'
 import { useContext } from "react";
 import { Context } from "../../components/Wrapper";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLightbulb, faMoon, faBriefcase, faHome, faUser, faEnvelopeOpen, faComments } from '@fortawesome/free-solid-svg-icons';
 // import { Link } from 'react-router-dom';
 
 const menuItem = [
@@ -23,41 +26,93 @@ const menuItem = [
 const HomeDark = () => {
   const context = useContext(Context);
   const [isVisible, setIsVisible] = useState(true);
+  const [isVisible1, setIsVisible1] = useState(true);
 
-  const handleClick = () => {
+  const handleThemeClick = (event) => {
+    console.log(event)
+    event.preventDefault();
     document.body.classList.toggle('light');
     document.body.classList.toggle('dark');
+    if (isVisible) {
+      document.getElementById('maindiv').classList.remove('yellow')
+      document.getElementById('maindiv').classList.add('green')
+    }
+    else {
+      document.getElementById('maindiv').classList.add('yellow')
+      document.getElementById('maindiv').classList.remove('green')
+    }
     setIsVisible(!isVisible);
   };
 
+  const handleLangClick = (language) => {
+    setIsVisible1(!isVisible1);
+    context.selectLanguage(language);
+  };
+
+  // State to keep track of the selected tab index
+  const [selectedTabIndex, setSelectedTabIndex] = useState(null);
+
+  // Handle tab selection
+  const handleSelect = (index, lastIndex, event) => {
+    console.log(`Selected tab index: ${index}`);
+    if (index <= 3) {
+      return false;
+    }
+    setSelectedTabIndex(index);
+  };
+
+
   // document.body.classList.remove("light");
   return (
-    <div className="yellow">
-      <div onClick={handleClick} className="demo-sticker">
-        {/* <a href="/home-light" data-cy="light">
-          <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
-        </a> */}
-        {/* <Link to="/home-light" data-cy="light">
-          <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
-        </Link> */}
-        <div style={{ display: isVisible ? 'block' : 'none' }}>
-          <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
-        </div>
-        <div style={{ display: isVisible ? 'none' : 'block' }}>
-          <i className="fa fa-moon-o" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div className="lang-selector demo-sticker2">
-        <select selected="en" value={context.locale} onChange={context.selectLanguage} data-cy="l">
-          <option value='en'>English (C1)</option>
-          <option value='fr'>French (B2)</option>
-        </select>
-      </div>
-      <Tabs>
+    <div id="maindiv" className="yellow">
+      <Tabs defaultIndex={4} onSelect={handleSelect}>
         <div className="header">
           <TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
-            <Tab className="icon-box" key={0}>
+            <Tab onClick={handleThemeClick} className="icon-box" key={5} style={{ display: isVisible ? 'block' : 'none' }}>
+              <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
+              {/* <FontAwesomeIcon icon={faHome} size="2x" /> */}
+              <h2> <FormattedMessage
+                description="HomeTheme"
+                id="Home.themeLight"
+                defaultMessage="Light"
+              />
+              </h2>
+            </Tab>
+
+            <Tab onClick={handleThemeClick} className="icon-box" key={6} style={{ display: isVisible ? 'none' : 'block' }}>
+              <i className="fa fa-moon-o" aria-hidden="true"></i>
+              {/* <FontAwesomeIcon icon={faHome} size="2x" /> */}
+              <h2>  <FormattedMessage
+                description="HomeTheme"
+                id="Home.themeDark"
+                defaultMessage="Dark"
+              />
+              </h2>
+            </Tab>
+
+            <Tab onClick={() => handleLangClick('fr')} className="icon-box" key={7} style={{ display: isVisible1 ? 'block' : 'none' }}>
+              <i className="fa fa-language" aria-hidden="true"></i>
+              <h2>  <FormattedMessage
+                description="French"
+                id="French"
+                defaultMessage="French"
+              />
+              </h2>
+            </Tab>
+
+            <Tab onClick={() => handleLangClick('en')} className="icon-box" key={8} style={{ display: isVisible1 ? 'none' : 'block' }}>
+              <i className="fa fa-language" aria-hidden="true"></i>
+              <h2>  <FormattedMessage
+                description="English"
+                id="English"
+                defaultMessage="Anglais"
+              />
+              </h2>
+            </Tab>
+
+            <Tab className="icon-box" key={0} >
               <i className={`fa ${menuItem[0].icon}`}></i>
+              {/* <FontAwesomeIcon icon={faHome} size="2x" /> */}
               <h2> <FormattedMessage
                 description="HomeMenuName"
                 id="Home.menuitem0"
@@ -66,7 +121,8 @@ const HomeDark = () => {
               </h2>
             </Tab>
 
-            <Tab className="icon-box" key={1} data-cy="cv">
+            <Tab className="icon-box" key={1} data-cy="cv" >
+              {/* <FontAwesomeIcon icon={faUser} size="2x" /> */}
               <i className={`fa ${menuItem[1].icon}`}></i>
               <h2> <FormattedMessage
                 description="HomeMenuName"
@@ -78,6 +134,7 @@ const HomeDark = () => {
 
             <Tab className="icon-box" key={2} data-cy="portfolio">
               <i className={`fa ${menuItem[2].icon}`}></i>
+              {/* <FontAwesomeIcon icon={faBriefcase} size="2x" /> */}
               <h2> <FormattedMessage
                 description="HomeMenuName"
                 id="Home.menuitem2"
@@ -86,8 +143,9 @@ const HomeDark = () => {
               </h2>
             </Tab>
 
-            <Tab className="icon-box" key={4} data-cy="blogs">
+            <Tab className="icon-box" key={3} data-cy="blogs">
               <i className={`fa ${menuItem[4].icon}`}></i>
+              {/* <FontAwesomeIcon icon={faEnvelopeOpen} size="2x" /> */}
               <h2> <FormattedMessage
                 description="HomeMenuName"
                 id="Home.menuitem4"
@@ -96,8 +154,9 @@ const HomeDark = () => {
               </h2>
             </Tab>
 
-            <Tab className="icon-box" key={3} data-cy="contact">
+            <Tab className="icon-box" key={4} data-cy="contact">
               <i className={`fa ${menuItem[3].icon}`}></i>
+              {/* <FontAwesomeIcon icon={faComments} size="2x" /> */}
               <h2> <FormattedMessage
                 description="HomeMenuName"
                 id="Home.menuitem3"
@@ -110,7 +169,19 @@ const HomeDark = () => {
         {/* End Menu Content */}
 
         <div className="tab-panel_list">
-          {/* Hero Content Starts */}
+          <TabPanel id="tabpanel1" className="home ">
+
+          </TabPanel>
+          <TabPanel id="tabpanel2" className="home ">
+
+          </TabPanel>
+          <TabPanel id="tabpanel2" className="home ">
+
+          </TabPanel>
+          <TabPanel id="tabpanel2" className="home ">
+
+          </TabPanel>
+
           <TabPanel className="home ">
             <div
               className="container-fluid main-container container-home p-0 "
@@ -195,7 +266,11 @@ const HomeDark = () => {
               data-aos-duration="1200"
             >
               <h1>
-                my <span>blog</span>
+              <FormattedMessage
+                description="Home.menuitem4"
+                id="Home.menuitem4"
+                defaultMessage="My Blogs"
+              />
               </h1>
               <span className="title-bg">posts</span>
             </div>
@@ -210,11 +285,11 @@ const HomeDark = () => {
               </div>
               {/* { Articles Ends } */}
             </div>
-          </TabPanel> 
+          </TabPanel>
           {/* Blog Content Ends */}
 
-           {/* Contact Content Starts */}
-           <TabPanel className="contact">
+          {/* Contact Content Starts */}
+          <TabPanel className="contact">
             <div
               className="title-section text-left text-sm-center"
               data-aos="fade-up"
@@ -275,6 +350,18 @@ const HomeDark = () => {
           {/* Contact Content Ends */}
         </div>
       </Tabs>
+
+
+
+      {/* <div className="lang-selector demo-sticker2">
+          <select selected="en" value={context.locale} onChange={context.selectLanguage} data-cy="l">
+            <option value='en'>English (C1)</option>
+            <option value='fr'>French (B2)</option>
+          </select>
+      </div> */}
+
+
+
     </div>
   );
 };
