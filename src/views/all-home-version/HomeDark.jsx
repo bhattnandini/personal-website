@@ -11,8 +11,8 @@ import Social from "../../components/Social";
 import { FormattedMessage } from 'react-intl'
 import { useContext } from "react";
 import { Context } from "../../components/Wrapper";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLightbulb, faMoon, faBriefcase, faHome, faUser, faEnvelopeOpen, faComments } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLightbulb, faMoon, faBriefcase, faHome, faUser, faEnvelopeOpen, faComments } from '@fortawesome/free-solid-svg-icons';
 // import { Link } from 'react-router-dom';
 
 const menuItem = [
