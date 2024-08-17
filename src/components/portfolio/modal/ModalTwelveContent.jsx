@@ -52,10 +52,10 @@ const ModalTwelveContent = () => {
         {/*  Main Project Content Starts */}
         <div className="row">
           <div className="col-6 col-sm-6 mb-2">
-            <img src="img/projects/poster1.webp" alt="Portolio" />
+            <img src="img/projects/poster1.webp" alt="ISTQB certification" />
           </div>
           <div className="col-6 col-sm-6 mb-2">
-            <img src="img/projects/poster2.webp" alt="Portolio" />
+            <img src="img/projects/poster2.webp" alt="ISTQB certification" />
           </div>
         </div>
         {/* <Slider {...settings}>

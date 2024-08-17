@@ -140,7 +140,7 @@ const Portfolio = () => {
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
               <figure onClick={toggleModalThirteen}>
-                <img src="img/projects/ISTQB_presentation_cover.webp" alt="Portolio" />
+                <img src="img/projects/ISTQB_presentation_cover.webp" alt="ISTQB certification" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title"><FormattedMessage
                     description="PortfolioItem8"
@@ -217,7 +217,7 @@ const Portfolio = () => {
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
               <figure onClick={toggleModalFourteen}>
-                <img src="img/projects/unittest.webp" alt="Portolio" />
+                <img src="img/projects/unittest.webp" alt="TESTynamo" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title"><FormattedMessage
                     description="PortfolioItem8"
@@ -296,7 +296,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalOne}>
-                <img src="img/projects/ICRASTEM_2022.webp" alt="Portolio" />
+                <img src="img/projects/ICRASTEM_2022.webp" alt="Research paper" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">ICRASTEM 2022</span>
                 </div>
@@ -327,7 +327,7 @@ const Portfolio = () => {
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
               <figure onClick={toggleModalTwo}>
-                <img src="img/projects/paper_presentation_loom.webp" alt="Portolio" />
+                <img src="img/projects/paper_presentation_loom.webp" alt="Research paper presentation" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Paper Presentation</span>
                 </div>
@@ -404,7 +404,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalEleven}>
-                <img src="img/projects/istqb.webp" alt="Portolio" />
+                <img src="img/projects/istqb.webp" alt="ISTQB certification" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">
                     <FormattedMessage
@@ -446,7 +446,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalTwelve}>
-                <img src="img/projects/istqb.webp" alt="Portolio" />
+                <img src="img/projects/istqb.webp" alt="ISTQB certification" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">
                     <FormattedMessage
@@ -492,7 +492,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalFour}>
-                <img src="img/projects/istqb.webp" alt="Portolio" />
+                <img src="img/projects/istqb.webp" alt="ISTQB certification" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">ISTQB CTFL</span>
                 </div>
@@ -529,7 +529,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalFive}>
-                <img src="img/projects/yellow_belt.webp" alt="Portolio" />
+                <img src="img/projects/yellow_belt.webp" alt="Six Sigma Yellow Belt" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Yellow Belt</span>
                 </div>
@@ -566,7 +566,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalSix}>
-                <img src="img/projects/green_belt.webp" alt="Portolio" />
+                <img src="img/projects/green_belt.webp" alt="Six Sigma Green Belt" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Green Belt</span>
                 </div>
@@ -603,7 +603,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalSeven}>
-                <img src="img/projects/black_belt.webp" alt="Portolio" />
+                <img src="img/projects/black_belt.webp" alt="Six sigma black belt" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Black Belt</span>
                 </div>
@@ -640,7 +640,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalEight}>
-                <img src="img/projects/lean_management.webp" alt="Portolio" />
+                <img src="img/projects/lean_management.webp" alt="Six Sigma Lean Management" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Management Expert</span>
                 </div>
@@ -677,7 +677,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalTen}>
-                <img src="img/projects/python.webp" alt="Portolio" />
+                <img src="img/projects/python.webp" alt="IBM - Data analysis with Python" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">IBM - Data analysis with Python</span>
                 </div>
@@ -714,7 +714,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalNine}>
-                <img src="img/projects/paper_presentation.webp" alt="Portolio" />
+                <img src="img/projects/paper_presentation.webp" alt="Research paper" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">  <FormattedMessage
                     description="bestPaper"
@@ -759,7 +759,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalOne}>
-                <img src="img/projects/hotfocus.jpg" alt="Portolio" />
+                <img src="img/projects/hotfocus.jpg" alt="Mobile App" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Hotfocus</span>
                 </div>

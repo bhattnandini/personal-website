@@ -30,7 +30,7 @@ const Blog = () => {
               <img
                 src="img/blog/convocation.webp"
                 className="img-fluid"
-                alt="Blog Post"
+                alt="Nandini Bhatt's medium.com Blog post"
               />
             </div>
           </div>
@@ -61,7 +61,7 @@ const Blog = () => {
               <img
                 src="img/projects/istqb.webp"
                 className="img-fluid"
-                alt="Blog Post"
+                alt="Nandini Bhatt's medium.com Blog post"
               />
             </div>
           </div>
@@ -89,7 +89,7 @@ const Blog = () => {
               <img
                 src="img/projects/istqb.webp"
                 className="img-fluid"
-                alt="Blog Post"
+                alt="Nandini Bhatt's medium.com Blog post"
               />
             </div>
           </div>

@@ -72,7 +72,7 @@ const ModalNineContent = () => {
         {/* Project Details Ends */}
 
         {/*  Main Project Content Starts */}
-        <img src="https://assets.appstasy.in/nandinee/certificates/best_paper.jpg" alt="Portolio"/>
+        <img src="https://assets.appstasy.in/nandinee/certificates/best_paper.jpg" alt="Research paper"/>
         {/* <Slider {...settings}>
         <div className="slide_item">
           <img src="img/projects/project-3.jpg" alt="slide 1" />

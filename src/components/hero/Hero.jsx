@@ -39,7 +39,7 @@ const Hero = () => {
                     transform: 'translate(-50%, -50%)',
                   }}
                   className="img-fluid main-img-mobile"
-                  alt="about avatar"
+                  alt="Nandini Bhatt"
                 />
           {/* <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%" data-cy="v"
             src="https://www.youtube.com/embed/wavzkI0Sztc">
@@ -57,7 +57,7 @@ const Hero = () => {
                 marginTop: '3%',
               }}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
-              alt="hero man"
+              alt="Nandini Bhatt"
             />
             {/* <div style={{ paddingTop: '50px' }}>
               <iframe title="Video Resume" style={{ borderRadius: 125 }} width="250" height="250"

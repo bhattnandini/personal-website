@@ -50,7 +50,7 @@ const ModalFourteenContent = () => {
       {/* Project Details Ends */}
 
       {/*  Main Project Content Starts */}
-      <img src="img/projects/TESTynamo.webp" alt="Portolio" />
+      <img src="img/projects/TESTynamo.webp" alt="TESTynamo" />
       {/* Main Project Content Ends */}
     </figure>
     </div >

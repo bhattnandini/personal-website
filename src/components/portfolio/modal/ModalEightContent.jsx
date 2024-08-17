@@ -56,7 +56,7 @@ const ModalEightContent = () => {
       {/* Project Details Ends */}
 
       {/*  Main Project Content Starts */}
-      <img src="https://assets.appstasy.in/nandinee/certificates/lean_management.png" alt="Portolio" />
+      <img src="https://assets.appstasy.in/nandinee/certificates/lean_management.png" alt="Six Sigma Lean Management" />
       {/* <Slider {...settings}>
         <div className="slide_item">
           <img src="img/projects/project-3.jpg" alt="slide 1" />
