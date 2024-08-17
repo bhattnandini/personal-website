@@ -66,7 +66,7 @@ const ModalFourContent = () => {
       {/* Project Details Ends */}
 
       {/*  Main Project Content Starts */}
-      <img src="img/projects/istqb_cert.jpg" alt="Portolio" />
+      <img src="img/projects/istqb_cert.webp" alt="Portolio" />
       {/* <Slider {...settings}>
         <div className="slide_item">
           <img src="img/projects/project-3.jpg" alt="slide 1" />

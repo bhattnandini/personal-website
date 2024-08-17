@@ -12,7 +12,7 @@
     "Home.menuitem1": "CV",
     "Home.menuitem2": "Portfolio",
     "Home.menuitem3": "Contact",
-    "Home.menuitem4": "My Blogs",
+    "Home.menuitem4": "Blogs",
     "Home.my": "my",
     "Home.works": "works",
     "Home.contact1": "get in ",
@@ -57,9 +57,10 @@
     "Achievements.obj2.Subtitle1": "Startup",
     "Education.degree0": "MASTER'S in Quality Systems Engineering",
     "Education.institute0": "Concordia UNIVERSITY, Montreal",
-    "Education.details0":"Pursuing",
+    "Education.details0":"CGPA: 3.65/4.30",
     "Education.degree1": "BACHELOR'S in Computer Engineering",
     "Education.institute1": "Gujarat Technological University",
+    "Education.details1":"CGPA: 8.49/10.00",
     "Education.degree2": "DIPLOMA in Computer Engineering",
     "Education.details2":"GTU first / Gold medalist with a CGPA of 9.69/10.00",
     "Education.institute3": "GUJARAT SECONDARY AND HIGHER SECONDARY BOARD",
@@ -97,6 +98,9 @@
     "Portfolio.item9": "GitHub",
     "Portfolio.item10": "TESTynamo: GAN-based Unit Test Generator",
     "ModalFourteen.item1": "GitHub Link",
+    "vidLink": "Video Link",
     "English": "English",
-    "French": "French"
+    "French": "French",
+    "paperpresent": "Paper Presentation",
+    "bestPaper":"Best Paper Presentation award"
 }

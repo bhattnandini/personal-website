@@ -16,9 +16,9 @@ const ModalThirteenContent = () => {
              <div className="col-12 col-sm-12 mb-2">
               <i className="fa fa-external-link pr-2"></i>
               <span className="project-label"><FormattedMessage
-                description="modalOneItem2"
-                id="Modalone.item2"
-                defaultMessage="Link"
+                description="vidLink"
+                id="vidLink"
+                defaultMessage="Video Link"
               /> </span>:{" "}
               <span className="ft-wt-600 uppercase">
                 <a
@@ -55,11 +55,11 @@ const ModalThirteenContent = () => {
                   allowFullScreen className="position-absolute" style={{top: 0, left: 0, width: '100%', height: '100%'}}>
                   </iframe> */}
 
-                  <iframe className="position-absolute" style={{top: 0, left: 0, width: '100%', height: '100%'}}
+                  <iframe className="position-absolute frame-border" style={{top: 0, left: 0, width: '100%', height: '100%'}}
                   src="https://www.youtube.com/embed/fMHHBhp0ooM?si=nkQ6S0hi66QIaDHk" 
-                  title="ISTQB PPT Presentation" frameborder="0" 
+                  title="ISTQB PPT Presentation"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
         {/* Main Project Content Ends */}
       </figure>

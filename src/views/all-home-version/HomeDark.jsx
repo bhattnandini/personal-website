@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Hero from "../../components/hero/Hero";
 import Index from "../../components/about/index";
 import Address from "../../components/Address";
@@ -29,8 +29,6 @@ const HomeDark = () => {
   const [isVisible1, setIsVisible1] = useState(true);
 
   const handleThemeClick = (event) => {
-    console.log(event)
-    event.preventDefault();
     document.body.classList.toggle('light');
     document.body.classList.toggle('dark');
     if (isVisible) {
@@ -54,7 +52,6 @@ const HomeDark = () => {
 
   // Handle tab selection
   const handleSelect = (index, lastIndex, event) => {
-    console.log(`Selected tab index: ${index}`);
     if (index <= 3) {
       return false;
     }
@@ -68,7 +65,7 @@ const HomeDark = () => {
       <Tabs defaultIndex={4} onSelect={handleSelect}>
         <div className="header">
           <TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
-            <Tab onClick={handleThemeClick} className="icon-box" key={5} style={{ display: isVisible ? 'block' : 'none' }}>
+          <Tab onClick={handleThemeClick} className="icon-box" key={5} style={{ display: isVisible ? 'block' : 'none' }}>
               <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
               {/* <FontAwesomeIcon icon={faHome} size="2x" /> */}
               <h2> <FormattedMessage
@@ -77,6 +74,7 @@ const HomeDark = () => {
                 defaultMessage="Light"
               />
               </h2>
+              <div id="darktheme" className={isVisible ? 'visible' : 'hidden'}></div>
             </Tab>
 
             <Tab onClick={handleThemeClick} className="icon-box" key={6} style={{ display: isVisible ? 'none' : 'block' }}>
@@ -89,6 +87,7 @@ const HomeDark = () => {
               />
               </h2>
             </Tab>
+
 
             <Tab onClick={() => handleLangClick('fr')} className="icon-box" key={7} style={{ display: isVisible1 ? 'block' : 'none' }}>
               <i className="fa fa-language" aria-hidden="true"></i>
@@ -261,13 +260,18 @@ const HomeDark = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <h1>
-              <FormattedMessage
-                description="Home.menuitem4"
-                id="Home.menuitem4"
-                defaultMessage="My Blogs"
-              />
-              </h1>
+               <h1>
+                  <FormattedMessage
+                    description="Home.menuitem4"
+                    id="Home.menuitem4"
+                    defaultMessage="Blogs"
+                  /> 
+                  {/* <span> <FormattedMessage
+                    description="heroMe"
+                    id="Hero.me"
+                    defaultMessage="me"
+                  /> </span> */}
+                </h1>
               <span className="title-bg">posts</span>
             </div>
             <div

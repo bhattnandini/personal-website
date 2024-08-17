@@ -9,7 +9,11 @@ const ModalNineContent = () => {
       <figure>
         {/* Project Details Starts */}
         <figcaption>
-          <h3>Best Paper Presentation award</h3>
+          <h3> <FormattedMessage
+                    description="bestPaper"
+                    id="bestPaper"
+                    defaultMessage="Best paper presentation award"
+                  /> </h3>
           <div className="row open-sans-font">
             <div className="col-12 col-sm-12 mb-2">
               <a

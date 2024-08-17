@@ -20,7 +20,7 @@ import ModalFourteenContent from "./modal/ModalFourteenContent";
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
-  const [isOpen3, setIsOpen3] = useState(false);
+  // const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setIsOpen5] = useState(false);
   const [isOpen6, setIsOpen6] = useState(false);
@@ -39,9 +39,9 @@ const Portfolio = () => {
   function toggleModalTwo() {
     setIsOpen2(!isOpen2);
   }
-  function toggleModalThree() {
-    setIsOpen3(!isOpen3);
-  }
+  // function toggleModalThree() {
+  //   setIsOpen3(!isOpen3);
+  // }
   function toggleModalFour() {
     setIsOpen4(!isOpen4);
   }
@@ -76,40 +76,58 @@ const Portfolio = () => {
     setIsOpen14(!isOpen14);
   }
 
-  
+  const getClassNames = () => {
+    let classNames = 'custom-modal'; // Base class
+
+    const darkTheme = document.getElementById('darktheme').classList.contains('visible');
+    // Check if the display is 'block' or 'none'
+    
+    if (darkTheme) {
+      console.log("dark mode");
+      classNames += ' dark';
+      classNames += ' yellow';
+      
+    } else {
+      console.log("light mode");
+      classNames += ' green';
+    }
+
+    return classNames;
+  };
+
   return (
     <Tabs>
       <TabList className="portfolio-tab-list">
-      <Tab data-cy="YouTube"><FormattedMessage
+        <Tab data-cy="YouTube"><FormattedMessage
           description="portfolioItem7"
           id="Portfolio.item7"
-          defaultMessage="YouTube" 
+          defaultMessage="YouTube"
         /> </Tab>
-         <Tab><FormattedMessage
+        <Tab><FormattedMessage
           description="portfolioItem9"
           id="Portfolio.item9"
           defaultMessage="GitHub"
         /> </Tab>
         <Tab><FormattedMessage
-                description="portfolioItem1"
-                id="Portfolio.item1"
-                defaultMessage="Research"
-              /> </Tab>
+          description="portfolioItem1"
+          id="Portfolio.item1"
+          defaultMessage="Research"
+        /> </Tab>
         <Tab><FormattedMessage
-                description="portfolioItem4"
-                id="Portfolio.item4"
-                defaultMessage="Posters"
-              /></Tab>
+          description="portfolioItem4"
+          id="Portfolio.item4"
+          defaultMessage="Posters"
+        /></Tab>
         <Tab><FormattedMessage
-                description="portfolioItem3"
-                id="Portfolio.item3"
-                defaultMessage="Certificates"
-              /></Tab>
-               <Tab><FormattedMessage
-                description="portfolioItem2"
-                id="Portfolio.item2"
-                defaultMessage="Mobile Apps"
-              /></Tab>
+          description="portfolioItem3"
+          id="Portfolio.item3"
+          defaultMessage="Certificates"
+        /></Tab>
+        <Tab><FormattedMessage
+          description="portfolioItem2"
+          id="Portfolio.item2"
+          defaultMessage="Mobile Apps"
+        /></Tab>
         {/* <Tab>LOGO</Tab>
         <Tab>VIDEO</Tab>
         <Tab>GRAPHIC DESIGN</Tab>
@@ -117,12 +135,12 @@ const Portfolio = () => {
       </TabList>
 
       <div className="portfolio-tab-content">
-      <TabPanel>
+        <TabPanel >
           <ul className="row grid justify-content-center">
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
-            <figure onClick={toggleModalThirteen}>
-                <img src="img/projects/ISTQB_presentation_cover.jpg" alt="Portolio" />
+              <figure onClick={toggleModalThirteen}>
+                <img src="img/projects/ISTQB_presentation_cover.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title"><FormattedMessage
                     description="PortfolioItem8"
@@ -137,7 +155,8 @@ const Portfolio = () => {
                 isOpen={isOpen13}
                 onRequestClose={toggleModalThirteen}
                 contentLabel="My dialog"
-                className="custom-modal dark green"
+                className={getClassNames()}
+                // className="custom-modal dark yellow"
                 overlayClassName="custom-overlay"
                 closeTimeoutMS={500}
               >
@@ -148,7 +167,7 @@ const Portfolio = () => {
                   {/* End close icon */}
 
                   <div className="box_inner portfolio">
-                    <ModalThirteenContent/>
+                    <ModalThirteenContent />
                   </div>
                 </div>
               </Modal>
@@ -192,12 +211,12 @@ const Portfolio = () => {
           </ul>
         </TabPanel>
         {/* End All Project */}
-       
+
         <TabPanel>
           <ul className="row grid justify-content-center">
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
-            <figure onClick={toggleModalFourteen}>
+              <figure onClick={toggleModalFourteen}>
                 <img src="img/projects/unittest.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title"><FormattedMessage
@@ -213,7 +232,7 @@ const Portfolio = () => {
                 isOpen={isOpen14}
                 onRequestClose={toggleModalFourteen}
                 contentLabel="TESTynamo"
-                className="custom-modal dark green"
+                className={getClassNames()}
                 overlayClassName="custom-overlay"
                 closeTimeoutMS={500}
               >
@@ -224,7 +243,7 @@ const Portfolio = () => {
                   {/* End close icon */}
 
                   <div className="box_inner portfolio">
-                    <ModalFourteenContent/>
+                    <ModalFourteenContent />
                   </div>
                 </div>
               </Modal>
@@ -277,7 +296,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalOne}>
-                <img src="img/projects/ICRASTEM_2022.jpg" alt="Portolio" />
+                <img src="img/projects/ICRASTEM_2022.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">ICRASTEM 2022</span>
                 </div>
@@ -288,7 +307,7 @@ const Portfolio = () => {
                 isOpen={isOpen}
                 onRequestClose={toggleModalOne}
                 contentLabel="ICRASTEM 2022"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -307,8 +326,8 @@ const Portfolio = () => {
             </li>
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
-            <figure onClick={toggleModalTwo}>
-                <img src="img/projects/paper_presentation.png" alt="Portolio" />
+              <figure onClick={toggleModalTwo}>
+                <img src="img/projects/paper_presentation_loom.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Paper Presentation</span>
                 </div>
@@ -316,10 +335,12 @@ const Portfolio = () => {
 
               {/* <!-- Portfolio Item Starts --> */}
               <Modal
+
+                
                 isOpen={isOpen2}
                 onRequestClose={toggleModalTwo}
                 contentLabel="My dialog"
-                className="custom-modal dark green"
+                className={getClassNames()}
                 overlayClassName="custom-overlay"
                 closeTimeoutMS={500}
               >
@@ -330,7 +351,7 @@ const Portfolio = () => {
                   {/* End close icon */}
 
                   <div className="box_inner portfolio">
-                    <ModalTwoContent/>
+                    <ModalTwoContent />
                   </div>
                 </div>
               </Modal>
@@ -374,7 +395,7 @@ const Portfolio = () => {
           </ul>
         </TabPanel>
         {/* End All Project */}
-        
+
         <TabPanel>
           <ul className="row grid justify-content-center">
             <li
@@ -383,23 +404,25 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalEleven}>
-                <img src="img/projects/istqb.jpg" alt="Portolio" />
+                <img src="img/projects/istqb.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">
-                  <FormattedMessage
-                  description="PortfolioItem5"
-                  id="Portfolio.item5"
-                  defaultMessage="ISTQB - Animated Poster"
-                /></span>
+                    <FormattedMessage
+                      description="PortfolioItem5"
+                      id="Portfolio.item5"
+                      defaultMessage="ISTQB - Animated Poster"
+                    /></span>
                 </div>
               </figure>
 
               {/* Start ModalElevenContent */}
               <Modal
+
+                
                 isOpen={isOpen11}
                 onRequestClose={toggleModalEleven}
                 contentLabel="ISTQB Poster Animated"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -423,23 +446,25 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalTwelve}>
-                <img src="img/projects/istqb.jpg" alt="Portolio" />
+                <img src="img/projects/istqb.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">
-                  <FormattedMessage
-                  description="PortfolioItem6"
-                  id="Portfolio.item6"
-                  defaultMessage="ISTQB - Static Poster"
-                /></span>
+                    <FormattedMessage
+                      description="PortfolioItem6"
+                      id="Portfolio.item6"
+                      defaultMessage="ISTQB - Static Poster"
+                    /></span>
                 </div>
               </figure>
 
               {/* Start ModalTwelveContent */}
               <Modal
+
+                
                 isOpen={isOpen12}
                 onRequestClose={toggleModalTwelve}
                 contentLabel="ISTQB Poster Static"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -467,7 +492,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalFour}>
-                <img src="img/projects/istqb.jpg" alt="Portolio" />
+                <img src="img/projects/istqb.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">ISTQB CTFL</span>
                 </div>
@@ -475,10 +500,12 @@ const Portfolio = () => {
 
               {/* Start ModalOneContent */}
               <Modal
+
+                
                 isOpen={isOpen4}
                 onRequestClose={toggleModalFour}
                 contentLabel="ISTQB"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -502,7 +529,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalFive}>
-                <img src="https://assets.appstasy.in/nandinee/certificates/yellow_belt.png" alt="Portolio" />
+                <img src="img/projects/yellow_belt.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Yellow Belt</span>
                 </div>
@@ -510,10 +537,12 @@ const Portfolio = () => {
 
               {/* Start ModalFiveContent */}
               <Modal
+
+                
                 isOpen={isOpen5}
                 onRequestClose={toggleModalFive}
                 contentLabel="yellowbelt"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -537,7 +566,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalSix}>
-                <img src="https://assets.appstasy.in/nandinee/certificates/green_belt.png" alt="Portolio" />
+                <img src="img/projects/green_belt.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Green Belt</span>
                 </div>
@@ -545,10 +574,12 @@ const Portfolio = () => {
 
               {/* Start ModalSixContent */}
               <Modal
+
+                
                 isOpen={isOpen6}
                 onRequestClose={toggleModalSix}
                 contentLabel="greenbelt"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -572,7 +603,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalSeven}>
-                <img src="https://assets.appstasy.in/nandinee/certificates/black_belt.png" alt="Portolio" />
+                <img src="img/projects/black_belt.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Black Belt</span>
                 </div>
@@ -580,10 +611,12 @@ const Portfolio = () => {
 
               {/* Start ModalSevenContent */}
               <Modal
+
+                
                 isOpen={isOpen7}
                 onRequestClose={toggleModalSeven}
                 contentLabel="blackbelt"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -607,7 +640,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalEight}>
-                <img src="https://assets.appstasy.in/nandinee/certificates/lean_management.png" alt="Portolio" />
+                <img src="img/projects/lean_management.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Management Expert</span>
                 </div>
@@ -615,10 +648,12 @@ const Portfolio = () => {
 
               {/* Start ModalOneContent */}
               <Modal
+
+                
                 isOpen={isOpen8}
                 onRequestClose={toggleModalEight}
                 contentLabel="managementexpert"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -642,7 +677,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalTen}>
-                <img src="img/projects/python.jpeg" alt="Portolio" />
+                <img src="img/projects/python.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">IBM - Data analysis with Python</span>
                 </div>
@@ -650,10 +685,12 @@ const Portfolio = () => {
 
               {/* Start ModalTenContent */}
               <Modal
+
+                
                 isOpen={isOpen10}
                 onRequestClose={toggleModalTen}
                 contentLabel="ibmpython"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -679,16 +716,22 @@ const Portfolio = () => {
               <figure onClick={toggleModalNine}>
                 <img src="img/projects/paper_presentation.webp" alt="Portolio" />
                 <div className=" hover-content-wrapper">
-                  <span className="content-title">Best paper presentation award</span>
+                  <span className="content-title">  <FormattedMessage
+                    description="bestPaper"
+                    id="bestPaper"
+                    defaultMessage="Best paper presentation award"
+                  /> </span>
                 </div>
               </figure>
 
               {/* Start ModalOneContent */}
               <Modal
+
+                
                 isOpen={isOpen9}
                 onRequestClose={toggleModalNine}
                 contentLabel="bestpaper"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >
@@ -727,7 +770,7 @@ const Portfolio = () => {
                 isOpen={isOpen}
                 onRequestClose={toggleModalOne}
                 contentLabel="ICRASTEM 2022"
-                className="custom-modal dark"
+                className={getClassNames()}
                 overlayClassName="custom-overlay dark"
                 closeTimeoutMS={500}
               >

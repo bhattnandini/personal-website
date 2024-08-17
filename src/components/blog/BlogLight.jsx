@@ -27,7 +27,7 @@ const BlogLight = () => {
           <div className="post-thumb">
             <div className="d-block position-relative overflow-hidden">
               <img
-                src="img/blog/convocation.png"
+                src="img/blog/convocation.webp"
                 className="img-fluid"
                 alt="Blog Post"
               />
@@ -58,7 +58,7 @@ const BlogLight = () => {
           <div className="post-thumb">
             <div className="d-block position-relative overflow-hidden">
               <img
-                src="img/projects/istqb.jpg"
+                src="img/projects/istqb.webp"
                 className="img-fluid"
                 alt="Blog Post"
               />
@@ -86,7 +86,7 @@ const BlogLight = () => {
           <div className="post-thumb">
             <div className="d-block position-relative overflow-hidden">
               <img
-                src="img/projects/istqb.jpg"
+                src="img/projects/istqb.webp"
                 className="img-fluid"
                 alt="Blog Post"
               />

@@ -28,7 +28,7 @@ const Blog = () => {
           <div className="post-thumb">
             <div className="d-block position-relative overflow-hidden">
               <img
-                src="img/blog/convocation.png"
+                src="img/blog/convocation.webp"
                 className="img-fluid"
                 alt="Blog Post"
               />
@@ -37,14 +37,14 @@ const Blog = () => {
           {/* End .thumb */}
           <div className="post-content">
             <div className="entry-header">
-              <h3 data-cy="blog-1"> <a target="_blank" 
+              <h3 data-cy="blog-1"> <a target="_blank" rel="noreferrer"
               href="https://medium.com/@nandineebhatt07/the-hidden-pearls-of-a-masters-degree-d491566207dd">
               The hidden pearls of a master’s degree
               </a></h3>
             </div>
             <div className="entry-content open-sans-font">
               <p>
-              You must have come across hundreds of posts immediately after the Convocation ...
+              You must have come across hundreds of posts immediately after the Convocation Ceremony. Most of them ...
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Blog = () => {
           <div className="post-thumb">
             <div className="d-block position-relative overflow-hidden">
               <img
-                src="img/projects/istqb.jpg"
+                src="img/projects/istqb.webp"
                 className="img-fluid"
                 alt="Blog Post"
               />
@@ -68,7 +68,7 @@ const Blog = () => {
           {/* End .thumb */}
           <div className="post-content">
             <div className="entry-header">
-              <h3> <a target="_blank" href="https://medium.com/@nandineebhatt07/a-software-testers-introduction-to-industry-certifications-2705ce398636" >A software tester’s introduction to industry certifications</a></h3>
+              <h3> <a target="_blank" rel="noreferrer" href="https://medium.com/@nandineebhatt07/a-software-testers-introduction-to-industry-certifications-2705ce398636" >A software tester’s introduction to industry certifications</a></h3>
             </div>
             <div className="entry-content open-sans-font">
               <p>
@@ -87,7 +87,7 @@ const Blog = () => {
           <div className="post-thumb">
             <div className="d-block position-relative overflow-hidden">
               <img
-                src="img/projects/istqb.jpg"
+                src="img/projects/istqb.webp"
                 className="img-fluid"
                 alt="Blog Post"
               />
@@ -96,7 +96,7 @@ const Blog = () => {
           {/* End .thumb */}
           <div className="post-content">
             <div className="entry-header">
-              <h3> <a target="_blank" href="https://medium.com/@nandineebhatt07/une-introduction-aux-diplômes-industrielle-par-une-testeuse-des-logiciels-en-herbe-0ada6a2826ef" >Une introduction aux diplômes industrielle par une testeuse des logiciels en herbe</a></h3>
+              <h3> <a target="_blank" rel="noreferrer" href="https://medium.com/@nandineebhatt07/une-introduction-aux-diplômes-industrielle-par-une-testeuse-des-logiciels-en-herbe-0ada6a2826ef" >Une introduction aux diplômes industrielle par une testeuse des logiciels en herbe</a></h3>
             </div>
             <div className="entry-content open-sans-font">
               <p>

@@ -2,7 +2,7 @@ import React from "react";
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FormattedMessage } from 'react-intl'
+// import { FormattedMessage } from 'react-intl'
 
 const ModalThreeContent = () => {
   // var settings = {
@@ -21,9 +21,9 @@ const ModalThreeContent = () => {
         <figcaption>
           <h3>Hotfocus</h3>
           <div className="row open-sans-font">
-            <div className="col-12 col-sm-12 mb-2">
+          {/*  <div className="col-12 col-sm-12 mb-2">
               <i className="fa fa-file-text-o pr-2"></i>
-              <span className="project-label">Android </span>:{" "}
+               <span className="project-label">Android </span>:{" "}
               <a
                 href="https://play.google.com/store/apps/details?id=com.appstasy1.hotfocus4"
                 target="_blank"
@@ -34,12 +34,12 @@ const ModalThreeContent = () => {
                   id="Modal3.item1"
                   defaultMessage="Download now on Google Playstore!"
                 />
-              </a>
+              </a> */}
               {/* <span className="ft-wt-600 uppercase">https://play.google.com/store/apps/details?id=com.appstasy1.hotfocus4</span> */}
-            </div>
+            {/* </div> */}
             {/* End .col */}
 
-            <div className="col-12 col-sm-12 mb-2">
+            {/* <div className="col-12 col-sm-12 mb-2">
               <i className="fa fa-user-o pr-2"></i>
               <span className="project-label">iOS </span>:{" "}
               <a
@@ -52,9 +52,9 @@ const ModalThreeContent = () => {
                   id="Modal3.item2"
                   defaultMessage="Download now on Apple Appstore!"
                 />
-              </a>
+              </a> */}
               {/* <span className="ft-wt-600 uppercase">Download now on Apple Appstore!</span> */}
-            </div>
+            {/* </div> */}
             {/* End .col */}
 
             {/* <div className="col-12 col-sm-6 mb-2">

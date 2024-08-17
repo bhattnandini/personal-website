@@ -12,7 +12,7 @@
     "Home.menuitem1": "CV",
     "Home.menuitem2": "Portefeuille",
     "Home.menuitem3": "Contacter",
-    "Home.menuitem4": "Mes Blogs",
+    "Home.menuitem4": "Blogs",
     "Home.my": "mon",
     "Home.works": "travaux",
     "Home.contact1": "prendre ",
@@ -56,6 +56,7 @@
     "Education.details0":"CGPA: 3,65/4,30",
     "Education.degree1": "BACHELOR'S en ingénierie informatique",
     "Education.institute1": "Université technologique du Gujarat",
+    "Education.details1":"CGPA: 8,49/10,00",
     "Education.degree2": "DIPLÔME en ingénierie informatique",
     "Education.institute2": "Gujarat Technological University",
     "Education.details2":"Premier GTU / Médaillé d'or avec une CGPA de 9,69/10,00",
@@ -99,5 +100,8 @@
     "Portfolio.item10": "TESTynamo: Générateur de tests unitaires basé sur le GAN",
     "ModalFourteen.item1": "Lien GitHub",
     "English": "Anglais",
-    "French": "Français"
+    "French": "Français",
+    "vidLink": "Lien vidéo",
+    "paperpresent": "Présentation du document",
+    "bestPaper":"Prix de la meilleure présentation"
 }

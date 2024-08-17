@@ -26,15 +26,17 @@ const Hero = () => {
     <>
       <div className="row home-details-container align-items-center">
         <div
-          className="col-lg-4 bg position-fixed d-none d-lg-block"
+          className="col-lg-4 bg position-fixed d-none d-lg-block" style={{ position: 'relative' }}
         >
            <img
                   src="img/nandini.webp"
                   // width="82%" height="82%"
                   style={{
-                    borderRadius: '20px',
-                    // marginLeft: '-5px',
-                    marginTop: '3%',
+                    borderRadius: '30px',
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
                   }}
                   className="img-fluid main-img-mobile"
                   alt="about avatar"
