@@ -17,20 +17,22 @@ const ModalNineContent = () => {
           <div className="row open-sans-font">
             <div className="col-12 col-sm-12 mb-2">
                 <i className="fa fa-file-text-o pr-2"></i>
-                <span className="project-label"><FormattedMessage
-                  description="Modal9Item1"
-                  id="Modalone.item2"
-                  defaultMessage="Publication Link"
-                /> </span> :{" "}
-                <span className="ft-wt-600 uppercase">
-                  <a
+                <a
                     href="https://sciencescholar.us/journal/index.php/ijhs/article/view/13487"
                     target="_blank"
                     rel="noreferrer"
                   >
+                <span className="project-label"><FormattedMessage
+                  description="Modal9Item1"
+                  id="Modalone.item2"
+                  defaultMessage="Publication Link"
+                /> </span> </a>
+                {/* :{" "}
+                <span className="ft-wt-600 uppercase">
+                 
                     https://sciencescholar.us/journal/index.php/ijhs/article/view/13487
-                  </a>
-                </span>
+                  
+                </span> */}
             </div>
 
             <div className="col-12 mt-1" style={{ textAlign: 'center' }}>

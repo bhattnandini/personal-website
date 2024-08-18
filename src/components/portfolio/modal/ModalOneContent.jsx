@@ -36,20 +36,22 @@ const ModalOneContent = () => {
 
             <div className="col-12 col-sm-12 mb-2">
                 <i className="fa fa-external-link pr-2"></i>
-                <span className="project-label"><FormattedMessage
-                  description="modalOneItem2"
-                  id="Modalone.item2"
-                  defaultMessage="Publication Link"
-                /> </span> :{" "}
-                <span className="ft-wt-600 uppercase">
-                  <a
+                <a
                     href="https://sciencescholar.us/journal/index.php/ijhs/article/view/13487"
                     target="_blank"
                     rel="noreferrer"
                   >
+                <span className="project-label"><FormattedMessage
+                  description="modalOneItem2"
+                  id="Modalone.item2"
+                  defaultMessage="Publication Link"
+                /> </span> </a>
+                {/* :{" "}
+                <span className="ft-wt-600 uppercase">
+                 
                     https://sciencescholar.us/journal/index.php/ijhs/article/view/13487
-                  </a>
-                </span>
+                  
+                </span> */}
             </div>
 
             <div className="col-12 mt-1" style={{ textAlign: 'center' }}>

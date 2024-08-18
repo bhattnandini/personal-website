@@ -15,20 +15,20 @@ const ModalThirteenContent = () => {
           <div className="row open-sans-font">
              <div className="col-12 col-sm-12 mb-2">
               <i className="fa fa-external-link pr-2"></i>
-              <span className="project-label"><FormattedMessage
-                description="vidLink"
-                id="vidLink"
-                defaultMessage="Video Link"
-              /> </span>:{" "}
-              <span className="ft-wt-600 uppercase">
-                <a
+              <a
                   href="https://www.youtube.com/watch?v=fMHHBhp0ooM"
                   target="_blank"
                   rel="noreferrer"
                 >
+              <span className="project-label"><FormattedMessage
+                description="vidLink"
+                id="vidLink"
+                defaultMessage="Video Link"
+              /> </span>  </a> 
+              {/* :{" "}
+              <span className="ft-wt-600 uppercase">
                   https://www.youtube.com/watch?v=fMHHBhp0ooM
-                </a>
-              </span>
+              </span> */}
             </div>
 
             <div className="col-12 col-sm-12 col-xs-12 mb-2" style={{textAlign: 'center'}}>

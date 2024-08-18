@@ -15,20 +15,22 @@ const ModalFourteenContent = () => {
           <div className="row open-sans-font">
             <div className="col-12 col-sm-12 mb-2">
                 <i className="fa fa-external-link pr-2"></i>
+                <a
+                  href="https://github.com/bhattnandini/TESTynamo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                 <span className="project-label"><FormattedMessage
                   description="ModalFourteenItem1"
                   id="ModalFourteen.item1"
                   defaultMessage="GitHub Link"
-                /> </span> :{" "}
+                /> </span> </a>
+                 {/* :{" "}
               <span className="ft-wt-600 uppercase">
-                <a
-                  href="https://github.com/nandineebhatt/TESTynamo"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+             
                   https://github.com/nandineebhatt/TESTynamo
-                </a>
-              </span>
+                
+              </span> */}
                 {/* <span className="ft-wt-600 uppercase">
             </span> */}
           </div>

@@ -1,0 +1,5 @@
+# Allow all bots to crawl the site
+User-agent: *
+
+# Allow crawling of the entire site except for the paths and file types above
+Allow: /
