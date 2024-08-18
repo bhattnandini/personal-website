@@ -30,7 +30,7 @@ const HeroLight = () => {
           className="col-lg-4 bg position-fixed d-none d-lg-block"
         >
               <img
-                   src="img/nandini.webp"
+                   src="img/nandini-web-dark.webp"
                    // width="82%" height="82%"
                    style={{
                      borderRadius: '20px',
@@ -47,7 +47,7 @@ const HeroLight = () => {
         <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
           <div>
             <img
-                    src="img/nandini-mobile.webp"
+                    src="img/nandini-mobile-dark.webp"
                     // width="82%" height="82%"
                     style={{
                       borderRadius: '20px',

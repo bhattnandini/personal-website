@@ -22,6 +22,37 @@ const Blog = () => {
 
   return (
     <>
+     {/* Blog 4 Starts */}
+     <div className="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+        <article className="post-container" onClick={toggleModalThree}>
+          <div className="post-thumb">
+            <div className="d-block position-relative overflow-hidden">
+              <img
+                src="img/blog/journey.webp"
+                className="img-fluid"
+                alt="Nandini Bhatt's medium.com Blog post"
+              />
+            </div>
+          </div>
+          {/* End .thumb */}
+          <div className="post-content">
+            <div className="entry-header">
+              <h3 data-cy="blog-4"> <a target="_blank" rel="noreferrer"
+              href="https://medium.com/@nandineebhatt07/a-birds-eye-view-of-my-professional-and-educational-journey-2b1bf4601f49">
+              A bird’s eye view of my professional and educational journey
+              </a></h3>
+            </div>
+            <div className="entry-content open-sans-font">
+              <p>
+              As a recent graduate with a master’s degree in Quality Systems Engineering from ... 
+              </p>
+            </div>
+          </div>
+          {/* End .post-content */}
+        </article>
+      </div>
+      {/*  Blog 4 Ends */}
+
      {/* Blog 3 Starts */}
      <div className="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
         <article className="post-container" onClick={toggleModalThree}>

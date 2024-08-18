@@ -34,10 +34,30 @@ const HomeDark = () => {
     if (isVisible) {
       document.getElementById('maindiv').classList.remove('yellow')
       document.getElementById('maindiv').classList.add('green')
+
+      const web = document.querySelectorAll('.nandini-web');
+      web.forEach(element => {
+        element.src = "img/nandini-web-light.webp";
+      });
+
+      const mobile = document.querySelectorAll('.nandini-mobile');
+      mobile.forEach(element => {
+        element.src = "img/nandini-mobile-light.webp";
+      });
     }
     else {
       document.getElementById('maindiv').classList.add('yellow')
       document.getElementById('maindiv').classList.remove('green')
+
+      const web = document.querySelectorAll('.nandini-web');
+      web.forEach(element => {
+        element.src = "img/nandini-web-dark.webp";
+      });
+
+      const mobile = document.querySelectorAll('.nandini-mobile');
+      mobile.forEach(element => {
+        element.src = "img/nandini-mobile-dark.webp";
+      });
     }
     setIsVisible(!isVisible);
   };

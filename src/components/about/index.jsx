@@ -84,14 +84,8 @@ const Index = () => {
 
               <div className="col-12 d-block text-center d-sm-none">
                 <img
-                   src="img/nandini-mobile.webp"
-                   // width="82%" height="82%"
-                   style={{
-                     borderRadius: '20px',
-                     // marginLeft: '-5px',
-                     marginTop: '3%',
-                   }}
-                  className="img-fluid main-img-mobile"
+                  src="img/nandini-mobile-dark.webp"
+                  className="img-fluid main-img-mobile nandini-mobile"
                   alt="Nandini Bhatt"
                 />
                 {/* <iframe title="Video Resume" style={{ borderRadius: 125 }} width="250" height="250" data-cy="v"

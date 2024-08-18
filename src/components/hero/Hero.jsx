@@ -29,7 +29,7 @@ const Hero = () => {
           className="col-lg-4 bg position-fixed d-none d-lg-block" style={{ position: 'relative' }}
         >
            <img
-                  src="img/nandini.webp"
+                  src="img/nandini-web-dark.webp"
                   // width="82%" height="82%"
                   style={{
                     borderRadius: '30px',
@@ -38,7 +38,7 @@ const Hero = () => {
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
                   }}
-                  className="img-fluid main-img-mobile"
+                  className="img-fluid main-img-mobile nandini-web"
                   alt="Nandini Bhatt"
                 />
           {/* <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%" data-cy="v"
@@ -48,15 +48,9 @@ const Hero = () => {
         </div>
         <div className="col-12 col-lg-8 offset-lg-4 home-details text-center text-lg-start">
           <div>
-            <img
-              src={"img/nandini-mobile.webp"}
-              // width="82%" height="82%"
-              style={{
-                borderRadius: '20px',
-                // marginLeft: '-5px',
-                marginTop: '3%',
-              }}
-              className="img-fluid main-img-mobile d-sm-block d-lg-none"
+          <img
+              src={"img/nandini-mobile-dark.webp"}
+              className="img-fluid main-img-mobile d-sm-block d-lg-none nandini-mobile"
               alt="Nandini Bhatt"
             />
             {/* <div style={{ paddingTop: '50px' }}>
