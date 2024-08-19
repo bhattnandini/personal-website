@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
   <!-- For indicating that the website supports light and dark mode -->
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
@@ -49,6 +49,8 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Nandini Bhatt | Full stack developer, tester/QA & cloud enthusiast | My Portfolio</title>
   <script type="application/ld+json" id="ld-json-data"></script>
+  <script type="application/ld+json" id="ld-json-data-2"></script>
+
   <script>
     // JavaScript to fetch and insert JSON data
     fetch('%PUBLIC_URL%/structured_data.json')
@@ -58,21 +60,17 @@
         scriptTag.textContent = JSON.stringify(data);
       })
       .catch(error => console.error('Error loading JSON:', error));
+
+    // JavaScript to fetch and insert JSON data
+    fetch('%PUBLIC_URL%/structured_data.json')
+      .then(response => response.json())
+      .then(data => {
+        const scriptTag = document.getElementById('ld-json-data-2');
+        scriptTag.textContent = JSON.stringify(data);
+      })
+      .catch(error => console.error('Error loading JSON:', error));
   </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Nandini Bhatt | Full stack developer, tester/QA & cloud enthusiast | My Portfolio",
-      "url": "https://nandinibhatt.me",
-      "inLanguage": [
-        "en",
-        "fr"
-      ],
-      "description": "Explore Nandini Bhatt's portfolio. I am a passionate full stack developer, tester/QA and cloud enthusiast. Check out my CV, projects, blogs, and get in touch with me. I am actively looking for a job.",
-    }
-  </script>
-  </head>
+</head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>

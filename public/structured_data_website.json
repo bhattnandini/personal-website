@@ -1,0 +1,11 @@
+ {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Nandini Bhatt | Full stack developer, tester/QA & cloud enthusiast | My Portfolio",
+      "url": "https://nandinibhatt.me",
+      "inLanguage": [
+        "en",
+        "fr"
+      ],
+      "description": "Explore Nandini Bhatt's portfolio. I am a passionate full stack developer, tester/QA and cloud enthusiast. Check out my CV, projects, blogs, and get in touch with me. I am actively looking for a job."
+}
