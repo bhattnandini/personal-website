@@ -42,6 +42,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="canonical" href="https://www.nandinibhatt.me"/>
+  <link rel="canonical" href="https://nandineeb.appstasy.in"/>
+
   <!-- Template Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet" />
@@ -69,6 +72,15 @@
         scriptTag.textContent = JSON.stringify(data);
       })
       .catch(error => console.error('Error loading JSON:', error));
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFL373VPS6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-XFL373VPS6');
   </script>
 </head>
 
