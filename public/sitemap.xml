@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Root Domain URLs -->
   <url>
     <loc>https://nandinibhatt.me/</loc>
     <lastmod>2024-08-18</lastmod>
@@ -11,6 +12,103 @@
     <lastmod>2024-08-18</lastmod>
     <changefreq>never</changefreq>
     <priority>0.1</priority>
+  </url>
+   <!-- Subdomain URLs -->
+  <url>
+    <loc>https://assets.nandinibhatt.me/certificates/best_paper.jpg</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/certificates/black_belt.png</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/certificates/data_analysis.pdf</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/certificates/green_belt.png</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/certificates/istqb.pdf</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/certificates/lean_management.png</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/certificates/yellow_belt.png</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/cv/cv_en.pdf</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/cv/cv_fr.pdf</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/french/niveau_6.pdf</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/handouts/istqb_en.pdf</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/posters/dynamic/istqb/page1.gif</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/posters/dynamic/istqb/page2.gif</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/posters/static/istqb.pdf</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/projects/testynamo/TESTynamo.pdf</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://assets.nandinibhatt.me/research/fulltext.pdf</loc>
+    <lastmod>2024-08-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
   </url>
   <!-- Add more static routes here -->
 </urlset>

@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { FormattedMessage } from 'react-intl'
 import { useIntl } from 'react-intl';
 
-const Contact = ({}) => {
+const Contact = ({ }) => {
   const intl = useIntl();
   const {
     register,
@@ -50,11 +50,11 @@ const Contact = ({}) => {
                 id="name"
                 placeholder={intl.formatMessage(
                   {
-                      description: 'placeholder1', 
-                      defaultMessage: 'YOUR NAME', 
-                      id: "Contact.placeholderName"
+                    description: 'placeholder1',
+                    defaultMessage: 'YOUR NAME',
+                    id: "Contact.placeholderName"
                   }
-               )}
+                )}
               />
               {errors.name && errors.name.type === "required" && (
                 <span className="invalid-feedback"><FormattedMessage
@@ -94,11 +94,11 @@ const Contact = ({}) => {
                 id="email"
                 placeholder={intl.formatMessage(
                   {
-                      description: 'placeholder2', 
-                      defaultMessage: 'YOUR EMAIL', 
-                      id: "Address.placeholderEmail"
+                    description: 'placeholder2',
+                    defaultMessage: 'YOUR EMAIL',
+                    id: "Address.placeholderEmail"
                   }
-               )}
+                )}
               />
               {errors.email && (
                 <span className="invalid-feedback">{errors.email.message}</span>
@@ -116,18 +116,18 @@ const Contact = ({}) => {
                 id="subject"
                 placeholder={intl.formatMessage(
                   {
-                      description: 'placeholder2', 
-                      defaultMessage: 'YOUR SUBJECT', 
-                      id: "Address.placeholderSubject"
+                    description: 'placeholder2',
+                    defaultMessage: 'YOUR SUBJECT',
+                    id: "Address.placeholderSubject"
                   }
-               )}
+                )}
               />
               {errors.subject && (
                 <span className="invalid-feedback"> <FormattedMessage
-                description="subjectError"
-                id="Address.subjectError"
-                defaultMessage="Subject is required."
-              /> </span>
+                  description="subjectError"
+                  id="Address.subjectError"
+                  defaultMessage="Subject is required."
+                /> </span>
               )}
             </div>
           </div>
@@ -141,18 +141,18 @@ const Contact = ({}) => {
                 id="message"
                 placeholder={intl.formatMessage(
                   {
-                      description: 'placeholder2', 
-                      defaultMessage: 'YOUR MESSAGE', 
-                      id: "Address.placeholderMessage"
+                    description: 'placeholder2',
+                    defaultMessage: 'YOUR MESSAGE',
+                    id: "Address.placeholderMessage"
                   }
-               )}
+                )}
               ></textarea>
               {errors.message && (
                 <span className="invalid-feedback"><FormattedMessage
-                description="messageError"
-                id="Address.messageError"
-                defaultMessage="Message is required."
-              /></span>
+                  description="messageError"
+                  id="Address.messageError"
+                  defaultMessage="Message is required."
+                /></span>
               )}
             </div>
           </div>
