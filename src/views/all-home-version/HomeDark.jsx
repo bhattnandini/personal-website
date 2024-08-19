@@ -34,7 +34,7 @@ const HomeDark = () => {
     if (isVisible) {
       document.getElementById('maindiv').classList.remove('yellow')
       document.getElementById('maindiv').classList.add('green')
-
+      
       const web = document.querySelectorAll('.nandini-web');
       web.forEach(element => {
         element.src = "img/nandini-web-light.webp";
@@ -44,6 +44,9 @@ const HomeDark = () => {
       mobile.forEach(element => {
         element.src = "img/nandini-mobile-light.webp";
       });
+
+      // Change the --before-bg-color variable
+      document.querySelector('.portfolio.professional').style.setProperty('--before-bg-color', '#72b626');
     }
     else {
       document.getElementById('maindiv').classList.add('yellow')
@@ -58,6 +61,9 @@ const HomeDark = () => {
       mobile.forEach(element => {
         element.src = "img/nandini-mobile-dark.webp";
       });
+
+      // Change the --before-bg-color variable
+      document.querySelector('.portfolio.professional').style.setProperty('--before-bg-color', '#ffb400');
     }
     setIsVisible(!isVisible);
   };
