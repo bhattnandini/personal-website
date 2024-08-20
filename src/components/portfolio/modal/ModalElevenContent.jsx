@@ -63,10 +63,10 @@ const ModalElevenContent = () => {
         {/*  Main Project Content Starts */}
         <div className="row">
           <div className="col-6 col-sm-6 mb-2">
-            <img src="https://assets.appstasy.in/nandinee/posters/dynamic/istqb/page1.gif" alt="ISTQB certification" />
+            <img src="https://assets.appstasy.in/nandinee/posters/dynamic/istqb/page1.gif" alt="Nandini bhatt's ISTQB certification poster gif, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
           </div>
           <div className="col-6 col-sm-6 mb-2">
-            <img src="https://assets.appstasy.in/nandinee/posters/dynamic/istqb/page2.gif" alt="ISTQB certification" />
+            <img src="https://assets.appstasy.in/nandinee/posters/dynamic/istqb/page2.gif" alt="Nandini bhatt's ISTQB certification poster gif, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
           </div>
         </div>
         {/* <Slider {...settings}>

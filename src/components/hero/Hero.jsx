@@ -39,7 +39,7 @@ const Hero = () => {
                     transform: 'translate(-50%, -50%)',
                   }}
                   className="img-fluid main-img-mobile nandini-web"
-                  alt="Nandini Bhatt"
+                  alt="Nandini Bhatt, Tester, QA, Cloud, DevOps, Automation, AWS"
                 />
           {/* <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%" data-cy="v"
             src="https://www.youtube.com/embed/wavzkI0Sztc">
@@ -51,7 +51,7 @@ const Hero = () => {
           <img
               src={"img/nandini-mobile-dark.webp"}
               className="img-fluid main-img-mobile d-sm-block d-lg-none nandini-mobile"
-              alt="Nandini Bhatt"
+              alt="Nandini Bhatt, Tester, QA, Cloud, DevOps, Automation, AWS"
             />
             {/* <div style={{ paddingTop: '50px' }}>
               <iframe title="Video Resume" style={{ borderRadius: 125 }} width="250" height="250"
@@ -134,7 +134,7 @@ const Hero = () => {
                   /> <span> <FormattedMessage
                     description="heroMe"
                     id="Hero.me"
-                    defaultMessage="me"
+                    defaultMessage="nandini"
                   /> </span>
                 </h1>
                 <span className="title-bg"><FormattedMessage

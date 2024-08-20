@@ -52,7 +52,8 @@ const ModalFourteenContent = () => {
       {/* Project Details Ends */}
 
       {/*  Main Project Content Starts */}
-      <img src="img/projects/TESTynamo.webp" alt="TESTynamo" />
+      <img src="img/projects/TESTynamo.webp" alt="Nandini Bhatt's project: TESTynamo, QA, Software/Unit Testing, GAN, AI/ML, CI/CD, DevOps, MLOps, Automation, Cloud, AWS, Python, Scripting,
+Containerisation" />
       {/* Main Project Content Ends */}
     </figure>
     </div >

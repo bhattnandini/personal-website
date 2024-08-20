@@ -30,7 +30,7 @@ const Blog = () => {
               <img
                 src="img/blog/journey.webp"
                 className="img-fluid"
-                alt="Nandini Bhatt's medium.com Blog post"
+                alt="Nandini Bhatt's medium.com Blog post, Tester, QA, Cloud, DevOps, Automation, AWS"
               />
             </div>
           </div>
@@ -39,7 +39,7 @@ const Blog = () => {
             <div className="entry-header">
               <h3 data-cy="blog-4"> <a target="_blank" rel="noreferrer"
               href="https://medium.com/@nandineebhatt07/a-birds-eye-view-of-my-professional-and-educational-journey-2b1bf4601f49">
-              A bird’s eye view of my professional and educational journey
+              Nandini Bhatt's professional and educational career
               </a></h3>
             </div>
             <div className="entry-content open-sans-font">
@@ -61,7 +61,7 @@ const Blog = () => {
               <img
                 src="img/blog/convocation.webp"
                 className="img-fluid"
-                alt="Nandini Bhatt's medium.com Blog post"
+                alt="Nandini Bhatt's medium.com Blog post, Tester, QA, Cloud, DevOps, Automation, AWS"
               />
             </div>
           </div>
@@ -70,7 +70,7 @@ const Blog = () => {
             <div className="entry-header">
               <h3 data-cy="blog-1"> <a target="_blank" rel="noreferrer"
               href="https://medium.com/@nandineebhatt07/the-hidden-pearls-of-a-masters-degree-d491566207dd">
-              The hidden pearls of a master’s degree
+              Nandini Bhatt's tips on pursuing Higher Education
               </a></h3>
             </div>
             <div className="entry-content open-sans-font">
@@ -92,14 +92,14 @@ const Blog = () => {
               <img
                 src="img/projects/istqb.webp"
                 className="img-fluid"
-                alt="Nandini Bhatt's medium.com Blog post"
+                alt="Nandini Bhatt's medium.com Blog post, Tester, QA, Cloud, DevOps, Automation, AWS"
               />
             </div>
           </div>
           {/* End .thumb */}
           <div className="post-content">
             <div className="entry-header">
-              <h3> <a target="_blank" rel="noreferrer" href="https://medium.com/@nandineebhatt07/a-software-testers-introduction-to-industry-certifications-2705ce398636" >A software tester’s introduction to industry certifications</a></h3>
+              <h3> <a target="_blank" rel="noreferrer" href="https://medium.com/@nandineebhatt07/a-software-testers-introduction-to-industry-certifications-2705ce398636">Nandini Bhatt’s introduction to pursuing ISTQB certifications</a></h3>
             </div>
             <div className="entry-content open-sans-font">
               <p>
@@ -120,14 +120,14 @@ const Blog = () => {
               <img
                 src="img/projects/istqb.webp"
                 className="img-fluid"
-                alt="Nandini Bhatt's medium.com Blog post"
+                alt="Nandini Bhatt's medium.com Blog post, Tester, QA, Cloud, DevOps, Automation, AWS"
               />
             </div>
           </div>
           {/* End .thumb */}
           <div className="post-content">
             <div className="entry-header">
-              <h3> <a target="_blank" rel="noreferrer" href="https://medium.com/@nandineebhatt07/une-introduction-aux-diplômes-industrielle-par-une-testeuse-des-logiciels-en-herbe-0ada6a2826ef" >Une introduction aux diplômes industrielle par une testeuse des logiciels en herbe</a></h3>
+              <h3> <a target="_blank" rel="noreferrer" href="https://medium.com/@nandineebhatt07/une-introduction-aux-diplômes-industrielle-par-une-testeuse-des-logiciels-en-herbe-0ada6a2826ef">Une introduction aux diplômes ISTQB par Nandini Bhatt</a></h3>
             </div>
             <div className="entry-content open-sans-font">
               <p>

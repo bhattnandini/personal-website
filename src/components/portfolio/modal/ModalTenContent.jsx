@@ -66,7 +66,7 @@ const ModalTenContent = () => {
       {/* Project Details Ends */}
 
       {/*  Main Project Content Starts */}
-      <img src="img/projects/python.webp" alt="IBM - Data analysis with Python" />
+      <img src="img/projects/python.webp" alt="Nandini Bhatt's Data analysis with Python certification, data science, ML, AI, IBM" />
       {/* <Slider {...settings}>
         <div className="slide_item">
           <img src="img/projects/project-3.jpg" alt="slide 1" />

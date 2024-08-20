@@ -86,7 +86,7 @@ const Index = () => {
                 <img
                   src="img/nandini-mobile-dark.webp"
                   className="img-fluid main-img-mobile nandini-mobile"
-                  alt="Nandini Bhatt"
+                  alt="Nandini Bhatt, Tester, QA, Cloud, DevOps, Automation, AWS"
                 />
                 {/* <iframe title="Video Resume" style={{ borderRadius: 125 }} width="250" height="250" data-cy="v"
                   src="https://www.youtube.com/embed/wavzkI0Sztc">

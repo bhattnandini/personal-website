@@ -140,7 +140,7 @@ const Portfolio = () => {
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
               <figure onClick={toggleModalThirteen}>
-                <img src="img/projects/ISTQB_presentation_cover.webp" alt="ISTQB certification" />
+                <img src="img/projects/ISTQB_presentation_cover.webp" alt="Nandini Bhatt's ISTQB certification, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title"><FormattedMessage
                     description="PortfolioItem8"
@@ -217,7 +217,8 @@ const Portfolio = () => {
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
               <figure onClick={toggleModalFourteen}>
-                <img src="img/projects/unittest.webp" alt="TESTynamo" />
+                <img src="img/projects/unittest.webp" alt="Nandini Bhatt's project: TESTynamo, QA, Software/Unit Testing, GAN, AI/ML, CI/CD, DevOps, MLOps, Automation, Cloud, AWS, Python, Scripting,
+Containerisation" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title"><FormattedMessage
                     description="PortfolioItem8"
@@ -296,7 +297,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalOne}>
-                <img src="img/projects/ICRASTEM_2022.webp" alt="Research paper" />
+                <img src="img/projects/ICRASTEM_2022.webp" alt="Nandini Bhatt's Research paper, ICRASTEM, research and development, LaTeX" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">ICRASTEM 2022</span>
                 </div>
@@ -327,7 +328,7 @@ const Portfolio = () => {
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
               <figure onClick={toggleModalTwo}>
-                <img src="img/projects/paper_presentation_loom.webp" alt="Research paper presentation" />
+                <img src="img/projects/paper_presentation_loom.webp" alt="Nandini Bhatt's Research paper presentation, ICRASTEM, research and development, public speaking" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Paper Presentation</span>
                 </div>
@@ -404,7 +405,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalEleven}>
-                <img src="img/projects/istqb.webp" alt="ISTQB certification" />
+                <img src="img/projects/istqb.webp" alt="Nandini bhatt's ISTQB certification poster gif, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">
                     <FormattedMessage
@@ -446,7 +447,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalTwelve}>
-                <img src="img/projects/istqb.webp" alt="ISTQB certification" />
+                <img src="img/projects/istqb.webp" alt="Nandini bhatt's ISTQB certification poster pdf, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">
                     <FormattedMessage
@@ -492,7 +493,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalFour}>
-                <img src="img/projects/istqb.webp" alt="ISTQB certification" />
+                <img src="img/projects/istqb.webp" alt="Nandini bhatt's ISTQB certification, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">ISTQB CTFL</span>
                 </div>
@@ -529,7 +530,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalFive}>
-                <img src="img/projects/yellow_belt.webp" alt="Six Sigma Yellow Belt" />
+                <img src="img/projects/yellow_belt.webp" alt="Nandini Bhatt's Lean Six Sigma Yellow Belt certification,Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Yellow Belt</span>
                 </div>
@@ -566,7 +567,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalSix}>
-                <img src="img/projects/green_belt.webp" alt="Six Sigma Green Belt" />
+                <img src="img/projects/green_belt.webp" alt="Nandini Bhatt's Lean Six Sigma Green Belt certification, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Green Belt</span>
                 </div>
@@ -603,7 +604,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalSeven}>
-                <img src="img/projects/black_belt.webp" alt="Six sigma black belt" />
+                <img src="img/projects/black_belt.webp" alt="Nandini Bhatt's Lean Six sigma black belt certification, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Black Belt</span>
                 </div>
@@ -640,7 +641,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalEight}>
-                <img src="img/projects/lean_management.webp" alt="Six Sigma Lean Management" />
+                <img src="img/projects/lean_management.webp" alt="Nandini Bhatt's Six Sigma Lean Management certification, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Lean Six Sigma Management Expert</span>
                 </div>
@@ -677,7 +678,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalTen}>
-                <img src="img/projects/python.webp" alt="IBM - Data analysis with Python" />
+                <img src="img/projects/python.webp" alt="Nandini Bhatt's Data analysis with Python certification, data science, ML, AI, IBM" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">IBM - Data analysis with Python</span>
                 </div>
@@ -714,7 +715,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalNine}>
-                <img src="img/projects/paper_presentation.webp" alt="Research paper" />
+                <img src="img/projects/paper_presentation.webp" alt="Nandini Bhatt's Research paper presentation, ICRASTEM, research and development, public speaking" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">  <FormattedMessage
                     description="bestPaper"
@@ -759,7 +760,7 @@ const Portfolio = () => {
               data-aos-delay="0"
             >
               <figure onClick={toggleModalOne}>
-                <img src="img/projects/hotfocus.jpg" alt="Mobile App" />
+                <img src="img/projects/hotfocus.jpg" alt="Nandini Bhatt's freelance project: Hybrid Mobile App development, Ionic framework, React.js, Vue.js, Android, iOS" />
                 <div className=" hover-content-wrapper">
                   <span className="content-title">Hotfocus</span>
                 </div>

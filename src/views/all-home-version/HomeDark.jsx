@@ -227,7 +227,7 @@ const HomeDark = () => {
                   /> <span> <FormattedMessage
                     description="heroMe"
                     id="Hero.me"
-                    defaultMessage="me"
+                    defaultMessage="nandini"
                   /> </span>
                 </h1>
                 <span className="title-bg"><FormattedMessage
@@ -252,8 +252,8 @@ const HomeDark = () => {
               <h1>
                 <FormattedMessage
                   description="homeMy"
-                  id="Home.my"
-                  defaultMessage="my"
+                  id="Home.me"
+                  defaultMessage="nandini's"
                 /> <span> <FormattedMessage
                   description="menuitem2"
                   id="Home.menuitem2"
@@ -289,14 +289,10 @@ const HomeDark = () => {
                <h1>
                   <FormattedMessage
                     description="Home.menuitem4"
-                    id="Home.menuitem4"
-                    defaultMessage="Blogs"
+                    id="Home.me"
+                    defaultMessage="nandini's"
                   /> 
-                  {/* <span> <FormattedMessage
-                    description="heroMe"
-                    id="Hero.me"
-                    defaultMessage="me"
-                  /> </span> */}
+                  <span> Blogs </span>
                 </h1>
               <span className="title-bg">posts</span>
             </div>
@@ -324,12 +320,12 @@ const HomeDark = () => {
               <h1>
                 <FormattedMessage
                   description="homeContact1"
-                  id="Home.contact1"
-                  defaultMessage="get in"
+                  id="Home.menuitem3"
+                  defaultMessage="Contact"
                 /> <span><FormattedMessage
                   description="homeContact2"
-                  id="Home.contact2"
-                  defaultMessage="touch"
+                  id="Hero.me"
+                  defaultMessage="nandini"
                 /> </span>
               </h1>
               <span className="title-bg">contact</span>

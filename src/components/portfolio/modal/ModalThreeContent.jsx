@@ -84,7 +84,7 @@ const ModalThreeContent = () => {
         {/* Project Details Ends */}
 
         {/*  Main Project Content Starts */}
-        <img src="img/projects/hotfocus.jpg" alt="Mobile App" />
+        <img src="img/projects/hotfocus.jpg" alt="Nandini Bhatt's freelance project: Hybrid Mobile App development, Ionic framework, React.js, Vue.js, Android, iOS" />
         {/* <Slider {...settings}>
           <div className="slide_item">
             <img src="img/projects/project-3.jpg" alt="slide 1" />
