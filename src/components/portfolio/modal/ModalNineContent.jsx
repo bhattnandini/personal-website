@@ -25,7 +25,7 @@ const ModalNineContent = () => {
                 <span className="project-label"><FormattedMessage
                   description="Modal9Item1"
                   id="Modalone.item2"
-                  defaultMessage="Publication Link"
+                  defaultMessage="Research paper"
                 /> </span> </a>
                 {/* :{" "}
                 <span className="ft-wt-600 uppercase">

@@ -30,9 +30,9 @@ const ModalTenContent = () => {
               rel="noreferrer"
             >
               <FormattedMessage
-                description="Modal3Item1"
+                description="Modal4.item1"
                 id="Modal4.item1"
-                defaultMessage="Verify my certificate"
+                defaultMessage="Verify ISTQB certificate"
               />
             </a>
             {/* <span className="ft-wt-600 uppercase">https://play.google.com/store/apps/details?id=com.appstasy1.hotfocus4</span> */}

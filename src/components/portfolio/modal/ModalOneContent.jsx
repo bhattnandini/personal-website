@@ -44,7 +44,7 @@ const ModalOneContent = () => {
                 <span className="project-label"><FormattedMessage
                   description="modalOneItem2"
                   id="Modalone.item2"
-                  defaultMessage="Publication Link"
+                  defaultMessage="Research paper"
                 /> </span> </a>
                 {/* :{" "}
                 <span className="ft-wt-600 uppercase">
@@ -59,7 +59,7 @@ const ModalOneContent = () => {
                 <span className="project-label"><FormattedMessage
                   description="modalOneItem3"
                   id="Modalone.item3"
-                  defaultMessage="Full text"
+                  defaultMessage="Research paper fulltext"
                 /></span>{" "}
                 <span className="button-icon fa fa-download"></span>
               </a>

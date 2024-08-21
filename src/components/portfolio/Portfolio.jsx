@@ -145,7 +145,7 @@ const Portfolio = () => {
                   <span className="content-title"><FormattedMessage
                     description="PortfolioItem8"
                     id="Portfolio.item8"
-                    defaultMessage="ISTQB - PPT Presentation"
+                    defaultMessage="ISTQB PPT Presentation"
                   /></span>
                 </div>
               </figure>
@@ -223,7 +223,7 @@ Containerisation" />
                   <span className="content-title"><FormattedMessage
                     description="PortfolioItem8"
                     id="Portfolio.item10"
-                    defaultMessage="TESTynamo: GAN-based Unit Test Generator"
+                    defaultMessage="TESTynamo: An automated end-to-end CI/CD integrated GAN-powered unit test generator"
                   /></span>
                 </div>
               </figure>

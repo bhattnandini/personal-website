@@ -16,7 +16,7 @@ const ModalTwelveContent = () => {
                 <span className="project-label"><FormattedMessage
                   description="modalTwelveItem1"
                   id="Modaltwelve.item1"
-                  defaultMessage="Poster"
+                  defaultMessage="ISTQB Poster"
                 /></span>{" "}
                 <span className="button-icon fa fa-download"></span>
               </a>

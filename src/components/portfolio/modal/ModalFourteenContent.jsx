@@ -23,7 +23,7 @@ const ModalFourteenContent = () => {
                 <span className="project-label"><FormattedMessage
                   description="ModalFourteenItem1"
                   id="ModalFourteen.item1"
-                  defaultMessage="GitHub Link"
+                  defaultMessage="GitHub Project TESTynamo"
                 /> </span> </a>
                  {/* :{" "}
               <span className="ft-wt-600 uppercase">
@@ -40,7 +40,7 @@ const ModalFourteenContent = () => {
               <span className="project-label"><FormattedMessage
                 description="modalFourteenItem1"
                 id="ModalFourteen.Item1"
-                defaultMessage="TESTynamo.pdf"
+                defaultMessage="GitHub Project TESTynamo"
               /></span>{" "}
               <span className="button-icon fa fa-download"></span>
             </a>
