@@ -41,7 +41,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="canonical" href="https://nandineeb.appstasy.in" />
 
   <!-- Template Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
@@ -63,7 +62,7 @@
       .catch(error => console.error('Error loading JSON:', error));
 
     // JavaScript to fetch and insert JSON data
-    fetch('%PUBLIC_URL%/structured_data.json')
+    fetch('%PUBLIC_URL%/structured_data_website.json')
       .then(response => response.json())
       .then(data => {
         const scriptTag = document.getElementById('ld-json-data-2');
@@ -71,6 +70,7 @@
       })
       .catch(error => console.error('Error loading JSON:', error));
   </script>
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFL373VPS6"></script>
   <script>

@@ -10,7 +10,7 @@ const educationContent = [
   //       adipisicing elit`,
   // },
   {
-    year: "2022 - 2023",
+    year: "2022 - 2024",
     degree: "MASTER'S in Quality Systems Engineering",
     institute: "Concordia UNIVERSITY, Montreal",
     details: `CGPA: 3.65/4.30`,
