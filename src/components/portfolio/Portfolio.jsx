@@ -83,12 +83,10 @@ const Portfolio = () => {
     // Check if the display is 'block' or 'none'
     
     if (darkTheme) {
-      console.log("dark mode");
       classNames += ' dark';
       classNames += ' yellow';
       
     } else {
-      console.log("light mode");
       classNames += ' green';
     }
 

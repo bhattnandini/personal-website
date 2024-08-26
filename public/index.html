@@ -51,7 +51,7 @@
   <script type="application/ld+json" id="ld-json-data"></script>
   <script type="application/ld+json" id="ld-json-data-2"></script>
 
-  <script>
+  <script defer>
     // JavaScript to fetch and insert JSON data
     fetch('%PUBLIC_URL%/structured_data.json')
       .then(response => response.json())
@@ -73,18 +73,19 @@
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFL373VPS6"></script>
-  <script>
+  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-XFL373VPS6');
   </script>
+
+  <!-- <script defer src="colorScheme.js"></script> -->
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>
-
 </html>

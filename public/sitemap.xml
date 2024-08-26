@@ -110,29 +110,5 @@
     <changefreq>never</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://www.youtube.com/watch?v=fMHHBhp0ooM</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>never</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.youtube.com/watch?v=wavzkI0Sztc</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>never</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.youtube.com/watch?v=cNkGS7Dv-UM</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>never</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.youtube.com/watch?v=REHOG4TIlS8</loc>
-    <lastmod>2024-08-18</lastmod>
-    <changefreq>never</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <!-- Add more static routes here -->
+ <!-- Add more static routes here -->
 </urlset>

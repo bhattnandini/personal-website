@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 // import { Link } from 'react-router-dom';
 import Hero from "../../components/hero/Hero";
@@ -28,44 +28,75 @@ const HomeDark = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isVisible1, setIsVisible1] = useState(true);
 
-  const handleThemeClick = (event) => {
-    document.body.classList.toggle('light');
-    document.body.classList.toggle('dark');
-    if (isVisible) {
-      document.getElementById('maindiv').classList.remove('yellow')
-      document.getElementById('maindiv').classList.add('green')
-      
-      const web = document.querySelectorAll('.nandini-web');
-      web.forEach(element => {
-        element.src = "img/nandini-web-light.webp";
-      });
+  function switchLight() {
+    document.body.classList.add('light');
+    document.body.classList.remove('dark');
+    document.getElementById('maindiv').classList.remove('yellow')
+    document.getElementById('maindiv').classList.add('green')
 
-      const mobile = document.querySelectorAll('.nandini-mobile');
-      mobile.forEach(element => {
-        element.src = "img/nandini-mobile-light.webp";
-      });
+    const web = document.querySelectorAll('.nandini-web');
+    web.forEach(element => {
+      element.src = "img/nandini-web-light.webp";
+    });
 
-      // Change the --before-bg-color variable
-      document.querySelector('.portfolio.professional').style.setProperty('--before-bg-color', '#72b626');
+    const mobile = document.querySelectorAll('.nandini-mobile');
+    mobile.forEach(element => {
+      element.src = "img/nandini-mobile-light.webp";
+    });
+
+    // Change the --before-bg-color variable
+    document.querySelector('.portfolio.professional').style.setProperty('--before-bg-color', '#72b626');
+    setIsVisible(false);
+  }
+
+  function switchDark() {
+    document.body.classList.remove('light');
+    document.body.classList.add('dark');
+    document.getElementById('maindiv').classList.add('yellow')
+    document.getElementById('maindiv').classList.remove('green')
+
+    const web = document.querySelectorAll('.nandini-web');
+    web.forEach(element => {
+      element.src = "img/nandini-web-dark.webp";
+    });
+
+    const mobile = document.querySelectorAll('.nandini-mobile');
+    mobile.forEach(element => {
+      element.src = "img/nandini-mobile-dark.webp";
+    });
+
+    // Change the --before-bg-color variable
+    document.querySelector('.portfolio.professional').style.setProperty('--before-bg-color', '#ffb400');
+    setIsVisible(true);
+  }
+
+  useEffect(() => {
+    // This will run after the component has completely rendered
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      // already dark mode on loading do nothing
     }
     else {
-      document.getElementById('maindiv').classList.add('yellow')
-      document.getElementById('maindiv').classList.remove('green')
-
-      const web = document.querySelectorAll('.nandini-web');
-      web.forEach(element => {
-        element.src = "img/nandini-web-dark.webp";
-      });
-
-      const mobile = document.querySelectorAll('.nandini-mobile');
-      mobile.forEach(element => {
-        element.src = "img/nandini-mobile-dark.webp";
-      });
-
-      // Change the --before-bg-color variable
-      document.querySelector('.portfolio.professional').style.setProperty('--before-bg-color', '#ffb400');
+      switchLight()
     }
-    setIsVisible(!isVisible);
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+      const newColorScheme = event.matches ? "dark" : "light";
+      if (newColorScheme === 'light') {
+        switchLight()
+      }
+      else {
+        switchDark()
+      }
+    });
+  }, []); // Th
+
+  const handleThemeClick = (event) => {
+    if (isVisible) {
+      switchLight()
+    }
+    else {
+      switchDark()
+    }
   };
 
   const handleLangClick = (language) => {
@@ -91,7 +122,7 @@ const HomeDark = () => {
       <Tabs defaultIndex={4} onSelect={handleSelect}>
         <div className="header">
           <TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
-          <Tab onClick={handleThemeClick} className="icon-box" key={5} style={{ display: isVisible ? 'block' : 'none' }}>
+            <Tab onClick={handleThemeClick} className="icon-box" key={5} id="lightbulb" style={{ display: isVisible ? 'block' : 'none' }}>
               <i className="fa fa-lightbulb-o" aria-hidden="true"></i>
               {/* <FontAwesomeIcon icon={faHome} size="2x" /> */}
               <h2> <FormattedMessage
@@ -103,7 +134,7 @@ const HomeDark = () => {
               <div id="darktheme" className={isVisible ? 'visible' : 'hidden'}></div>
             </Tab>
 
-            <Tab onClick={handleThemeClick} className="icon-box" key={6} style={{ display: isVisible ? 'none' : 'block' }}>
+            <Tab onClick={handleThemeClick} className="icon-box" key={6} id="moon" style={{ display: isVisible ? 'none' : 'block' }}>
               <i className="fa fa-moon-o" aria-hidden="true"></i>
               {/* <FontAwesomeIcon icon={faHome} size="2x" /> */}
               <h2>  <FormattedMessage
@@ -286,14 +317,14 @@ const HomeDark = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-               <h1>
-                  <FormattedMessage
-                    description="Home.menuitem4"
-                    id="Home.me"
-                    defaultMessage="nandini's"
-                  /> 
-                  <span> Blogs </span>
-                </h1>
+              <h1>
+                <FormattedMessage
+                  description="Home.menuitem4"
+                  id="Home.me"
+                  defaultMessage="nandini's"
+                />
+                <span> Blogs </span>
+              </h1>
               <span className="title-bg">posts</span>
             </div>
             <div
