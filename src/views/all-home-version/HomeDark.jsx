@@ -88,7 +88,7 @@ const HomeDark = () => {
         switchDark()
       }
     });
-  }, []); // Th
+  }, []);
 
   const handleThemeClick = (event) => {
     if (isVisible) {
