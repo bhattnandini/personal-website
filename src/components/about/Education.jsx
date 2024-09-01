@@ -19,7 +19,7 @@ const educationContent = [
     year: "2017 - 2020",
     degree: "BACHELOR'S in Computer Engineering",
     institute: "Gujarat Technological University",
-    details: `CGPA: 8.49/10.00`,
+    details: `CGPA: 8.69/10.00`,
   },
   {
     year: "2014 - 2017",
@@ -82,7 +82,7 @@ const Education = () => {
         <p className="open-sans-font"><FormattedMessage
             description="EducationDetails1"
             id="Education.details1"
-            defaultMessage="CGPA: 8.49/10.00"
+            defaultMessage="CGPA: 8.69/10.00"
           /></p>
       </li>
       
