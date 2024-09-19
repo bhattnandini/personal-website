@@ -36,7 +36,7 @@ const ModalThirteenContent = () => {
                 <span className="project-label"><FormattedMessage
                 description="modalThirteenItem1"
                 id="ModalThirteen.Item1"
-                defaultMessage="ISTQB presentation Handout"
+                defaultMessage="ISTQB Handout"
               /></span>{" "}
                   <span className="button-icon fa fa-download"></span>
                 </a>

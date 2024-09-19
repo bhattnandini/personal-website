@@ -16,7 +16,7 @@ const ModalElevenContent = () => {
                 <span className="project-label"><FormattedMessage
                   description="modalElevenItem1"
                   id="Modaleleven.item1"
-                  defaultMessage="Page 1"
+                  defaultMessage="1/2"
                 /></span>{" "}
                 <span className="button-icon fa fa-download"></span>
               </a>
@@ -27,7 +27,7 @@ const ModalElevenContent = () => {
                 <span className="project-label"><FormattedMessage
                   description="modalElevenItem2"
                   id="Modaleleven.item2"
-                  defaultMessage="Page 2"
+                  defaultMessage="2/2"
                 /></span>{" "}
                 <span className="button-icon fa fa-download"></span>
               </a>
