@@ -38,7 +38,7 @@ const Blog = () => {
           <div className="post-content">
             <div className="entry-header">
               <h3 data-cy="blog-4"> <a target="_blank" rel="noreferrer"
-              href="https://medium.com/@nandineebhatt07/a-birds-eye-view-of-my-professional-and-educational-journey-2b1bf4601f49">
+              href="https://blogs.nandinibhatt.me/a-birds-eye-view-of-my-professional-and-educational-journey-2b1bf4601f49">
               Nandini Bhatt's professional and educational career
               </a></h3>
             </div>
@@ -69,7 +69,7 @@ const Blog = () => {
           <div className="post-content">
             <div className="entry-header">
               <h3 data-cy="blog-1"> <a target="_blank" rel="noreferrer"
-              href="https://medium.com/@nandineebhatt07/the-hidden-pearls-of-a-masters-degree-d491566207dd">
+              href="https://blogs.nandinibhatt.me/the-hidden-pearls-of-a-masters-degree-d491566207dd">
               Nandini Bhatt's tips on pursuing Higher Education
               </a></h3>
             </div>
@@ -99,7 +99,7 @@ const Blog = () => {
           {/* End .thumb */}
           <div className="post-content">
             <div className="entry-header">
-              <h3> <a target="_blank" rel="noreferrer" href="https://medium.com/@nandineebhatt07/a-software-testers-introduction-to-industry-certifications-2705ce398636">Nandini Bhatt’s introduction to pursuing ISTQB certifications</a></h3>
+              <h3> <a target="_blank" rel="noreferrer" href="https://blogs.nandinibhatt.me/a-software-testers-introduction-to-industry-certifications-2705ce398636">Nandini Bhatt’s introduction to pursuing ISTQB certifications</a></h3>
             </div>
             <div className="entry-content open-sans-font">
               <p>
@@ -127,7 +127,7 @@ const Blog = () => {
           {/* End .thumb */}
           <div className="post-content">
             <div className="entry-header">
-              <h3> <a target="_blank" rel="noreferrer" href="https://medium.com/@nandineebhatt07/une-introduction-aux-diplômes-industrielle-par-une-testeuse-des-logiciels-en-herbe-0ada6a2826ef">Une introduction aux diplômes ISTQB par Nandini Bhatt</a></h3>
+              <h3> <a target="_blank" rel="noreferrer" href="https://blogs.nandinibhatt.me/une-introduction-aux-diplômes-industrielle-par-une-testeuse-des-logiciels-en-herbe-0ada6a2826ef">Une introduction aux diplômes ISTQB par Nandini Bhatt</a></h3>
             </div>
             <div className="entry-content open-sans-font">
               <p>

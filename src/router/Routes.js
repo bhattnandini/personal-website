@@ -13,7 +13,7 @@ const Routes3 = () => {
         <ScrollTopBehaviour />
         <Routes>
           <Route path="/" element={<HomeDark />} />
-          <Route path="/home-light" element={<HomeLight />} />
+          {/* <Route path="/home-light" element={<HomeLight />} /> */}
           <Route path="/home-dark" element={<HomeDark />} />
           <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}
         </Routes>
