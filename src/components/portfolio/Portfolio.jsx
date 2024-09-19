@@ -328,7 +328,11 @@ Containerisation" />
               <figure onClick={toggleModalTwo}>
                 <img src="img/projects/paper_presentation_loom.webp" alt="Nandini Bhatt's Research paper presentation, ICRASTEM, research and development, public speaking" />
                 <div className=" hover-content-wrapper">
-                  <span className="content-title">Paper Presentation</span>
+                  <span className="content-title"><FormattedMessage
+                    description="paperpresent"
+                    id="paperpresent"
+                    defaultMessage="Paper Presentation"
+                  /></span>
                 </div>
               </figure>
 

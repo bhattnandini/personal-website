@@ -8,7 +8,7 @@ const heroContent = {
   heroMobileImage: "img-mobile",
   heroTitleName: "Nandini Bhatt",
   heroDesignation: "QA Engineer",
-  heroDescriptions: `Experienced software professional with a passion for innovation and problem-solving. Proficient in a diverse range of technologies including Selenium, Java, Python, and cloud computing. Skilled in Agile methodologies, test-driven development, and delivering high-quality results. Adept at collaborating in cross-functional teams and adapting to evolving development practices. Strong background in software testing, development, and quality assurance. I am committed to continuous learning and staying updated with the latest industry trends. I am dedicated to delivering excellence in every project undertaken. I am open to new opportunities to contribute my skills and expertise to impactful projects.`,
+  heroDescriptions: `Nandini Bhatt is an experienced IT professional with a passion for innovation and problem-solving. She is proficient in Automation, Cloud Computing (AWS), DevOps, Full-stack Software Development, Linux Administration, Programming, and SDLC. Nandini has a proven track record of delivering high-quality results using Agile methodologies and Test-Driven Development.  Besides, Nandini is an exceptional team player with a charismatic personality. She serves as a source of inspiration for her juniors and never ceases to learn from her seniors. Her inquisitive nature and drive to push the boundaries of what is possible, help her stay abreast of the state-of-the-art state developments in the industry.  Nandini Bhatt is actively seeking new opportunities to challenge herself with. Please feel free to reach out to Nandini!`,
   heroBtn: "more about me",
 };
 
