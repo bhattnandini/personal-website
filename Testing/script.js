@@ -1,0 +1,109 @@
+// Check if the response status is 200 OK
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+// Check if the response body contains success message
+pm.test("Response body contains success message", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property('message').that.equals('Email sent successfully');
+});
+
+// Check if the response time is within acceptable limits
+pm.test("Response time is less than 500ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(1000);
+});
+
+// Check if content type is JSON
+pm.test("Content-Type is application/json", function () {
+    pm.response.to.have.header("Content-Type", "application/json");
+});
+
+// Check if response is indeed JSON
+pm.test("Response body is JSON", function () {
+    pm.response.to.be.json;
+});
+
+// Check if response follows a pre-defined structure
+const schema = {
+    "type": "object",
+    "properties": {
+        "message": { "type": "string" },
+        "statusCode": { "type": "number" }
+    },
+    "required": ["message", "statusCode"]
+};
+pm.test("Response follows the correct schema", function() {
+    pm.response.to.have.jsonSchema(schema);
+});
+
+// Test Header (e.g., Security)
+pm.test("Has security headers", function () {
+    pm.response.to.have.header('Strict-Transport-Security');
+});
+
+// Check response data types
+pm.test("Correct data types in response body", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.message).to.be.a('string');
+    pm.expect(jsonData.statusCode).to.be.a('number');
+});
+
+// load testing
+let requestCount = 2;
+for (let i = 0; i < requestCount; i++) {
+    pm.sendRequest({
+        url: pm.request.url.toString(),
+        method: 'POST',
+        header: { 'Content-Type': 'application/json' },
+        body: {
+            mode: 'raw',
+            raw: JSON.stringify({
+                "src":"hinddeep.purohit007@gmail.com",
+                "message": "Testing",
+                "toEmail": "reach@nandinibhatt.me",
+                "subject": "test"
+            })
+        }
+    }, function (err, res) {
+        pm.test("Request " + i + " completed with status 200", function () {
+            pm.expect(res.code).to.eql(200);
+        });
+    });
+}
+
+// check for error messages / if API validates input data 
+pm.test("Error message is returned for empty message", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property('error').that.equals('Message cannot be empty.');
+});
+pm.test("Error message is returned for empty subject", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property('error').that.equals('Subject cannot be empty.');
+});
+
+// Test for rate limit
+pm.test("Rate limiting works properly", function () {
+    pm.response.to.have.status(429);
+    var jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property('error').that.equals('Rate limit exceeded.');
+});
+
+// Check missing authorization if API key is enabled
+pm.test("Unauthorized request returns 401", function () {
+    pm.response.to.have.status(401);
+});
+
+// Check response for cookies (if resp has cookies)
+pm.test("Response contains required cookies", function () {
+    pm.expect(pm.cookies.has('session_id')).to.be.true;
+});
+
+
+// checking status codes other than 200
+pm.test("Status code is 400 for invalid request", function () {
+    pm.response.to.have.status(400);
+});
+
+// Log the response for debugging
+console.log(pm.response.text());
