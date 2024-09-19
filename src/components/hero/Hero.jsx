@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import Index from "../../components/about/index";
 import { FormattedMessage } from 'react-intl';
@@ -22,25 +22,56 @@ const Hero = () => {
   //     process.env.PUBLIC_URL + heroContent.heroImage
   //   })`,
   // }}
+  useEffect(() => {
+    // Code to be executed when the component is rendered
+    console.log('Component has been rendered');
+
+    if (document.body.classList.contains('light')) {
+      const web = document.querySelectorAll('.nandini-web');
+      web.forEach(element => {
+        element.src = "img/nandini-web-light.webp";
+      });
+  
+      const mobile = document.querySelectorAll('.nandini-mobile');
+      mobile.forEach(element => {
+        element.src = "img/nandini-mobile-light.webp";
+      });    
+    } else {
+      const web = document.querySelectorAll('.nandini-web');
+        web.forEach(element => {
+          element.src = "img/nandini-web-dark.webp";
+        });
+    
+        const mobile = document.querySelectorAll('.nandini-mobile');
+        mobile.forEach(element => {
+          element.src = "img/nandini-mobile-dark.webp";
+        });
+    }
+    // Optionally, return a cleanup function (runs when component is unmounted)
+    return () => {
+      // console.log('Component is being unmounted');
+    };
+  }, []); // Empty dependency array ensures it runs only on the first render
+
   return (
     <>
       <div className="row home-details-container align-items-center">
         <div
           className="col-lg-4 bg position-fixed d-none d-lg-block" style={{ position: 'relative' }}
         >
-           <img
-                  src="img/nandini-web-dark.webp"
-                  // width="82%" height="82%"
-                  style={{
-                    borderRadius: '30px',
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                  }}
-                  className="img-fluid main-img-mobile nandini-web"
-                  alt="Nandini Bhatt, Tester, QA, Cloud, DevOps, Automation, AWS"
-                />
+          <img
+            src="img/nandini-web-light.webp"
+            // width="82%" height="82%"
+            style={{
+              borderRadius: '30px',
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+            }}
+            className="img-fluid main-img-mobile nandini-web"
+            alt="Nandini Bhatt, Tester, QA, Cloud, DevOps, Automation, AWS"
+          />
           {/* <iframe title="Video Resume" style={{ margin: 25 }} width="90%" height="90%" data-cy="v"
             src="https://www.youtube.com/embed/wavzkI0Sztc">
           </iframe> */}
@@ -48,7 +79,7 @@ const Hero = () => {
         </div>
         <div className="col-12 col-lg-8 offset-lg-4 home-details text-center text-lg-start">
           <div>
-          <img
+            <img
               src={"img/nandini-mobile-dark.webp"}
               className="img-fluid main-img-mobile d-sm-block d-lg-none nandini-mobile"
               alt="Nandini Bhatt, Tester, QA, Cloud, DevOps, Automation, AWS"
