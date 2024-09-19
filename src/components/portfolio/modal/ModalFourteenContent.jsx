@@ -36,7 +36,7 @@ const ModalFourteenContent = () => {
           </div>
 
           <div className="col-12 col-sm-12 col-xs-12 mb-2" style={{ textAlign: 'center' }}>
-            <a className="button" href="https://assets.appstasy.in/nandinee/projects/testynamo/TESTynamo.pdf" download="TESTynamo.pdf">
+            <a className="button" href="https://assets.nandinibhatt.me/projects/testynamo/TESTynamo.pdf" download="TESTynamo.pdf">
               <span className="project-label"><FormattedMessage
                 description="modalFourteenItem1"
                 id="ModalFourteen.Item1"

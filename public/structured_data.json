@@ -1,761 +1,759 @@
 {
-    "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "mainEntity": {
-        "@type": "Person",
-        "name": "Nandini Bhatt",
-        "description": "Nandini Bhatt is a skilled software tester & full-stack developer proficient in QA, AWS, DevOps, Automation & Linux. Actively seeking a job/freelance projects.",
-        "url": "https://nandinibhatt.me",
-        "image": "https://nandinibhatt.me/img/nandini-web-dark.webp",
-        "jobTitle": [
-            "Full Stack Developer",
-            "Cloud Engineer",
-            "Quality Assurance Engineer",
-            "Frontend Developer",
-            "Backend Developer",
-            "DevOps Engineer",
-            "Software Tester"
-        ],
-        "skills": [
-            "Python",
-            "Jira",
-            "Java",
-            "API",
-            "CI/CD",
-            "AWS",
-            "AWS CloudWatch",
-            "Software Tester",
-            "Deployment",
-            "Regression Testing",
-            "Front-end",
-            "React.JS",
-            "SQL",
-            "PyTorch",
-            "Database Management",
-            "Requirement Analysis",
-            "Agile",
-            "REST",
-            "Android",
-            "Project Management",
-            "API Gateway",
-            "AWS Codepipeline",
-            "C#",
-            "C++",
-            "Cucumber",
-            "Node.JS",
-            "PHP",
-            "Shell Scripting",
-            "Automation",
-            "Amazon CloudFront",
-            "Amazon Elastic cloud compute",
-            "Docker",
-            "Kubernetes",
-            "Scrum",
-            "Sprint Boot",
-            "Selenium",
-            "Software Testing",
-            "Testrail",
-            "Unit Test",
-            "Maven",
-            "MySQL",
-            "PostgreSQL",
-            "GIT",
-            "Grafana",
-            "Networking",
-            "Prometheus",
-            "Virtualisation",
-            "C",
-            "LaTeX",
-            "Lambda",
-            "AWS Route53",
-            "AWS S3",
-            "AWS SNS",
-            "AWS SES",
-            "AWS VPC",
-            "AWS CodeBuild",
-            "AWS Codepipeline",
-            "VPN",
-            "VLAN",
-            "Routing",
-            "QoS",
-            "ACL",
-            "DHCP",
-            "DNS",
-            "IPv4",
-            "IPv6",
-            "NAT",
-            "PKI",
-            "SSL",
-            "SSH",
-            "Subnetting",
-            "TCP",
-            "UDP",
-            "Lucidchart",
-            "Cypress"
-        ],
-        "projects": [
-            {
-                "@type": "CreativeWork",
-                "name": "TESYnamo",
-                "description": "Performed research and development, proposed and implemented a technique to improve branch coverage by applying machine learning (GAN), Used docker to containerize GAN, uploaded container image to AWS ECR and deployed, trained and tested ML models Sagemaker by leveraging S3 for storing datasets, Built a CI/CD pipeline on GitLab and integrated the testing solution with the pipeline",
-                "url": "https://github.com/bhattnandini/TESTynamo",
-                "sameAs": [
-                    "https://assets.nandinibhatt.me/projects/testynamo/TESTynamo.pdf"
-                ]
-            },
-            {
-                "@type": "CreativeWork",
-                "name": "Nandini Bhatt's personal portfolio website made with React",
-                "description": "Used Dev Containers to develop and upgrade an SPA front-end in React.js and Python back-end using Lambda@Edge on a secured EC2 (with static IP and custom hostname) via SSH, used port-forwarding to analyze and optimize it (100% GTMetrix score) and used GitHub for src management, Provisioned infrastructure using Terraform, created CI/CD pipeline with CodePipeline to build the project using CodeBuild, test and deploy it on S3 based on Blue/Green strategy and enabled Email and SMS notifications using CloudWatch, EventBridge and Lambda, Tested front-end using Cypress and back-end using Postman, managed SSL certificates and configured DNS in Route53 to create subdomains and point to CDN (CloudFront) for caching, Performed SEO",
-                "url": "https://github.com/bhattnandini/personal-website",
-                "sameAs": [
-                    "https://nandinibhatt.me"
-                ]
-            }
-        ],
-        "publications": [
-            {
-                "@type": "ScholarlyArticle",
-                "headline": "A modern tech-driven approach to prognosis powered by realtime health care record updates from the patients",
-                "author": "Nandini Bhatt",
-                "publisher": "International Journal of Health Sciences",
-                "datePublished": "2022-4-1",
-                "url": "https://sciencescholar.us/journal/index.php/ijhs/article/view/13487",
-                "abstract": "In this era of technological advancement, all the sectors, including primary health care, have been upgraded to their pinnacle with fascinating tools and systems that actually make the process of saving a patient’s life somewhat easier than it used to be. Medical records typically consist of self-reported patient information along with doctor’s notes on diagnoses, and treatments. But there’s so much more to it. Up-to-date medical records generally contain self-reported detail such as contact and demographic information, lifestyle habits, medical history, vaccination information, and past test results. The primary reason why accurate and up- to-date medical records are super essential is that THEY CAN SAVE LIVES DURING EMERGENCIES. In this study, we aim to present a system that helps doctors get the necessary details of patients beforehand. So in case of an emergency, based on these essential data, the doctors can decide and start preparing the pieces of equipment and medicines before it’s too late. If the health parameters cross a pre-determined threshold value, a notification will be sent through an email or an SMS."
-            }
-        ],
-        "videos": [
-            {
-                "@type": "VideoObject",
-                "name": "Introduction to ISTQB certifications",
-                "description": "Ace the ISTQB Foundation Level Exam: A Complete Preparation Journey. Watch my detailed account of how I prepared for and passed the ISTQB Foundation Level exam. Learn about the study materials, training courses, and practical techniques that helped me succeed.",
-                "thumbnailUrl": "https://img.youtube.com/vi/fMHHBhp0ooM/maxresdefault.jpg",
-                "uploadDate": "2024-06-15",
-                "contentUrl": "https://www.youtube.com/watch?v=fMHHBhp0ooM",
-                "embedUrl": "https://www.youtube.com/embed/fMHHBhp0ooM"
-            },
-            {
-                "@type": "VideoObject",
-                "name": "Nandini Bhatt’s video Resume",
-                "description": "To make an impact on the world through innovative, cutting edge technologies in computer engineering, I have chosen this path. I am an avid reader and love to learn new things. I have been involved in various competitions that have helped me build a strong foundation in the field of programming. One thing I firmly believe in is that there is always a better way of doing things and this is what made me take up Computer Engineering as my profession. I have keen interest in database management, requirement analysis, data science and machine learning, and also event management, marketing .",
-                "thumbnailUrl": "https://img.youtube.com/vi/wavzkI0Sztc/maxresdefault.jpg",
-                "uploadDate": "2022-01-15",
-                "contentUrl": "https://www.youtube.com/watch?v=wavzkI0Sztc",
-                "embedUrl": "https://www.youtube.com/embed/wavzkI0Sztc"
-            },
-            {
-                "@type": "VideoObject",
-                "name": "Research Paper Presentation",
-                "description": "This is the presentation for the research paper titled 'A modern tech-driven approach to prognosis powered by realtime health care record updates from the patients' in the International Journal of Health Sciences",
-                "thumbnailUrl": "https://example.com/thumbnail1.jpg",
-                "uploadDate": "2024-08-15",
-                "contentUrl": "https://www.loom.com/share/9871257224e849cfa096361389f8fae9",
-                "embedUrl": "https://www.loom.com/embed/9871257224e849cfa096361389f8fae9"
-            },
-            {
-                "@type": "VideoObject",
-                "name": "Research Paper Presentation",
-                "description": "This is the presentation for the research paper titled 'Mitigating Demographic Bias in AI-based Resume Filtering' given at Concordia University.",
-                "thumbnailUrl": "https://example.com/thumbnail1.jpg",
-                "uploadDate": "2024-08-15",
-                "contentUrl": "https://www.loom.com/share/9871257224e849cfa096361389f8fae9",
-                "embedUrl": "https://www.loom.com/embed/9871257224e849cfa096361389f8fae9"
-            }
-        ],
-        "blogPosts": [
-            {
-                "@type": "BlogPosting",
-                "headline": "A bird’s eye view of Nandini Bhatt's professional and educational journey",
-                "author": {
-                    "@type": "Person",
-                    "name": "Nandini Bhatt",
-                    "url": "https://medium.com/@nandineebhatt07"
-                },
-                "datePublished": "2024-08-2",
-                "url": "https://medium.com/@nandineebhatt07/a-birds-eye-view-of-my-professional-and-educational-journey-2b1bf4601f49",
-                "description": "A summary of Nandini Bhatt's professional and educational journey",
-                "mainEntityOfPage": "https://medium.com/@nandineebhatt07",
-                "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*WpAkiENDc5gktzVXoKsPjQ@2x.jpeg",
-                "inLanguage": "en"
-            },
-            {
-                "@type": "BlogPosting",
-                "headline": "Nandini Bhatt's tips on pursuing Higher Education",
-                "author": {
-                    "@type": "Person",
-                    "name": "Nandini Bhatt",
-                    "url": "https://medium.com/@nandineebhatt07"
-                },
-                "datePublished": "2024-06-17",
-                "url": "https://medium.com/@nandineebhatt07/the-hidden-pearls-of-a-masters-degree-d491566207dd",
-                "description": "Nandini Bhatt's tips on pursuing Higher Education",
-                "mainEntityOfPage": "https://medium.com/@nandineebhatt07",
-                "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*PGhjlD4HA7Ko-Q3opCtOVw.png",
-                "inLanguage": "en"
-            },
-            {
-                "@type": "BlogPosting",
-                "headline": "Nandini Bhatt’s introduction to pursuing ISTQB certifications",
-                "author": {
-                    "@type": "Person",
-                    "name": "Nandini Bhatt",
-                    "url": "https://medium.com/@nandineebhatt07"
-                },
-                "datePublished": "2024-06-17",
-                "url": "https://medium.com/@nandineebhatt07/a-software-testers-introduction-to-industry-certifications-2705ce398636",
-                "description": "Nandini Bhatt's tips on pursuing ISTQB (International Software Testing Qualification Board) certifications.",
-                "mainEntityOfPage": "https://medium.com/@nandineebhatt07",
-                "image": "https://nandinibhatt.me/img/projects/istqb_cert.webp",
-                "inLanguage": "en"
-            },
-            {
-                "@type": "BlogPosting",
-                "headline": "Une introduction aux diplômes ISTQB par Nandini Bhatt",
-                "author": {
-                    "@type": "Person",
-                    "name": "Nandini Bhatt",
-                    "url": "https://medium.com/@nandineebhatt07"
-                },
-                "datePublished": "2024-06-17",
-                "url": "https://medium.com/@nandineebhatt07/une-introduction-aux-diplômes-industrielle-par-une-testeuse-des-logiciels-en-herbe-0ada6a2826ef",
-                "description": "Une introduction aux diplômes industrielle par Nandini Bhatt",
-                "mainEntityOfPage": "https://medium.com/@nandineebhatt07",
-                "image": "https://nandinibhatt.me/img/projects/istqb_cert.webp",
-                "inLanguage": "fr"
-            }
-        ],
-        "award": {
-            "@type": "EducationalOrganization",
-            "name": "Best Research Paper Presentation Award",
-            "awardType": "Best Research Paper Presentation",
-            "description": "Awarded for the best presentation of a research paper titled 'A modern tech-driven approach to prognosis powered by realtime health care record updates from the patients,” International journal of health sciences' at 'International Conference on Recent Advances in Science, Technology, Engineering and Management (ICRASTEM - 2022)",
-            "provider": {
-                "@type": "Organization",
-                "name": "International Conference on Recent Advances in Science, Technology, Engineering and Management (ICRASTEM - 2022)"
-            },
-            "dateReceived": "2022-05-29",
-            "sameAs": "https://assets.nandinibhatt.me/certificates/best_paper.jpg"
-        },
-        "resume": [
-            {
-                "@type": "CreativeWork",
-                "additionalType": "https://schema.org/MediaObject",
-                "name": "CV in English",
-                "url": "https://assets.nandinibhatt.me/cv/cv_en.pdf",
-                "contentUrl": "https://assets.nandinibhatt.me/cv/cv_en.pdf",
-                "encodingFormat": "application/pdf",
-                "description": "Nandini Bhatt's Curriculum Vita (CV) in English.",
-                "inLanguage": "en",
-                "identifier": {
-                    "@type": "PropertyValue",
-                    "propertyID": "cv-en"
-                }
-            },
-            {
-                "@type": "CreativeWork",
-                "additionalType": "https://schema.org/MediaObject",
-                "name": "CV in French",
-                "url": "https://assets.nandinibhatt.me/cv/cv_fr.pdf",
-                "contentUrl": "https://assets.nandinibhatt.me/cv/cv_fr.pdf",
-                "encodingFormat": "application/pdf",
-                "description": "Nandini Bhatt's Curriculum Vitae (CV) in French.",
-                "inLanguage": "fr",
-                "identifier": {
-                    "@type": "PropertyValue",
-                    "propertyID": "cv-fr"
-                }
-            },
-            {
-                "@type": "CreativeWork",
-                "additionalType": "https://schema.org/MediaObject",
-                "name": "Nandini Bhatt's PDF Poster on ISTQB Certifications",
-                "url": "https://assets.nandinibhatt.me/posters/static/istqb.pdf",
-                "contentUrl": "https://assets.nandinibhatt.me/posters/static/istqb.pdf",
-                "encodingFormat": "application/pdf",
-                "description": "Static poster in PDF format providing a brief overview of ISTQB (International Software Testing Qualification Board) Certifications. Created by Nandini Bhatt."
-            },
-            {
-                "@type": "CreativeWork",
-                "additionalType": "https://schema.org/MediaObject",
-                "name": "Nandini Bhatt's GIF Poster - 1 on ISTQB Certifications",
-                "url": "http://assets.nandinibhatt.me/posters/dynamic/istqb/page1.gif",
-                "contentUrl": "http://assets.nandinibhatt.me/posters/dynamic/istqb/page1.gif",
-                "encodingFormat": "image/gif",
-                "description": "Animated poster part 1 in GIF format providing a brief overview of ISTQB (International Software Testing Qualification Board) Certifications. Created by Nandini Bhatt."
-            },
-            {
-                "@type": "CreativeWork",
-                "additionalType": "https://schema.org/MediaObject",
-                "name": "Nandini Bhatt's GIF Poster - 2 on ISTQB Certifications",
-                "url": "http://assets.nandinibhatt.me/posters/dynamic/istqb/page2.gif",
-                "contentUrl": "http://assets.nandinibhatt.me/posters/dynamic/istqb/page2.gif",
-                "encodingFormat": "image/gif",
-                "description": "Animated poster part 2 in GIF format providing a brief overview of ISTQB (International Software Testing Qualification Board) Certifications. Created by Nandini Bhatt."
-            }
-        ],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Montreal",
-            "addressRegion": "Quebec",
-            "postalCode": "H4G1P4",
-            "addressCountry": "Canada",
-            "streetAddress": "3501, Rue Evelyn, Verdun"
-        },
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Nandini Bhatt",
+    "description": "Nandini Bhatt is a skilled software tester & full-stack developer proficient in QA, AWS, DevOps, Automation & Linux. Actively seeking a job/freelance projects.",
+    "url": "https://nandinibhatt.me",
+    "image": "https://nandinibhatt.me/img/nandini-web-dark.webp",
+    "jobTitle": [
+      "Full Stack Developer",
+      "Cloud Engineer",
+      "Quality Assurance Engineer",
+      "Frontend Developer",
+      "Backend Developer",
+      "DevOps Engineer",
+      "Software Tester"
+    ],
+    "skills": [
+      "Python",
+      "Jira",
+      "Java",
+      "API",
+      "CI/CD",
+      "AWS",
+      "AWS CloudWatch",
+      "Software Tester",
+      "Deployment",
+      "Regression Testing",
+      "Front-end",
+      "React.JS",
+      "SQL",
+      "PyTorch",
+      "Database Management",
+      "Requirement Analysis",
+      "Agile",
+      "REST",
+      "Android",
+      "Project Management",
+      "API Gateway",
+      "AWS Codepipeline",
+      "C#",
+      "C++",
+      "Cucumber",
+      "Node.JS",
+      "PHP",
+      "Shell Scripting",
+      "Automation",
+      "Amazon CloudFront",
+      "Amazon Elastic cloud compute",
+      "Docker",
+      "Kubernetes",
+      "Scrum",
+      "Sprint Boot",
+      "Selenium",
+      "Software Testing",
+      "Testrail",
+      "Unit Test",
+      "Maven",
+      "MySQL",
+      "PostgreSQL",
+      "GIT",
+      "Grafana",
+      "Networking",
+      "Prometheus",
+      "Virtualisation",
+      "C",
+      "LaTeX",
+      "Lambda",
+      "AWS Route53",
+      "AWS S3",
+      "AWS SNS",
+      "AWS SES",
+      "AWS VPC",
+      "AWS CodeBuild",
+      "AWS Codepipeline",
+      "VPN",
+      "VLAN",
+      "Routing",
+      "QoS",
+      "ACL",
+      "DHCP",
+      "DNS",
+      "IPv4",
+      "IPv6",
+      "NAT",
+      "PKI",
+      "SSL",
+      "SSH",
+      "Subnetting",
+      "TCP",
+      "UDP",
+      "Lucidchart",
+      "Cypress"
+    ],
+    "projects": [
+      {
+        "@type": "CreativeWork",
+        "name": "TESYnamo",
+        "description": "Performed research and development, proposed and implemented a technique to improve branch coverage by applying machine learning (GAN), Used docker to containerize GAN, uploaded container image to AWS ECR and deployed, trained and tested ML models Sagemaker by leveraging S3 for storing datasets, Built a CI/CD pipeline on GitLab and integrated the testing solution with the pipeline",
+        "url": "https://github.com/bhattnandini/TESTynamo",
         "sameAs": [
-            "https://www.linkedin.com/in/njbhatt/",
-            "https://github.com/bhattnandini/bhattnandini",
-            "https://medium.com/@nandineebhatt07",
-            "https://www.youtube.com/@nandineebhatt9140"
-        ],
-        "alumniOf": [
-            {
-                "@type": "EducationalOrganization",
-                "name": "Concordia University",
-                "url": "https://www.concordia.ca",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "1455 Boulevard de Maisonneuve O",
-                    "addressLocality": "Montreal",
-                    "addressRegion": "QC",
-                    "postalCode": "H3G1M8",
-                    "addressCountry": "CA"
-                }
-            }
-        ],
-        "birthDate": "1998-07-07",
-        "birthPlace": {
+          "https://assets.nandinibhatt.me/projects/testynamo/TESTynamo.pdf"
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Nandini Bhatt's personal portfolio website made with React",
+        "description": "Used Dev Containers to develop and upgrade an SPA front-end in React.js and Python back-end using Lambda@Edge on a secured EC2 (with static IP and custom hostname) via SSH, used port-forwarding to analyze and optimize it (100% GTMetrix score) and used GitHub for src management, Provisioned infrastructure using Terraform, created CI/CD pipeline with CodePipeline to build the project using CodeBuild, test and deploy it on S3 based on Blue/Green strategy and enabled Email and SMS notifications using CloudWatch, EventBridge and Lambda, Tested front-end using Cypress and back-end using Postman, managed SSL certificates and configured DNS in Route53 to create subdomains and point to CDN (CloudFront) for caching, Performed SEO",
+        "url": "https://github.com/bhattnandini/personal-website",
+        "sameAs": ["https://nandinibhatt.me"]
+      }
+    ],
+    "publications": [
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "A modern tech-driven approach to prognosis powered by realtime health care record updates from the patients",
+        "author": "Nandini Bhatt",
+        "publisher": "International Journal of Health Sciences",
+        "datePublished": "2022-4-1",
+        "url": "https://sciencescholar.us/journal/index.php/ijhs/article/view/13487",
+        "abstract": "In this era of technological advancement, all the sectors, including primary health care, have been upgraded to their pinnacle with fascinating tools and systems that actually make the process of saving a patient’s life somewhat easier than it used to be. Medical records typically consist of self-reported patient information along with doctor’s notes on diagnoses, and treatments. But there’s so much more to it. Up-to-date medical records generally contain self-reported detail such as contact and demographic information, lifestyle habits, medical history, vaccination information, and past test results. The primary reason why accurate and up- to-date medical records are super essential is that THEY CAN SAVE LIVES DURING EMERGENCIES. In this study, we aim to present a system that helps doctors get the necessary details of patients beforehand. So in case of an emergency, based on these essential data, the doctors can decide and start preparing the pieces of equipment and medicines before it’s too late. If the health parameters cross a pre-determined threshold value, a notification will be sent through an email or an SMS."
+      }
+    ],
+    "videos": [
+      {
+        "@type": "VideoObject",
+        "name": "Introduction to ISTQB certifications",
+        "description": "Ace the ISTQB Foundation Level Exam: A Complete Preparation Journey. Watch my detailed account of how I prepared for and passed the ISTQB Foundation Level exam. Learn about the study materials, training courses, and practical techniques that helped me succeed.",
+        "thumbnailUrl": "https://img.youtube.com/vi/fMHHBhp0ooM/maxresdefault.jpg",
+        "uploadDate": "2024-06-15",
+        "contentUrl": "https://www.youtube.com/watch?v=fMHHBhp0ooM",
+        "embedUrl": "https://www.youtube.com/embed/fMHHBhp0ooM"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Nandini Bhatt’s video Resume",
+        "description": "To make an impact on the world through innovative, cutting edge technologies in computer engineering, I have chosen this path. I am an avid reader and love to learn new things. I have been involved in various competitions that have helped me build a strong foundation in the field of programming. One thing I firmly believe in is that there is always a better way of doing things and this is what made me take up Computer Engineering as my profession. I have keen interest in database management, requirement analysis, data science and machine learning, and also event management, marketing .",
+        "thumbnailUrl": "https://img.youtube.com/vi/wavzkI0Sztc/maxresdefault.jpg",
+        "uploadDate": "2022-01-15",
+        "contentUrl": "https://www.youtube.com/watch?v=wavzkI0Sztc",
+        "embedUrl": "https://www.youtube.com/embed/wavzkI0Sztc"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Research Paper Presentation",
+        "description": "This is the presentation for the research paper titled 'A modern tech-driven approach to prognosis powered by realtime health care record updates from the patients' in the International Journal of Health Sciences",
+        "thumbnailUrl": "https://example.com/thumbnail1.jpg",
+        "uploadDate": "2024-08-15",
+        "contentUrl": "https://www.loom.com/share/9871257224e849cfa096361389f8fae9",
+        "embedUrl": "https://www.loom.com/embed/9871257224e849cfa096361389f8fae9"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Research Paper Presentation",
+        "description": "This is the presentation for the research paper titled 'Mitigating Demographic Bias in AI-based Resume Filtering' given at Concordia University.",
+        "thumbnailUrl": "https://example.com/thumbnail1.jpg",
+        "uploadDate": "2024-08-15",
+        "contentUrl": "https://www.loom.com/share/9871257224e849cfa096361389f8fae9",
+        "embedUrl": "https://www.loom.com/embed/9871257224e849cfa096361389f8fae9"
+      }
+    ],
+    "blogPosts": [
+      {
+        "@type": "BlogPosting",
+        "headline": "A bird’s eye view of Nandini Bhatt's professional and educational journey",
+        "author": {
+          "@type": "Person",
+          "name": "Nandini Bhatt",
+          "url": "https://blogs.nandinibhatt.me"
+        },
+        "datePublished": "2024-08-2",
+        "url": "https://blogs.nandinibhatt.me/a-birds-eye-view-of-my-professional-and-educational-journey-2b1bf4601f49",
+        "description": "A summary of Nandini Bhatt's professional and educational journey",
+        "mainEntityOfPage": "https://blogs.nandinibhatt.me",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*WpAkiENDc5gktzVXoKsPjQ@2x.jpeg",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Nandini Bhatt's tips on pursuing Higher Education",
+        "author": {
+          "@type": "Person",
+          "name": "Nandini Bhatt",
+          "url": "https://blogs.nandinibhatt.me"
+        },
+        "datePublished": "2024-06-17",
+        "url": "https://blogs.nandinibhatt.me/the-hidden-pearls-of-a-masters-degree-d491566207dd",
+        "description": "Nandini Bhatt's tips on pursuing Higher Education",
+        "mainEntityOfPage": "https://blogs.nandinibhatt.me",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*PGhjlD4HA7Ko-Q3opCtOVw.png",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Nandini Bhatt’s introduction to pursuing ISTQB certifications",
+        "author": {
+          "@type": "Person",
+          "name": "Nandini Bhatt",
+          "url": "https://blogs.nandinibhatt.me"
+        },
+        "datePublished": "2024-06-17",
+        "url": "https://blogs.nandinibhatt.me/a-software-testers-introduction-to-industry-certifications-2705ce398636",
+        "description": "Nandini Bhatt's tips on pursuing ISTQB (International Software Testing Qualification Board) certifications.",
+        "mainEntityOfPage": "https://blogs.nandinibhatt.me",
+        "image": "https://nandinibhatt.me/img/projects/istqb_cert.webp",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Une introduction aux diplômes ISTQB par Nandini Bhatt",
+        "author": {
+          "@type": "Person",
+          "name": "Nandini Bhatt",
+          "url": "https://blogs.nandinibhatt.me"
+        },
+        "datePublished": "2024-06-17",
+        "url": "https://blogs.nandinibhatt.me/une-introduction-aux-diplômes-industrielle-par-une-testeuse-des-logiciels-en-herbe-0ada6a2826ef",
+        "description": "Une introduction aux diplômes industrielle par Nandini Bhatt",
+        "mainEntityOfPage": "https://blogs.nandinibhatt.me",
+        "image": "https://nandinibhatt.me/img/projects/istqb_cert.webp",
+        "inLanguage": "fr"
+      }
+    ],
+    "award": {
+      "@type": "EducationalOrganization",
+      "name": "Best Research Paper Presentation Award",
+      "awardType": "Best Research Paper Presentation",
+      "description": "Awarded for the best presentation of a research paper titled 'A modern tech-driven approach to prognosis powered by realtime health care record updates from the patients,” International journal of health sciences' at 'International Conference on Recent Advances in Science, Technology, Engineering and Management (ICRASTEM - 2022)",
+      "provider": {
+        "@type": "Organization",
+        "name": "International Conference on Recent Advances in Science, Technology, Engineering and Management (ICRASTEM - 2022)"
+      },
+      "dateReceived": "2022-05-29",
+      "sameAs": "https://assets.nandinibhatt.me/certificates/best_paper.jpg"
+    },
+    "resume": [
+      {
+        "@type": "CreativeWork",
+        "additionalType": "https://schema.org/MediaObject",
+        "name": "CV in English",
+        "url": "https://assets.nandinibhatt.me/cv/cv_en.pdf",
+        "contentUrl": "https://assets.nandinibhatt.me/cv/cv_en.pdf",
+        "encodingFormat": "application/pdf",
+        "description": "Nandini Bhatt's Curriculum Vita (CV) in English.",
+        "inLanguage": "en",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "cv-en"
+        }
+      },
+      {
+        "@type": "CreativeWork",
+        "additionalType": "https://schema.org/MediaObject",
+        "name": "CV in French",
+        "url": "https://assets.nandinibhatt.me/cv/cv_fr.pdf",
+        "contentUrl": "https://assets.nandinibhatt.me/cv/cv_fr.pdf",
+        "encodingFormat": "application/pdf",
+        "description": "Nandini Bhatt's Curriculum Vitae (CV) in French.",
+        "inLanguage": "fr",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "cv-fr"
+        }
+      },
+      {
+        "@type": "CreativeWork",
+        "additionalType": "https://schema.org/MediaObject",
+        "name": "Nandini Bhatt's PDF Poster on ISTQB Certifications",
+        "url": "https://assets.nandinibhatt.me/posters/static/istqb.pdf",
+        "contentUrl": "https://assets.nandinibhatt.me/posters/static/istqb.pdf",
+        "encodingFormat": "application/pdf",
+        "description": "Static poster in PDF format providing a brief overview of ISTQB (International Software Testing Qualification Board) Certifications. Created by Nandini Bhatt."
+      },
+      {
+        "@type": "CreativeWork",
+        "additionalType": "https://schema.org/MediaObject",
+        "name": "Nandini Bhatt's GIF Poster - 1 on ISTQB Certifications",
+        "url": "http://assets.nandinibhatt.me/posters/dynamic/istqb/page1.gif",
+        "contentUrl": "http://assets.nandinibhatt.me/posters/dynamic/istqb/page1.gif",
+        "encodingFormat": "image/gif",
+        "description": "Animated poster part 1 in GIF format providing a brief overview of ISTQB (International Software Testing Qualification Board) Certifications. Created by Nandini Bhatt."
+      },
+      {
+        "@type": "CreativeWork",
+        "additionalType": "https://schema.org/MediaObject",
+        "name": "Nandini Bhatt's GIF Poster - 2 on ISTQB Certifications",
+        "url": "http://assets.nandinibhatt.me/posters/dynamic/istqb/page2.gif",
+        "contentUrl": "http://assets.nandinibhatt.me/posters/dynamic/istqb/page2.gif",
+        "encodingFormat": "image/gif",
+        "description": "Animated poster part 2 in GIF format providing a brief overview of ISTQB (International Software Testing Qualification Board) Certifications. Created by Nandini Bhatt."
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Montreal",
+      "addressRegion": "Quebec",
+      "postalCode": "H4G1P4",
+      "addressCountry": "Canada",
+      "streetAddress": "3501, Rue Evelyn, Verdun"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/njbhatt/",
+      "https://github.com/bhattnandini",
+      "https://blogs.nandinibhatt.me",
+      "https://www.youtube.com/@nandinibhatt0707"
+    ],
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Concordia University",
+        "url": "https://www.concordia.ca",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1455 Boulevard de Maisonneuve O",
+          "addressLocality": "Montreal",
+          "addressRegion": "QC",
+          "postalCode": "H3G1M8",
+          "addressCountry": "CA"
+        }
+      }
+    ],
+    "birthDate": "1998-07-07",
+    "birthPlace": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rajkot",
+        "addressRegion": "Gujarat",
+        "addressCountry": "India"
+      }
+    },
+    "familyName": "Bhatt",
+    "givenName": "Nandini",
+    "gender": "Female",
+    "knowsLanguage": [
+      {
+        "@type": "Language",
+        "name": "English",
+        "fluency": "Fluent"
+      },
+      {
+        "@type": "Language",
+        "name": "French",
+        "fluency": "Intermediate"
+      },
+      {
+        "@type": "Language",
+        "name": "Hindi",
+        "fluency": "Fluent"
+      },
+      {
+        "@type": "Language",
+        "name": "Gujarati",
+        "fluency": "Native"
+      }
+    ],
+    "nationality": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "seeks": [
+      {
+        "@type": "Demand",
+        "itemOffered": {
+          "@type": "JobPosting",
+          "title": "Full Stack Developer",
+          "description": "A Full Stack Developer is responsible for developing both the front-end and back-end of web applications. This role involves designing, coding, and testing software to ensure high performance and responsiveness of applications. Key responsibilities include working with HTML, CSS, and JavaScript for front-end development, and using server-side technologies such as Node.js, Python, or Ruby for back-end development. The Full Stack Developer also collaborates with other team members to integrate user-facing elements with server-side logic and databases, while ensuring cross-platform optimization and maintaining security best practices.",
+          "datePosted": "2024-01-01",
+          "jobLocation": {
             "@type": "Place",
             "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Rajkot",
-                "addressRegion": "Gujarat",
-                "addressCountry": "India"
+              "@type": "PostalAddress",
+              "addressLocality": "Any City",
+              "addressRegion": "Any State",
+              "addressCountry": "Canada"
             }
+          },
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Any Organization"
+          }
+        }
+      },
+      {
+        "@type": "Demand",
+        "itemOffered": {
+          "@type": "JobPosting",
+          "title": "Cloud Engineer",
+          "description": "A Cloud Engineer is responsible for designing, implementing, and managing cloud-based infrastructure and services. This role involves working with cloud platforms such as AWS, Azure, or Google Cloud to build scalable and reliable systems. Key responsibilities include deploying and maintaining cloud resources, optimizing cloud performance, ensuring data security, and managing cloud costs. The Cloud Engineer collaborates with development teams to integrate cloud solutions, troubleshoot issues, and ensure high availability of applications. This role requires strong knowledge of cloud services, automation tools, and best practices for cloud architecture.",
+          "datePosted": "2024-01-01",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Any City",
+              "addressRegion": "Any State",
+              "addressCountry": "Canada"
+            }
+          },
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Any Organization"
+          }
+        }
+      },
+      {
+        "@type": "Demand",
+        "itemOffered": {
+          "@type": "JobPosting",
+          "title": "Quality Assurance Engineer",
+          "description": "A Quality Assurance (QA) Engineer is responsible for ensuring the quality and reliability of software applications through rigorous testing and evaluation. Key responsibilities include developing and executing test plans, identifying and documenting defects, and collaborating with development teams to resolve issues. The QA Engineer conducts both manual and automated testing, verifies that software meets functional and non-functional requirements, and ensures that quality standards are adhered to throughout the software development lifecycle. This role requires a strong understanding of testing methodologies, attention to detail, and the ability to work effectively in a fast-paced environment.",
+          "datePosted": "2024-01-01",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Any City",
+              "addressRegion": "Any State",
+              "addressCountry": "Canada"
+            }
+          },
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Any Organization"
+          }
+        }
+      },
+      {
+        "@type": "Demand",
+        "itemOffered": {
+          "@type": "JobPosting",
+          "title": "Frontend Developer",
+          "description": "A Frontend Developer is responsible for designing and implementing the user interface and user experience of web applications. This role involves using HTML, CSS, and JavaScript to create responsive and visually appealing websites and applications. Key responsibilities include translating design mockups into functional code, optimizing web pages for performance and accessibility, and ensuring cross-browser compatibility. The Frontend Developer collaborates with designers and backend developers to integrate APIs and improve the overall user experience. This role requires strong skills in front-end technologies, attention to detail, and a passion for creating user-friendly interfaces.",
+          "datePosted": "2024-01-01",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Any City",
+              "addressRegion": "Any State",
+              "addressCountry": "Canada"
+            }
+          },
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Any Organization"
+          }
+        }
+      },
+      {
+        "@type": "Demand",
+        "itemOffered": {
+          "@type": "JobPosting",
+          "title": "Backend Developer",
+          "description": "A Backend Developer is responsible for designing, developing, and maintaining the server-side logic, databases, and application architecture of web applications. This role involves writing server-side code, integrating APIs, managing databases, and ensuring the scalability and performance of backend systems. Key responsibilities include building and optimizing backend services, handling data storage and retrieval, and ensuring security and data integrity. The Backend Developer collaborates with frontend developers and other team members to create cohesive and efficient applications. This role requires strong skills in server-side programming languages, database management, and an understanding of backend frameworks and technologies.",
+          "datePosted": "2024-01-01",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Any City",
+              "addressRegion": "Any State",
+              "addressCountry": "Canada"
+            }
+          },
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Any Organization"
+          }
+        }
+      },
+      {
+        "@type": "Demand",
+        "itemOffered": {
+          "@type": "JobPosting",
+          "title": "DevOps Engineer",
+          "description": "A DevOps Engineer is responsible for bridging the gap between software development and IT operations by automating and streamlining the deployment, monitoring, and management of applications and infrastructure. This role involves designing and implementing CI/CD pipelines, managing cloud infrastructure, and ensuring the reliability and scalability of systems. Key responsibilities include automating deployment processes, monitoring system performance, troubleshooting issues, and collaborating with development and operations teams to improve processes and practices. The DevOps Engineer requires strong skills in scripting, cloud platforms, containerization technologies, and an understanding of system administration and infrastructure management.",
+          "datePosted": "2024-01-01",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Any City",
+              "addressRegion": "Any State",
+              "addressCountry": "Canada"
+            }
+          },
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Any Organization"
+          }
+        }
+      },
+      {
+        "@type": "Demand",
+        "itemOffered": {
+          "@type": "JobPosting",
+          "title": "Software Tester",
+          "description": "A Software Tester is responsible for evaluating and ensuring the quality of software applications through systematic testing and defect identification. This role involves designing and executing test cases, reporting bugs, and working closely with development teams to resolve issues. Key responsibilities include creating detailed test plans, performing both manual and automated testing, validating software functionality and performance, and ensuring that the software meets the required standards and specifications. The Software Tester requires strong analytical skills, attention to detail, and proficiency in testing tools and methodologies to deliver high-quality software products.",
+          "datePosted": "2024-01-01",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Any City",
+              "addressRegion": "Any State",
+              "addressCountry": "Canada"
+            }
+          },
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Any Organization"
+          }
+        }
+      }
+    ],
+    "telephone": "+1-438-722-3706",
+    "email": "mailto:reach@nandinibhatt.me",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "educationalLevel": "Master's of Engineering",
+        "about": {
+          "@type": "EducationalOccupationalProgram",
+          "name": "Quality Systems Engineering"
         },
-        "familyName": "Bhatt",
-        "givenName": "Nandini",
-        "gender": "Female",
-        "knowsLanguage": [
-            {
-                "@type": "Language",
-                "name": "English",
-                "fluency": "Fluent"
-            },
-            {
-                "@type": "Language",
-                "name": "French",
-                "fluency": "Intermediate"
-            },
-            {
-                "@type": "Language",
-                "name": "Hindi",
-                "fluency": "Fluent"
-            },
-            {
-                "@type": "Language",
-                "name": "Gujarati",
-                "fluency": "Native"
-            }
-        ],
-        "nationality": {
-            "@type": "Country",
-            "name": "India"
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Concordia University",
+          "url": "https://www.concordia.ca",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1455 Boulevard de Maisonneuve O",
+            "addressLocality": "Montreal",
+            "addressRegion": "QC",
+            "postalCode": "H3G 1M8",
+            "addressCountry": "CA"
+          }
         },
-        "seeks": [
-            {
-                "@type": "Demand",
-                "itemOffered": {
-                    "@type": "JobPosting",
-                    "title": "Full Stack Developer",
-                    "description": "A Full Stack Developer is responsible for developing both the front-end and back-end of web applications. This role involves designing, coding, and testing software to ensure high performance and responsiveness of applications. Key responsibilities include working with HTML, CSS, and JavaScript for front-end development, and using server-side technologies such as Node.js, Python, or Ruby for back-end development. The Full Stack Developer also collaborates with other team members to integrate user-facing elements with server-side logic and databases, while ensuring cross-platform optimization and maintaining security best practices.",
-                    "datePosted": "2024-01-01",
-                    "jobLocation": {
-                        "@type": "Place",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Any City",
-                            "addressRegion": "Any State",
-                            "addressCountry": "Canada"
-                        }
-                    },
-                    "hiringOrganization": {
-                        "@type": "Organization",
-                        "name": "Any Organization"
-                    }
-                }
-            },
-            {
-                "@type": "Demand",
-                "itemOffered": {
-                    "@type": "JobPosting",
-                    "title": "Cloud Engineer",
-                    "description": "A Cloud Engineer is responsible for designing, implementing, and managing cloud-based infrastructure and services. This role involves working with cloud platforms such as AWS, Azure, or Google Cloud to build scalable and reliable systems. Key responsibilities include deploying and maintaining cloud resources, optimizing cloud performance, ensuring data security, and managing cloud costs. The Cloud Engineer collaborates with development teams to integrate cloud solutions, troubleshoot issues, and ensure high availability of applications. This role requires strong knowledge of cloud services, automation tools, and best practices for cloud architecture.",
-                    "datePosted": "2024-01-01",
-                    "jobLocation": {
-                        "@type": "Place",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Any City",
-                            "addressRegion": "Any State",
-                            "addressCountry": "Canada"
-                        }
-                    },
-                    "hiringOrganization": {
-                        "@type": "Organization",
-                        "name": "Any Organization"
-                    }
-                }
-            },
-            {
-                "@type": "Demand",
-                "itemOffered": {
-                    "@type": "JobPosting",
-                    "title": "Quality Assurance Engineer",
-                    "description": "A Quality Assurance (QA) Engineer is responsible for ensuring the quality and reliability of software applications through rigorous testing and evaluation. Key responsibilities include developing and executing test plans, identifying and documenting defects, and collaborating with development teams to resolve issues. The QA Engineer conducts both manual and automated testing, verifies that software meets functional and non-functional requirements, and ensures that quality standards are adhered to throughout the software development lifecycle. This role requires a strong understanding of testing methodologies, attention to detail, and the ability to work effectively in a fast-paced environment.",
-                    "datePosted": "2024-01-01",
-                    "jobLocation": {
-                        "@type": "Place",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Any City",
-                            "addressRegion": "Any State",
-                            "addressCountry": "Canada"
-                        }
-                    },
-                    "hiringOrganization": {
-                        "@type": "Organization",
-                        "name": "Any Organization"
-                    }
-                }
-            },
-            {
-                "@type": "Demand",
-                "itemOffered": {
-                    "@type": "JobPosting",
-                    "title": "Frontend Developer",
-                    "description": "A Frontend Developer is responsible for designing and implementing the user interface and user experience of web applications. This role involves using HTML, CSS, and JavaScript to create responsive and visually appealing websites and applications. Key responsibilities include translating design mockups into functional code, optimizing web pages for performance and accessibility, and ensuring cross-browser compatibility. The Frontend Developer collaborates with designers and backend developers to integrate APIs and improve the overall user experience. This role requires strong skills in front-end technologies, attention to detail, and a passion for creating user-friendly interfaces.",
-                    "datePosted": "2024-01-01",
-                    "jobLocation": {
-                        "@type": "Place",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Any City",
-                            "addressRegion": "Any State",
-                            "addressCountry": "Canada"
-                        }
-                    },
-                    "hiringOrganization": {
-                        "@type": "Organization",
-                        "name": "Any Organization"
-                    }
-                }
-            },
-            {
-                "@type": "Demand",
-                "itemOffered": {
-                    "@type": "JobPosting",
-                    "title": "Backend Developer",
-                    "description": "A Backend Developer is responsible for designing, developing, and maintaining the server-side logic, databases, and application architecture of web applications. This role involves writing server-side code, integrating APIs, managing databases, and ensuring the scalability and performance of backend systems. Key responsibilities include building and optimizing backend services, handling data storage and retrieval, and ensuring security and data integrity. The Backend Developer collaborates with frontend developers and other team members to create cohesive and efficient applications. This role requires strong skills in server-side programming languages, database management, and an understanding of backend frameworks and technologies.",
-                    "datePosted": "2024-01-01",
-                    "jobLocation": {
-                        "@type": "Place",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Any City",
-                            "addressRegion": "Any State",
-                            "addressCountry": "Canada"
-                        }
-                    },
-                    "hiringOrganization": {
-                        "@type": "Organization",
-                        "name": "Any Organization"
-                    }
-                }
-            },
-            {
-                "@type": "Demand",
-                "itemOffered": {
-                    "@type": "JobPosting",
-                    "title": "DevOps Engineer",
-                    "description": "A DevOps Engineer is responsible for bridging the gap between software development and IT operations by automating and streamlining the deployment, monitoring, and management of applications and infrastructure. This role involves designing and implementing CI/CD pipelines, managing cloud infrastructure, and ensuring the reliability and scalability of systems. Key responsibilities include automating deployment processes, monitoring system performance, troubleshooting issues, and collaborating with development and operations teams to improve processes and practices. The DevOps Engineer requires strong skills in scripting, cloud platforms, containerization technologies, and an understanding of system administration and infrastructure management.",
-                    "datePosted": "2024-01-01",
-                    "jobLocation": {
-                        "@type": "Place",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Any City",
-                            "addressRegion": "Any State",
-                            "addressCountry": "Canada"
-                        }
-                    },
-                    "hiringOrganization": {
-                        "@type": "Organization",
-                        "name": "Any Organization"
-                    }
-                }
-            },
-            {
-                "@type": "Demand",
-                "itemOffered": {
-                    "@type": "JobPosting",
-                    "title": "Software Tester",
-                    "description": "A Software Tester is responsible for evaluating and ensuring the quality of software applications through systematic testing and defect identification. This role involves designing and executing test cases, reporting bugs, and working closely with development teams to resolve issues. Key responsibilities include creating detailed test plans, performing both manual and automated testing, validating software functionality and performance, and ensuring that the software meets the required standards and specifications. The Software Tester requires strong analytical skills, attention to detail, and proficiency in testing tools and methodologies to deliver high-quality software products.",
-                    "datePosted": "2024-01-01",
-                    "jobLocation": {
-                        "@type": "Place",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Any City",
-                            "addressRegion": "Any State",
-                            "addressCountry": "Canada"
-                        }
-                    },
-                    "hiringOrganization": {
-                        "@type": "Organization",
-                        "name": "Any Organization"
-                    }
-                }
+        "description": "CGPA: 3.65/4.30"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "educationalLevel": "Bachelor's of Engineering",
+        "about": {
+          "@type": "EducationalOccupationalProgram",
+          "name": "Computer Engineering"
+        },
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Gujarat Technical University",
+          "url": "https://www.gtu.ac.in",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rajkot",
+            "addressRegion": "GJ",
+            "addressCountry": "IN"
+          }
+        },
+        "description": "CGPA: 8.15/10.00"
+      },
+      {
+        "@type": "Certification",
+        "name": "ISTQB Certified Tester - Foundation Level",
+        "issuer": {
+          "@type": "EducationalOrganization",
+          "name": "ISTQB",
+          "url": "https://www.istqb.org"
+        },
+        "url": "https://atsqa.org/certified-testers/profile/92007d7a02c74bd2abc44232ba4d53db"
+      },
+      {
+        "@type": "Certification",
+        "name": "Lean Six Sigma - Yellow Belt",
+        "issuer": {
+          "@type": "EducationalOrganization",
+          "name": "Six Sigma Academy Amsterdam",
+          "url": "https://www.ssaa.nl"
+        },
+        "url": "https://assets.nandinibhatt.me/certificates/yellow_belt.png"
+      },
+      {
+        "@type": "Certification",
+        "name": "Lean Six Sigma - Green Belt",
+        "issuer": {
+          "@type": "EducationalOrganization",
+          "name": "Six Sigma Academy Amsterdam",
+          "url": "https://www.ssaa.nl"
+        },
+        "url": "https://assets.nandinibhatt.me/certificates/green_belt.png"
+      },
+      {
+        "@type": "Certification",
+        "name": "Lean Six Sigma - Black Belt",
+        "issuer": {
+          "@type": "EducationalOrganization",
+          "name": "Six Sigma Academy Amsterdam",
+          "url": "https://www.ssaa.nl"
+        },
+        "url": "https://assets.nandinibhatt.me/certificates/black_belt.png"
+      },
+      {
+        "@type": "Certification",
+        "name": "Lean Six Sigma - Management Expert",
+        "issuer": {
+          "@type": "EducationalOrganization",
+          "name": "Six Sigma Academy Amsterdam",
+          "url": "https://www.ssaa.nl"
+        },
+        "url": "https://assets.nandinibhatt.me/certificates/lean_management.png"
+      },
+      {
+        "@type": "Certification",
+        "name": "IBM - Data Analysis with Python",
+        "issuer": {
+          "@type": "EducationalOrganization",
+          "name": "IBM",
+          "url": "https://www.ibm.com/"
+        },
+        "identifier": "YMM5T73RZMFX",
+        "url": "https://www.coursera.org/account/accomplishments/verify/YMM5T73RZMFX"
+      }
+    ],
+    "hasOccupation": [
+      {
+        "@type": "Occupation",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://nandinibhatt.me/",
+          "lastReviewed": "2024-08-18T14:20:00-05:00"
+        },
+        "name": "Junior Software Tester",
+        "occupationalCategory": "15-1253.00",
+        "startDate": "2020-01-01",
+        "endDate": "2022-04-30",
+        "description": "Debugged Java and Python apps, Analysed logs using CloudWatch, Planned, designed, executed and maintained black-box/whitebox test suits, Performed API, Functional, Unit, Integration, Performance and Regression Testing, Tracked and reported errors in Jira, Architected solutions on AWS using best practices, Setup Blue/Green Environments for testing, Created CI/CD pipelines and automated integration, testing and deployment of web apps, Automated development environment, Used special methods for testing (TDD and BDD), Streamlined testing to reduce bugs by 20%, Improved code performance by up to 30% by identifying and resolving critical issues.",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Rajkot",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "GJ",
+            "addressCountry": {
+              "@type": "Country",
+              "name": "India",
+              "addressCountry": "IN"
             }
-        ],
-        "telephone": "+1-438-722-3706",
-        "email": "mailto:reach@nandinibhatt.me",
-        "hasCredential": [
-            {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "degree",
-                "educationalLevel": "Master's of Engineering",
-                "about": {
-                    "@type": "EducationalOccupationalProgram",
-                    "name": "Quality Systems Engineering"
-                },
-                "recognizedBy": {
-                    "@type": "Organization",
-                    "name": "Concordia University",
-                    "url": "https://www.concordia.ca",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "1455 Boulevard de Maisonneuve O",
-                        "addressLocality": "Montreal",
-                        "addressRegion": "QC",
-                        "postalCode": "H3G 1M8",
-                        "addressCountry": "CA"
-                    }
-                },
-                "description": "CGPA: 3.65/4.30"
-            },
-            {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "degree",
-                "educationalLevel": "Bachelor's of Engineering",
-                "about": {
-                    "@type": "EducationalOccupationalProgram",
-                    "name": "Computer Engineering"
-                },
-                "recognizedBy": {
-                    "@type": "Organization",
-                    "name": "Gujarat Technical University",
-                    "url": "https://www.gtu.ac.in",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressLocality": "Rajkot",
-                        "addressRegion": "GJ",
-                        "addressCountry": "IN"
-                    }
-                },
-                "description": "CGPA: 8.15/10.00"
-            },
-            {
-                "@type": "Certification",
-                "name": "ISTQB Certified Tester - Foundation Level",
-                "issuer": {
-                    "@type": "EducationalOrganization",
-                    "name": "ISTQB",
-                    "url": "https://www.istqb.org"
-                },
-                "url": "https://atsqa.org/certified-testers/profile/92007d7a02c74bd2abc44232ba4d53db"
-            },
-            {
-                "@type": "Certification",
-                "name": "Lean Six Sigma - Yellow Belt",
-                "issuer": {
-                    "@type": "EducationalOrganization",
-                    "name": "Six Sigma Academy Amsterdam",
-                    "url": "https://www.ssaa.nl"
-                },
-                "url": "https://assets.appstasy.in/nandinee/certificates/yellow_belt.png"
-            },
-            {
-                "@type": "Certification",
-                "name": "Lean Six Sigma - Green Belt",
-                "issuer": {
-                    "@type": "EducationalOrganization",
-                    "name": "Six Sigma Academy Amsterdam",
-                    "url": "https://www.ssaa.nl"
-                },
-                "url": "https://assets.appstasy.in/nandinee/certificates/green_belt.png"
-            },
-            {
-                "@type": "Certification",
-                "name": "Lean Six Sigma - Black Belt",
-                "issuer": {
-                    "@type": "EducationalOrganization",
-                    "name": "Six Sigma Academy Amsterdam",
-                    "url": "https://www.ssaa.nl"
-                },
-                "url": "https://assets.appstasy.in/nandinee/certificates/black_belt.png"
-            },
-            {
-                "@type": "Certification",
-                "name": "Lean Six Sigma - Management Expert",
-                "issuer": {
-                    "@type": "EducationalOrganization",
-                    "name": "Six Sigma Academy Amsterdam",
-                    "url": "https://www.ssaa.nl"
-                },
-                "url": "https://assets.appstasy.in/nandinee/certificates/lean_management.png"
-            },
-            {
-                "@type": "Certification",
-                "name": "IBM - Data Analysis with Python",
-                "issuer": {
-                    "@type": "EducationalOrganization",
-                    "name": "IBM",
-                    "url": "https://www.ibm.com/"
-                },
-                "identifier": "YMM5T73RZMFX",
-                "url": "https://www.coursera.org/account/accomplishments/verify/YMM5T73RZMFX"
+          }
+        },
+        "estimatedSalary": {
+          "@type": "MonetaryAmountDistribution",
+          "name": "Annual Salary Distribution",
+          "currency": "INR",
+          "minValue": "500000",
+          "maxValue": "700000",
+          "amount": {
+            "@type": "MonetaryAmount",
+            "value": "600000"
+          },
+          "distribution": {
+            "@type": "QuantitativeValue",
+            "value": "600000",
+            "unitCode": "YEA"
+          },
+          "duration": "P1Y"
+        }
+      },
+      {
+        "@type": "Occupation",
+        "name": "Software Developer",
+        "occupationalCategory": "15-1252.00",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://nandinibhatt.me/",
+          "lastReviewed": "2024-08-18T14:20:00-05:00"
+        },
+        "startDate": "2019-01-01",
+        "endDate": "2019-12-31",
+        "description": "Performed requirement analysis, Participated in R&D, Developed Android apps (Java), Implemented REST APIs and applied SOLID principles, Collaborated with cross-functional teams with Jira, Fostered collaboration among team members to adapt to changing requirements and efficiently deliver high-quality results, Performed Functional, Unit, and Performance Testing, Reduced development time by 25% by using agile methodologies and efficient project management techniques, Received positive feedback from clients for delivering 3 high-quality applications before project deadlines system",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Rajkot",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "GJ",
+            "addressCountry": {
+              "@type": "Country",
+              "name": "India",
+              "addressCountry": "IN"
             }
-        ],
-        "hasOccupation": [
-            {
-                "@type": "Occupation",
-                "mainEntityOfPage": {
-                    "@type": "WebPage",
-                    "@id": "https://nandinibhatt.me/",
-                    "lastReviewed": "2024-08-18T14:20:00-05:00"
-                },
-                "name": "Junior Software Tester",
-                "occupationalCategory": "15-1253.00",
-                "startDate": "2020-01-01",
-                "endDate": "2022-04-30",
-                "description": "Debugged Java and Python apps, Analysed logs using CloudWatch, Planned, designed, executed and maintained black-box/whitebox test suits, Performed API, Functional, Unit, Integration, Performance and Regression Testing, Tracked and reported errors in Jira, Architected solutions on AWS using best practices, Setup Blue/Green Environments for testing, Created CI/CD pipelines and automated integration, testing and deployment of web apps, Automated development environment, Used special methods for testing (TDD and BDD), Streamlined testing to reduce bugs by 20%, Improved code performance by up to 30% by identifying and resolving critical issues.",
-                "occupationLocation": {
-                    "@type": "City",
-                    "name": "Rajkot",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressRegion": "GJ",
-                        "addressCountry": {
-                            "@type": "Country",
-                            "name": "India",
-                            "addressCountry": "IN"
-                        }
-                    }
-                },
-                "estimatedSalary": {
-                    "@type": "MonetaryAmountDistribution",
-                    "name": "Annual Salary Distribution",
-                    "currency": "INR",
-                    "minValue": "500000",
-                    "maxValue": "700000",
-                    "amount": {
-                        "@type": "MonetaryAmount",
-                        "value": "600000"
-                    },
-                    "distribution": {
-                        "@type": "QuantitativeValue",
-                        "value": "600000",
-                        "unitCode": "YEA"
-                    },
-                    "duration": "P1Y"
-                }
-            },
-            {
-                "@type": "Occupation",
-                "name": "Software Developer",
-                "occupationalCategory": "15-1252.00",
-                "mainEntityOfPage": {
-                    "@type": "WebPage",
-                    "@id": "https://nandinibhatt.me/",
-                    "lastReviewed": "2024-08-18T14:20:00-05:00"
-                },
-                "startDate": "2019-01-01",
-                "endDate": "2019-12-31",
-                "description": "Performed requirement analysis, Participated in R&D, Developed Android apps (Java), Implemented REST APIs and applied SOLID principles, Collaborated with cross-functional teams with Jira, Fostered collaboration among team members to adapt to changing requirements and efficiently deliver high-quality results, Performed Functional, Unit, and Performance Testing, Reduced development time by 25% by using agile methodologies and efficient project management techniques, Received positive feedback from clients for delivering 3 high-quality applications before project deadlines system",
-                "occupationLocation": {
-                    "@type": "City",
-                    "name": "Rajkot",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressRegion": "GJ",
-                        "addressCountry": {
-                            "@type": "Country",
-                            "name": "India",
-                            "addressCountry": "IN"
-                        }
-                    }
-                },
-                "estimatedSalary": {
-                    "@type": "MonetaryAmountDistribution",
-                    "name": "Annual Salary Distribution",
-                    "currency": "INR",
-                    "minValue": "400000",
-                    "maxValue": "500000",
-                    "amount": {
-                        "@type": "MonetaryAmount",
-                        "value": "450000"
-                    },
-                    "distribution": {
-                        "@type": "QuantitativeValue",
-                        "value": "450000",
-                        "unitCode": "YEA"
-                    },
-                    "duration": "P1Y"
-                }
-            },
-            {
-                "@type": "Occupation",
-                "name": "Software Developer Intern",
-                "occupationalCategory": "15-1252.00",
-                "mainEntityOfPage": {
-                    "@type": "WebPage",
-                    "@id": "https://nandinibhatt.me/",
-                    "lastReviewed": "2024-08-18T14:20:00-05:00"
-                },
-                "startDate": "2018-06-01",
-                "endDate": "2018-12-31",
-                "description": "Coded ML models using PyTorch, Developed Front-end using ReactJS and Back-end using Python, Database Management using SQL, Optimized the front-end's code to reduce the response time by 10% and DB query execution time by 5%.",
-                "estimatedSalary": {
-                    "@type": "MonetaryAmountDistribution",
-                    "name": "Monthly Salary Distribution",
-                    "currency": "INR",
-                    "minValue": "50000",
-                    "maxValue": "50000",
-                    "amount": {
-                        "@type": "MonetaryAmount",
-                        "value": "10000"
-                    },
-                    "distribution": {
-                        "@type": "QuantitativeValue",
-                        "value": "10000",
-                        "unitCode": "MTH"
-                    },
-                    "duration": "P6M"
-                },
-                "occupationLocation": {
-                    "@type": "City",
-                    "name": "Rajkot",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressRegion": "GJ",
-                        "addressCountry": {
-                            "@type": "Country",
-                            "name": "India",
-                            "addressCountry": "IN"
-                        }
-                    }
-                }
+          }
+        },
+        "estimatedSalary": {
+          "@type": "MonetaryAmountDistribution",
+          "name": "Annual Salary Distribution",
+          "currency": "INR",
+          "minValue": "400000",
+          "maxValue": "500000",
+          "amount": {
+            "@type": "MonetaryAmount",
+            "value": "450000"
+          },
+          "distribution": {
+            "@type": "QuantitativeValue",
+            "value": "450000",
+            "unitCode": "YEA"
+          },
+          "duration": "P1Y"
+        }
+      },
+      {
+        "@type": "Occupation",
+        "name": "Software Developer Intern",
+        "occupationalCategory": "15-1252.00",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://nandinibhatt.me/",
+          "lastReviewed": "2024-08-18T14:20:00-05:00"
+        },
+        "startDate": "2018-06-01",
+        "endDate": "2018-12-31",
+        "description": "Coded ML models using PyTorch, Developed Front-end using ReactJS and Back-end using Python, Database Management using SQL, Optimized the front-end's code to reduce the response time by 10% and DB query execution time by 5%.",
+        "estimatedSalary": {
+          "@type": "MonetaryAmountDistribution",
+          "name": "Monthly Salary Distribution",
+          "currency": "INR",
+          "minValue": "50000",
+          "maxValue": "50000",
+          "amount": {
+            "@type": "MonetaryAmount",
+            "value": "10000"
+          },
+          "distribution": {
+            "@type": "QuantitativeValue",
+            "value": "10000",
+            "unitCode": "MTH"
+          },
+          "duration": "P6M"
+        },
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Rajkot",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "GJ",
+            "addressCountry": {
+              "@type": "Country",
+              "name": "India",
+              "addressCountry": "IN"
             }
-        ]
-    }
+          }
+        }
+      }
+    ]
+  }
 }

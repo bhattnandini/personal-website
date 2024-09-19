@@ -1,17 +1,17 @@
 import React from "react";
-import { FormattedMessage } from 'react-intl'
+import { FormattedMessage } from "react-intl";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ModalEightContent = () => {
   return (
     <div className="slideshow">
-    <figure>
-      {/* Project Details Starts */}
-      <figcaption>
-        <h3>Lean Six Sigma Management Expert</h3>
-        <div className="row open-sans-font">
-          {/* <div className="col-12 col-sm-12 mb-2"> */}
+      <figure>
+        {/* Project Details Starts */}
+        <figcaption>
+          <h3>Lean Six Sigma Management Expert</h3>
+          <div className="row open-sans-font">
+            {/* <div className="col-12 col-sm-12 mb-2"> */}
             {/* <i className="fa fa-file-text-o pr-2"></i> */}
             {/* <span className="project-label">Link </span>:{" "} */}
             {/* <a
@@ -26,17 +26,17 @@ const ModalEightContent = () => {
               />
             </a> */}
             {/* <span className="ft-wt-600 uppercase">https://play.google.com/store/apps/details?id=com.appstasy1.hotfocus4</span> */}
-          {/* </div> */}
-          {/* End .col */}
+            {/* </div> */}
+            {/* End .col */}
 
-          {/* <div className="col-12 col-sm-6 mb-2">
+            {/* <div className="col-12 col-sm-6 mb-2">
             <i className="fa fa-code pr-2"></i>
             <span className="project-label">Langages </span>:{" "}
             <span className="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
           </div> */}
-          {/* End .col */}
+            {/* End .col */}
 
-          {/* <div className="col-12 col-sm-6 mb-2">
+            {/* <div className="col-12 col-sm-6 mb-2">
             <i className="fa fa-external-link pr-2"></i>
             <span className="project-label">Preview </span>:{" "}
             <span className="ft-wt-600 uppercase">
@@ -49,15 +49,18 @@ const ModalEightContent = () => {
               </a>
             </span>
           </div> */}
-          {/* End .col */}
-        </div>
-        {/* End .row */}
-      </figcaption>
-      {/* Project Details Ends */}
+            {/* End .col */}
+          </div>
+          {/* End .row */}
+        </figcaption>
+        {/* Project Details Ends */}
 
-      {/*  Main Project Content Starts */}
-      <img src="https://assets.appstasy.in/nandinee/certificates/lean_management.png" alt="Nandini Bhatt's Six Sigma Lean Management certification, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
-      {/* <Slider {...settings}>
+        {/*  Main Project Content Starts */}
+        <img
+          src="https://assets.nandinibhatt.me/certificates/lean_management.png"
+          alt="Nandini Bhatt's Six Sigma Lean Management certification, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile"
+        />
+        {/* <Slider {...settings}>
         <div className="slide_item">
           <img src="img/projects/project-3.jpg" alt="slide 1" />
         </div>
@@ -68,10 +71,10 @@ const ModalEightContent = () => {
           <img src="img/projects/project-1.jpg" alt="slide 1" />
         </div>
       </Slider> */}
-      {/* Main Project Content Ends */}
-    </figure>
-  </div>
-  //  End .slideshow
+        {/* Main Project Content Ends */}
+      </figure>
+    </div>
+    //  End .slideshow
   );
 };
 

@@ -55,7 +55,7 @@ const ModalOneContent = () => {
             </div>
 
             <div className="col-12 mt-1" style={{ textAlign: 'center' }}>
-              <a className="button" href="https://assets.appstasy.in/nandinee/research/fulltext.pdf" download="fulltext.pdf">
+              <a className="button" href="https://assets.nandinibhatt.me/research/fulltext.pdf" download="fulltext.pdf">
                 <span className="project-label"><FormattedMessage
                   description="modalOneItem3"
                   id="Modalone.item3"

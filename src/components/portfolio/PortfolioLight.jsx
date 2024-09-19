@@ -6,7 +6,7 @@ import ModalOneContent from "./modal/ModalOneContent";
 import ModalTwoContent from "./modal/ModalTwoContent";
 import ModalThreeContent from "./modal/ModalThreeContent";
 import ModalFourContent from "./modal/ModalFourContent";
-import { FormattedMessage } from 'react-intl'
+import { FormattedMessage } from "react-intl";
 import ModalFiveContent from "./modal/ModalFiveContent";
 import ModalSixContent from "./modal/ModalSixContent";
 import ModalSevenContent from "./modal/ModalSevenContent";
@@ -95,36 +95,48 @@ const PortfolioLight = () => {
   return (
     <Tabs>
       <TabList className="portfolio-tab-list">
-        <Tab><FormattedMessage
-          description="portfolioItem7"
-          id="Portfolio.item7"
-          defaultMessage="YouTube"
-        /> </Tab>
-         <Tab><FormattedMessage
-          description="portfolioItem9"
-          id="Portfolio.item9"
-          defaultMessage="GitHub"
-        /> </Tab>
-        <Tab><FormattedMessage
-          description="portfolioItem1"
-          id="Portfolio.item1"
-          defaultMessage="Research"
-        /> </Tab>
-        <Tab><FormattedMessage
-          description="portfolioItem4"
-          id="Portfolio.item4"
-          defaultMessage="Posters"
-        /></Tab>
-        <Tab><FormattedMessage
-          description="portfolioItem3"
-          id="Portfolio.item3"
-          defaultMessage="Certificates"
-        /></Tab>
-        <Tab><FormattedMessage
-          description="portfolioItem2"
-          id="Portfolio.item2"
-          defaultMessage="Mobile Apps"
-        /></Tab>
+        <Tab>
+          <FormattedMessage
+            description="portfolioItem7"
+            id="Portfolio.item7"
+            defaultMessage="YouTube"
+          />{" "}
+        </Tab>
+        <Tab>
+          <FormattedMessage
+            description="portfolioItem9"
+            id="Portfolio.item9"
+            defaultMessage="GitHub"
+          />{" "}
+        </Tab>
+        <Tab>
+          <FormattedMessage
+            description="portfolioItem1"
+            id="Portfolio.item1"
+            defaultMessage="Research"
+          />{" "}
+        </Tab>
+        <Tab>
+          <FormattedMessage
+            description="portfolioItem4"
+            id="Portfolio.item4"
+            defaultMessage="Posters"
+          />
+        </Tab>
+        <Tab>
+          <FormattedMessage
+            description="portfolioItem3"
+            id="Portfolio.item3"
+            defaultMessage="Certificates"
+          />
+        </Tab>
+        <Tab>
+          <FormattedMessage
+            description="portfolioItem2"
+            id="Portfolio.item2"
+            defaultMessage="Mobile Apps"
+          />
+        </Tab>
         {/* <Tab>LOGO</Tab>
       <Tab>VIDEO</Tab>
       <Tab>GRAPHIC DESIGN</Tab>
@@ -134,14 +146,22 @@ const PortfolioLight = () => {
         <TabPanel>
           <ul className="row grid justify-content-center">
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalThirteen}>
-                <img src="img/projects/ISTQB_presentation_cover.jpg" alt="Portolio" />
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalThirteen}
+              >
+                <img
+                  src="img/projects/ISTQB_presentation_cover.jpg"
+                  alt="Portolio"
+                />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title"><FormattedMessage
-                    description="PortfolioItem8"
-                    id="Portfolio.item8"
-                    defaultMessage="ISTQB - PPT Presentation"
-                  /></span>
+                  <span className="direction-reveal__title">
+                    <FormattedMessage
+                      description="PortfolioItem8"
+                      id="Portfolio.item8"
+                      defaultMessage="ISTQB - PPT Presentation"
+                    />
+                  </span>
                 </div>
               </figure>
 
@@ -174,14 +194,19 @@ const PortfolioLight = () => {
         <TabPanel>
           <ul className="row grid justify-content-center">
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalFourteen}>
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalFourteen}
+              >
                 <img src="img/projects/unittest.webp" alt="Portolio" />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title"><FormattedMessage
-                    description="PortfolioItem8"
-                    id="Portfolio.item10"
-                    defaultMessage="TESTynamo: GAN-based Unit Test Generator"
-                  /></span>
+                  <span className="direction-reveal__title">
+                    <FormattedMessage
+                      description="PortfolioItem8"
+                      id="Portfolio.item10"
+                      defaultMessage="TESTynamo: GAN-based Unit Test Generator"
+                    />
+                  </span>
                 </div>
               </figure>
 
@@ -214,7 +239,10 @@ const PortfolioLight = () => {
         <TabPanel>
           <ul className="row grid justify-content-center">
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalOne}>
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalOne}
+              >
                 <img src="img/projects/ICRASTEM_2022.jpg" alt="Portolio" />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
                   <span className="direction-reveal__title">ICRASTEM 2022</span>
@@ -245,10 +273,15 @@ const PortfolioLight = () => {
             </li>
             {/* <!-- Portfolio Item Ends --> */}
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalTwo}>
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalTwo}
+              >
                 <img src="img/projects/paper_presentation.png" alt="Portolio" />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title">Paper Presentation</span>
+                  <span className="direction-reveal__title">
+                    Paper Presentation
+                  </span>
                 </div>
               </figure>
 
@@ -283,14 +316,19 @@ const PortfolioLight = () => {
         <TabPanel>
           <ul className="row grid justify-content-center">
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalEleven}>
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalEleven}
+              >
                 <img src="img/projects/istqb.jpg" alt="Portolio" />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title"><FormattedMessage
-                    description="PortfolioItem5"
-                    id="Portfolio.item5"
-                    defaultMessage="ISTQB - Animated Poster"
-                  /></span>
+                  <span className="direction-reveal__title">
+                    <FormattedMessage
+                      description="PortfolioItem5"
+                      id="Portfolio.item5"
+                      defaultMessage="ISTQB - Animated Poster"
+                    />
+                  </span>
                 </div>
               </figure>
 
@@ -319,14 +357,19 @@ const PortfolioLight = () => {
             {/* <!-- Portfolio Item Ends --> */}
 
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalTwelve}>
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalTwelve}
+              >
                 <img src="img/projects/istqb.jpg" alt="Portolio" />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title"><FormattedMessage
-                    description="PortfolioItem6"
-                    id="Portfolio.item6"
-                    defaultMessage="ISTQB - Static Poster"
-                  /></span>
+                  <span className="direction-reveal__title">
+                    <FormattedMessage
+                      description="PortfolioItem6"
+                      id="Portfolio.item6"
+                      defaultMessage="ISTQB - Static Poster"
+                    />
+                  </span>
                 </div>
               </figure>
 
@@ -359,7 +402,10 @@ const PortfolioLight = () => {
         <TabPanel>
           <ul className="row grid justify-content-center">
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalFour}>
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalFour}
+              >
                 <img src="img/projects/istqb.jpg" alt="Portolio" />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
                   <span className="direction-reveal__title">ISTQB</span>
@@ -391,10 +437,18 @@ const PortfolioLight = () => {
             {/* <!-- Portfolio Item Ends --> */}
 
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalFive}>
-                <img src="https://assets.appstasy.in/nandinee/certificates/yellow_belt.png" alt="Portolio" />
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalFive}
+              >
+                <img
+                  src="https://assets.nandinibhatt.me/certificates/yellow_belt.png"
+                  alt="Portolio"
+                />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title">Lean Six Sigma Yellow Belt</span>
+                  <span className="direction-reveal__title">
+                    Lean Six Sigma Yellow Belt
+                  </span>
                 </div>
               </figure>
 
@@ -423,10 +477,18 @@ const PortfolioLight = () => {
             {/* <!-- Portfolio Item Ends --> */}
 
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalSix}>
-                <img src="https://assets.appstasy.in/nandinee/certificates/green_belt.png" alt="Portolio" />
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalSix}
+              >
+                <img
+                  src="https://assets.nandinibhatt.me/certificates/green_belt.png"
+                  alt="Portolio"
+                />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title">Lean Six Sigma Green Belt</span>
+                  <span className="direction-reveal__title">
+                    Lean Six Sigma Green Belt
+                  </span>
                 </div>
               </figure>
 
@@ -455,10 +517,18 @@ const PortfolioLight = () => {
             {/* <!-- Portfolio Item Ends --> */}
 
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalSeven}>
-                <img src="https://assets.appstasy.in/nandinee/certificates/black_belt.png" alt="Portolio" />
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalSeven}
+              >
+                <img
+                  src="https://assets.nandinibhatt.me/certificates/black_belt.png"
+                  alt="Portolio"
+                />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title">Lean Six Sigma Black Belt</span>
+                  <span className="direction-reveal__title">
+                    Lean Six Sigma Black Belt
+                  </span>
                 </div>
               </figure>
 
@@ -487,10 +557,18 @@ const PortfolioLight = () => {
             {/* <!-- Portfolio Item Ends --> */}
 
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalEight}>
-                <img src="https://assets.appstasy.in/nandinee/certificates/lean_management.png" alt="Portolio" />
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalEight}
+              >
+                <img
+                  src="https://assets.nandinibhatt.me/certificates/lean_management.png"
+                  alt="Portolio"
+                />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title">Lean Six Sigma Management Expert</span>
+                  <span className="direction-reveal__title">
+                    Lean Six Sigma Management Expert
+                  </span>
                 </div>
               </figure>
 
@@ -519,10 +597,15 @@ const PortfolioLight = () => {
             {/* <!-- Portfolio Item Ends --> */}
 
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalTen}>
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalTen}
+              >
                 <img src="img/projects/python.jpeg" alt="Portolio" />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title">IBM - Data analysis with Python</span>
+                  <span className="direction-reveal__title">
+                    IBM - Data analysis with Python
+                  </span>
                 </div>
               </figure>
 
@@ -551,10 +634,18 @@ const PortfolioLight = () => {
             {/* <!-- Portfolio Item Ends --> */}
 
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalNine}>
-                <img src="img/projects/paper_presentation.webp" alt="Portolio" />
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalNine}
+              >
+                <img
+                  src="img/projects/paper_presentation.webp"
+                  alt="Portolio"
+                />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="direction-reveal__title">Best paper presentation award</span>
+                  <span className="direction-reveal__title">
+                    Best paper presentation award
+                  </span>
                 </div>
               </figure>
 
@@ -587,7 +678,10 @@ const PortfolioLight = () => {
         <TabPanel>
           <ul className="row grid justify-content-center">
             <li className="direction-reveal">
-              <figure className="direction-reveal__card" onClick={toggleModalThree}>
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalThree}
+              >
                 <img src="img/projects/hotfocus.jpg" alt="Portolio" />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
                   <span className="direction-reveal__title">Hotfocus</span>

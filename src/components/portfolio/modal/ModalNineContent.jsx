@@ -36,7 +36,7 @@ const ModalNineContent = () => {
             </div>
 
             <div className="col-12 mt-1" style={{ textAlign: 'center' }}>
-              <a className="button" href="https://assets.appstasy.in/nandinee/research/fulltext.pdf" download="fulltext.pdf">
+              <a className="button" href="https://assets.nandinibhatt.me/research/fulltext.pdf" download="fulltext.pdf">
                 <span className="project-label"><FormattedMessage
                   description="modalOneItem3"
                   id="Modalone.item3"
@@ -74,7 +74,7 @@ const ModalNineContent = () => {
         {/* Project Details Ends */}
 
         {/*  Main Project Content Starts */}
-        <img src="https://assets.appstasy.in/nandinee/certificates/best_paper.jpg" alt="Nandini Bhatt's Research paper presentation, ICRASTEM, research and development, public speaking"/>
+        <img src="https://assets.nandinibhatt.me/certificates/best_paper.jpg" alt="Nandini Bhatt's Research paper presentation, ICRASTEM, research and development, public speaking"/>
         {/* <Slider {...settings}>
         <div className="slide_item">
           <img src="img/projects/project-3.jpg" alt="slide 1" />

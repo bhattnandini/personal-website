@@ -12,7 +12,7 @@ const ModalElevenContent = () => {
           <h3>ISTQB</h3>
           <div className="row open-sans-font">
             <div className="col-6 col-sm-6 col-xs-12 mb-2" style={{textAlign: 'center'}}>
-              <a className="button" href="https://assets.appstasy.in/nandinee/posters/dynamic/istqb/page1.gif" download="page1.gif">
+              <a className="button" href="https://assets.nandinibhatt.me/posters/dynamic/istqb/page1.gif" download="page1.gif">
                 <span className="project-label"><FormattedMessage
                   description="modalElevenItem1"
                   id="Modaleleven.item1"
@@ -23,7 +23,7 @@ const ModalElevenContent = () => {
             </div>
 
             <div className="col-6 col-sm-6 col-xs-12 mb-2" style={{textAlign: 'center'}}>
-              <a className="button" href="https://assets.appstasy.in/nandinee/posters/dynamic/istqb/page2.gif" download="page2.gif">
+              <a className="button" href="https://assets.nandinibhatt.me/posters/dynamic/istqb/page2.gif" download="page2.gif">
                 <span className="project-label"><FormattedMessage
                   description="modalElevenItem2"
                   id="Modaleleven.item2"
@@ -63,10 +63,10 @@ const ModalElevenContent = () => {
         {/*  Main Project Content Starts */}
         <div className="row">
           <div className="col-6 col-sm-6 mb-2">
-            <img src="https://assets.appstasy.in/nandinee/posters/dynamic/istqb/page1.gif" alt="Nandini bhatt's ISTQB certification poster gif, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
+            <img src="https://assets.nandinibhatt.me/posters/dynamic/istqb/page1.gif" alt="Nandini bhatt's ISTQB certification poster gif, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
           </div>
           <div className="col-6 col-sm-6 mb-2">
-            <img src="https://assets.appstasy.in/nandinee/posters/dynamic/istqb/page2.gif" alt="Nandini bhatt's ISTQB certification poster gif, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
+            <img src="https://assets.nandinibhatt.me/posters/dynamic/istqb/page2.gif" alt="Nandini bhatt's ISTQB certification poster gif, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
           </div>
         </div>
         {/* <Slider {...settings}>

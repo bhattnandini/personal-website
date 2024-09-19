@@ -32,7 +32,7 @@ const ModalThirteenContent = () => {
             </div>
 
             <div className="col-12 col-sm-12 col-xs-12 mb-2" style={{textAlign: 'center'}}>
-                <a className="button" href="https://assets.appstasy.in/nandinee/handouts/istqb_en.pdf" download="handouts_en.pdf">
+                <a className="button" href="https://assets.nandinibhatt.me/handouts/istqb_en.pdf" download="handouts_en.pdf">
                 <span className="project-label"><FormattedMessage
                 description="modalThirteenItem1"
                 id="ModalThirteen.Item1"

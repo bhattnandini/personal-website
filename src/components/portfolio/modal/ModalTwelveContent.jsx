@@ -12,7 +12,7 @@ const ModalTwelveContent = () => {
           <h3>ISTQB</h3>
           <div className="row open-sans-font">
             <div className="col-12 col-sm-12 col-xs-12 mb-2" style={{textAlign: 'center'}}>
-              <a className="button" href="https://assets.appstasy.in/nandinee/posters/static/istqb.pdf" download="poster.pdf">
+              <a className="button" href="https://assets.nandinibhatt.me/posters/static/istqb.pdf" download="poster.pdf">
                 <span className="project-label"><FormattedMessage
                   description="modalTwelveItem1"
                   id="Modaltwelve.item1"

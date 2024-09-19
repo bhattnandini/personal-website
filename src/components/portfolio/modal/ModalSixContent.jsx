@@ -56,7 +56,7 @@ const ModalSixContent = () => {
       {/* Project Details Ends */}
 
       {/*  Main Project Content Starts */}
-      <img src="https://assets.appstasy.in/nandinee/certificates/green_belt.png" alt="Nandini Bhatt's Lean Six Sigma Green Belt certification, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
+      <img src="https://assets.nandinibhatt.me/certificates/green_belt.png" alt="Nandini Bhatt's Lean Six Sigma Green Belt certification, Software Tester, QA, Cloud, DevOps, Automation, AWS, Agile" />
       {/* <Slider {...settings}>
         <div className="slide_item">
           <img src="img/projects/project-3.jpg" alt="slide 1" />
