@@ -28,6 +28,8 @@ jobs:
             --reporter-json-export newman-results.json
 
       - name: Upload Newman Results
+      # This step will run regardless of previous step's outcome (even if a few tests fail artifacts will be uploaded)
+        if: always()  
         uses: actions/upload-artifact@v4
         with:
           name: newman-results
