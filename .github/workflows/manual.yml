@@ -49,11 +49,10 @@ jobs:
         
       - name: Deploy React app to AWS S3
         run:
-          aws s3 sync build/ s3://nandinibhatt.me/ --delete --acl public-read
+          aws s3 sync build/ s3://nandinibhatt.me/ --delete --acl public-read --region us-east-2
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
 
       - name: Invalidate CloudFront Cache
         run:
@@ -61,7 +60,6 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
 
       # - name: Notify on Failure
       #   if: failure() # Execute only if previous steps failed
