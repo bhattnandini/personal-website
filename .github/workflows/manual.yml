@@ -23,10 +23,10 @@ jobs:
       - name: Run Postman Tests
         run: |
           newman run Testing/Postman/send_email.json \
-            # --environment path/to/your/postman_environment.json \
             --reporters cli,json \
-            --reporter-json-export newman-results.json
+            --reporter-json-export newman-results.json \
             --suppress-exit-code
+            # --environment path/to/your/postman_environment.json \
             # ensure this commands always returns 0, even if tests fail because otherwise, JSON will won't be created and uploaded
 
       - name: Upload Newman Results
