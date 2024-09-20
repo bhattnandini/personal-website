@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Trigger the workflow on push to the main branch
 
+permissions:
+  issues: write  # Allow creating issues
+
 jobs:
   website-deploy:
     runs-on: ubuntu-latest
