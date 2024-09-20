@@ -30,7 +30,13 @@ jobs:
       #     options: '--debug'  # Add this line for more verbose output
       - name: Run Trivy vulnerability scanner in IaC mode
         run: |
-          docker run --rm -v ${{ github.workspace }}:/data aquasecurity/trivy:0.20.0 config --severity CRITICAL,HIGH /data/main.tf --format sarif --output trivy-results.sarif --ignore-unfixed --debug
+          sudo apt-get install wget apt-transport-https gnupg lsb-release
+          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+          echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+          sudo apt-get update
+          sudo apt-get install trivy
+          trivy config --severity CRITICAL,HIGH --format sarif --output trivy-results.sarif ./main.tf
+          # docker run --rm -v ${{ github.workspace }}:/data aquasecurity/trivy:0.20.0 config --severity CRITICAL,HIGH /data/main.tf --format sarif --output trivy-results.sarif --ignore-unfixed --debug
 
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v3
