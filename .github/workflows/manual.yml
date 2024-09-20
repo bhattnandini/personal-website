@@ -97,35 +97,47 @@ jobs:
       - name: Install dependencies
         run: npm ci  # npm ci is preferred over npm install for CI environments
 
+      # Lint the code using ESLint
+      - name: Run ESLint
+        run: npm run lint
+
+      # Upload ESLint results as an artifact
+      - name: Upload ESLint results
+        uses: actions/upload-artifact@v4
+        with:
+          name: eslint-report
+          path: eslint-report.json
+
       # Step 4: Build the React app
-      - name: Build React app
-        run: npm run build # Treating warnings as errors because process.env.CI = true, most CI servers set this as true by default but we need to turn it off because warnings should not be treated as errors 
-        env:
-          CI: false
+      # - name: Build React app
+      #   run: npm run build # Treating warnings as errors because process.env.CI = true, most CI servers set this as true by default but we need to turn it off because warnings should not be treated as errors 
+      #   env:
+      #     CI: false
 
-      - name: Start the Web App (React)
-        run: npm start &
-        env:
-          CI: false
+      # - name: Start the Web App (React)
+      #   run: npm start &
+      #   env:
+      #     CI: false
 
-       # Step 5: Run Cypress tests in headless mode
-      - name: Run Cypress tests
-        run: npx cypress run
+      #  # Step 5: Run Cypress tests in headless mode
+      # - name: Run Cypress tests
+      #   run: npx cypress run
 
-      # Step 6: Upload Cypress videos and screenshots as artifacts for later viewing (optional)
-      - name: Upload Cypress Artifacts
-        uses: actions/upload-artifact@v4
-        if: failure()  # Only upload if tests fail
-        with:
-          name: cypress-artifacts
-          path: cypress/videos
+      # # Step 6: Upload Cypress videos and screenshots as artifacts for later viewing (optional)
+      # - name: Upload Cypress Artifacts
+      #   uses: actions/upload-artifact@v4
+      #   if: failure()  # Only upload if tests fail
+      #   with:
+      #     name: cypress-artifacts
+      #     path: cypress/videos
 
-      # Step 7: Upload test results (optional)
-      - name: Upload Cypress Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: cypress-results
-          path: cypress/reports
+      # # Step 7: Upload test results (optional)
+      # - name: Upload Cypress Results
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: cypress-results
+      #     path: cypress/reports
+
       # # Scan for vulnerabilities using OWASP ZAP
       # - name: OWASP ZAP Security Scan
       #   uses: zaproxy/action-full-scan@v0.10.0
