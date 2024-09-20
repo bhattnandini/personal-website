@@ -99,7 +99,7 @@ jobs:
 
        # Step 5: Run Cypress tests in headless mode
       - name: Run Cypress tests
-        run: npm run cypress:run  # Or you can directly use npx cypress run
+        run: npx cypress run
 
           # Step 6: Upload Cypress videos and screenshots as artifacts for later viewing (optional)
       - name: Upload Cypress Artifacts
