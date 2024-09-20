@@ -169,15 +169,21 @@ jobs:
 
       - name: Install JMeter
         run: |
-          sudo apt-get update
-          sudo apt-get install -y jmeter
+          # sudo apt-get update
+          # sudo apt-get install -y jmeter
+          wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
+          tar -xzf apache-jmeter-5.6.3.tgz
+          sudo mv apache-jmeter-5.6.3 /opt/jmeter
+          echo "export JMETER_HOME=/opt/jmeter" >> $GITHUB_ENV
+          echo "export PATH=\$PATH:\$JMETER_HOME/bin" >> $GITHUB_ENV
 
-      - name: Create Custom XStream Properties
-        run: echo "com.thoughtworks.xstream.security.NoTypePermission=org.apache.jmeter.save.ScriptWrapper" > Testing/JMeter/custom_xstream.properties
+      # - name: Create Custom XStream Properties
+      #   run: echo "com.thoughtworks.xstream.security.NoTypePermission=org.apache.jmeter.save.ScriptWrapper" > Testing/JMeter/custom_xstream.properties
     
       - name: Run JMeter Test Plan
         run: |
-          jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG -Jxstream.properties=Testing/JMeter/custom_xstream.properties
+          # jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG -Jxstream.properties=Testing/JMeter/custom_xstream.properties
+          jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG
 
       - name: Upload JMeter Results
         uses: actions/upload-artifact@v4
