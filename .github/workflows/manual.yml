@@ -97,11 +97,22 @@ jobs:
       - name: Install dependencies
         run: npm ci  # npm ci is preferred over npm install for CI environments
 
+      # Step 4: Build the React app
+      - name: Build React app
+        run: npm run build # Treating warnings as errors because process.env.CI = true, most CI servers set this as true by default but we need to turn it off because warnings should not be treated as errors 
+        env:
+          CI: false
+
+      - name: Start the Web App (React)
+        run: npm start &
+        env:
+          CI: false
+
        # Step 5: Run Cypress tests in headless mode
       - name: Run Cypress tests
         run: npx cypress run
 
-          # Step 6: Upload Cypress videos and screenshots as artifacts for later viewing (optional)
+      # Step 6: Upload Cypress videos and screenshots as artifacts for later viewing (optional)
       - name: Upload Cypress Artifacts
         uses: actions/upload-artifact@v4
         if: failure()  # Only upload if tests fail
@@ -115,19 +126,6 @@ jobs:
         with:
           name: cypress-results
           path: cypress/reports
-
-
-      # # Step 4: Build the React app
-      # - name: Build React app
-      #   run: npm run build # Treating warnings as errors because process.env.CI = true, most CI servers set this as true by default but we need to turn it off because warnings should not be treated as errors 
-      #   env:
-      #     CI: false
-
-      # - name: Start the Web App (React)
-      #   run: npm start &
-      #   env:
-      #     CI: false
-        
       # # Scan for vulnerabilities using OWASP ZAP
       # - name: OWASP ZAP Security Scan
       #   uses: zaproxy/action-full-scan@v0.10.0
