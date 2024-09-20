@@ -3,7 +3,7 @@ import Modal from "react-modal";
 
 // import ModalOneBlogContent from "./modal/ModalOneBlogContent";
 
-Modal.setAppElement("#root");
+// Modal.setAppElement("#root");
 
 const Blog = () => {
   const [isOpen, setIsOpen] = useState(false);
