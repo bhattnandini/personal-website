@@ -17,32 +17,49 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Trivy vulnerability scanner
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Run Postman Tests
         run: |
-          sudo apt-get install wget apt-transport-https gnupg lsb-release
-          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
-          echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
-          sudo apt-get update
-          sudo apt-get install trivy
+          newman run testing/postman/send_email.json \
+            # --environment path/to/your/postman_environment.json \
+            --reporters cli,json \
+            --reporter-json-export newman-results.json
 
-      - name: Run Trivy vulnerability scanner in IaC mode to scan terraform file 
-        run:  trivy config --severity CRITICAL,HIGH --format sarif --output trivy-terraform-results.sarif ./terraform/main.tf
-
-      - name: Upload Trivy scan results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v3
+      - name: Upload Newman Results
+        uses: actions/upload-artifact@v4
         with:
-          sarif_file: 'trivy-terraform-results.sarif'
+          name: newman-results
+          path: newman-results.json
           
-      - name: Build docker image
-        run:  docker build -t my-react-app .
+      # - name: Install Trivy vulnerability scanner
+      #   run: |
+      #     sudo apt-get install wget apt-transport-https gnupg lsb-release
+      #     wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+      #     echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+      #     sudo apt-get update
+      #     sudo apt-get install trivy
+
+      # - name: Run Trivy vulnerability scanner in IaC mode to scan terraform file 
+      #   run:  trivy config --severity CRITICAL,HIGH --format sarif --output trivy-terraform-results.sarif ./terraform/main.tf
+
+      # - name: Upload Trivy scan results to GitHub Security tab
+      #   uses: github/codeql-action/upload-sarif@v3
+      #   with:
+      #     sarif_file: 'trivy-terraform-results.sarif'
+          
+      # - name: Build docker image
+      #   run:  docker build -t my-react-app .
       
-      - name: Run Trivy vulnerability scanner docker image 
-        run:  trivy image --severity HIGH,CRITICAL --format json --output trivy-docker-results.json my-react-app
+      # - name: Run Trivy vulnerability scanner docker image 
+      #   run:  trivy image --severity HIGH,CRITICAL --format json --output trivy-docker-results.json my-react-app
         
-      - uses: actions/upload-artifact@v4
-        with:
-          name: dockerimage-artifact
-          path: trivy-docker-results.json
+      # - uses: actions/upload-artifact@v4
+      #   with:
+      #     name: dockerimage-artifact
+      #     path: trivy-docker-results.json
+   
       # # Debug steps
       # - name: Print Node.js version
       #   run: node --version
