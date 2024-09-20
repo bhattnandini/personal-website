@@ -13,14 +13,35 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Debug steps
+      - name: Print Node.js version
+        run: node --version
+
+      - name: Print npm version
+        run: npm --version
+      
+      - name: Print environment variables
+        run: printenv
+
       # Step 2: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # You can specify your preferred Node.js version
+          node-version: '20.15.0' # You can specify your preferred Node.js version
 
+      # speed up pipeline by caching node modules 
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            ~/.cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+            
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # npm ci is preferred over npm install for CI environments
 
       # Step 4: Build the React app
       - name: Build React app
