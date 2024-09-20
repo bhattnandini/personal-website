@@ -171,11 +171,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y jmeter
-          echo "com.thoughtworks.xstream.security.NoTypePermission=org.apache.jmeter.save.ScriptWrapper" >> /usr/share/jmeter/bin/xstream.properties
 
       - name: Run JMeter Test Plan
         run: |
-          jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG
+          jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG  -Jxstream.properties=Testing/JMeter/custom_xstream.properties
           # jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log
 
       - name: Upload JMeter Results
