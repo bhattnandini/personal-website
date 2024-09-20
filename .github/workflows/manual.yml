@@ -173,12 +173,11 @@ jobs:
           sudo apt-get install -y jmeter
 
       - name: Create Custom XStream Properties
-        run: echo "com.thoughtworks.xstream.security.NoTypePermission=org.apache.jmeter.save.ScriptWrapper" > custom_xstream.properties
+        run: echo "com.thoughtworks.xstream.security.NoTypePermission=org.apache.jmeter.save.ScriptWrapper" > Testing/JMeter/custom_xstream.properties
     
       - name: Run JMeter Test Plan
         run: |
-          jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG  -Jxstream.properties=Testing/JMeter/custom_xstream.properties
-          # jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log
+          jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG -Jxstream.properties=Testing/JMeter/custom_xstream.properties
 
       - name: Upload JMeter Results
         uses: actions/upload-artifact@v4
