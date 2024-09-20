@@ -40,6 +40,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
             
+      - name: Upgrade AWS CLI
+        run: pip install --upgrade awscli
+        
       - name: Install dependencies
         run: npm ci  # npm ci is preferred over npm install for CI environments
 
