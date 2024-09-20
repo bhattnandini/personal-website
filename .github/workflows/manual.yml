@@ -17,25 +17,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Newman
-        run: npm install -g newman
+      # - name: Install Newman
+      #   run: npm install -g newman
 
-      - name: Run Postman Tests
-        run: |
-          newman run Testing/Postman/send_email.json \
-            --reporters cli,json \
-            --reporter-json-export newman-results.json \
-            --suppress-exit-code
-            # --environment path/to/your/postman_environment.json \
-            # ensure this commands always returns 0, even if tests fail because otherwise, JSON will won't be created and uploaded
+      # - name: Run Postman Tests
+      #   run: |
+      #     newman run Testing/Postman/send_email.json \
+      #       --reporters cli,json \
+      #       --reporter-json-export newman-results.json \
+      #       --suppress-exit-code
+      #       # --environment path/to/your/postman_environment.json \
+      #       # ensure this commands always returns 0, even if tests fail because otherwise, JSON will won't be created and uploaded
 
-      - name: Upload Newman Results
-      # This step will run regardless of previous step's outcome (even if a few tests fail artifacts will be uploaded)
-        if: always()  
-        uses: actions/upload-artifact@v4
-        with:
-          name: newman-results
-          path: newman-results.json
+      # - name: Upload Newman Results
+      # # This step will run regardless of previous step's outcome (even if a few tests fail artifacts will be uploaded)
+      #   if: always()  
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: newman-results
+      #     path: newman-results.json
           
       # - name: Install Trivy vulnerability scanner
       #   run: |
@@ -80,22 +80,42 @@ jobs:
       #   with:
       #     node-version: '20.15.0' # You can specify your preferred Node.js version
 
-      # # speed up pipeline by caching node modules 
-      # - name: Cache Node.js modules
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: |
-      #       ~/.npm
-      #       ~/.cache
-      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-node-
+      # speed up pipeline by caching node modules 
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            ~/.cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
             
       # - name: Upgrade AWS CLI
       #   run: pip install --upgrade awscli
         
-      # - name: Install dependencies
-      #   run: npm ci  # npm ci is preferred over npm install for CI environments
+      - name: Install dependencies
+        run: npm ci  # npm ci is preferred over npm install for CI environments
+
+       # Step 5: Run Cypress tests in headless mode
+      - name: Run Cypress tests
+        run: npm run cypress:run  # Or you can directly use npx cypress run
+
+          # Step 6: Upload Cypress videos and screenshots as artifacts for later viewing (optional)
+      - name: Upload Cypress Artifacts
+        uses: actions/upload-artifact@v4
+        if: failure()  # Only upload if tests fail
+        with:
+          name: cypress-artifacts
+          path: cypress/videos
+
+      # Step 7: Upload test results (optional)
+      - name: Upload Cypress Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-results
+          path: cypress/reports
+
 
       # # Step 4: Build the React app
       # - name: Build React app
