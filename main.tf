@@ -4,10 +4,10 @@ provider "aws" {
 
 # Define local values
 locals {
-    zone_id         = <<zoneid>>
-    oauthtoken      = <<token>>
-    email           = <<email>>
-    phone           = <<phone>>
+    zone_id         = "zoneid"
+    oauthtoken      = "token"
+    email           = "email"
+    phone           = "phone"
 }
 
 # Provider for us-east-1 (for other resources)
