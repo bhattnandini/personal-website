@@ -171,6 +171,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y jmeter
+          echo "com.thoughtworks.xstream.security.NoTypePermission=org.apache.jmeter.save.ScriptWrapper" >> /usr/share/jmeter/bin/xstream.properties
 
       - name: Run JMeter Test Plan
         run: |
