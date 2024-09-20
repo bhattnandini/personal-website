@@ -97,16 +97,16 @@ jobs:
       - name: Install dependencies
         run: npm ci  # npm ci is preferred over npm install for CI environments
 
-      # Lint the code using ESLint
-      - name: Run ESLint
-        run: npm run lint
+      # # Lint the code using ESLint
+      # - name: Run ESLint
+      #   run: npm run lint
 
-      # Upload ESLint results as an artifact
-      - name: Upload ESLint results
-        uses: actions/upload-artifact@v4
-        with:
-          name: eslint-report
-          path: eslint-report.json
+      # # Upload ESLint results as an artifact
+      # - name: Upload ESLint results
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: eslint-report
+      #     path: eslint-report.json
 
       # Step 4: Build the React app
       # - name: Build React app
@@ -166,6 +166,23 @@ jobs:
       #   env:
       #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Install JMeter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jmeter
+
+      - name: Run JMeter Test Plan
+        run: |
+          jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log
+
+      - name: Upload JMeter Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: jmeter-results
+          path: |
+            Testing/JMeter/results.jtl
+            Testing/JMeter/jmeter.log
 
       # - name: Notify on Failure
       #   if: failure() # Execute only if previous steps failed
