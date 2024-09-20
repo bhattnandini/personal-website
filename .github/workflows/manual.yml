@@ -167,15 +167,28 @@ jobs:
       #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-      - name: Install JMeter
+      # - name: Install JMeter
+      #   run: |
+      #     # sudo apt-get update
+      #     # sudo apt-get install -y jmeter
+      #     wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
+      #     tar -xzf apache-jmeter-5.6.3.tgz
+      #     sudo mv apache-jmeter-5.6.3 /opt/jmeter
+      #     echo "export JMETER_HOME=/opt/jmeter" >> $GITHUB_ENV
+      #     echo "export PATH=\$PATH:\$JMETER_HOME/bin" >> $GITHUB_ENV
+
+      - name: Install JMeter 5.6.3
         run: |
-          # sudo apt-get update
-          # sudo apt-get install -y jmeter
           wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
           tar -xzf apache-jmeter-5.6.3.tgz
           sudo mv apache-jmeter-5.6.3 /opt/jmeter
           echo "export JMETER_HOME=/opt/jmeter" >> $GITHUB_ENV
           echo "export PATH=\$PATH:\$JMETER_HOME/bin" >> $GITHUB_ENV
+
+      - name: Verify JMeter installation
+        run: |
+          echo "JMeter version:"
+          jmeter --version
 
       # - name: Create Custom XStream Properties
       #   run: echo "com.thoughtworks.xstream.security.NoTypePermission=org.apache.jmeter.save.ScriptWrapper" > Testing/JMeter/custom_xstream.properties
