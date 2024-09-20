@@ -13,5 +13,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: "http://localhost:3000",
+    video: true,  // Record videos for tests
+    screenshotOnRunFailure: true,  // Take screenshots when tests fail
   },
 });
