@@ -22,7 +22,7 @@ jobs:
 
       - name: Run Postman Tests
         run: |
-          newman run testing/postman/send_email.json \
+          newman run /testing/postman/send_email.json \
             # --environment path/to/your/postman_environment.json \
             --reporters cli,json \
             --reporter-json-export newman-results.json
