@@ -84,7 +84,7 @@ jobs:
       - name: Build docker image with cache
         run: |
           docker buildx create --use
-           docker buildx build --cache-to type=local,dest=/tmp/.buildx-cache --cache-from type=local,src=/tmp/.buildx-cache -t nandini-website .
+          docker buildx build --cache-to type=local,dest=/tmp/.buildx-cache --cache-from type=local,src=/tmp/.buildx-cache -t nandini-website:latest .
 
       # - name: Run Trivy vulnerability scanner docker image 
       #   run:  trivy image --severity HIGH,CRITICAL --format json --output trivy-docker-results.json my-react-app
@@ -107,7 +107,7 @@ jobs:
         run: |
           docker tag nandini-website:latest public.ecr.aws/y9r8y8a8/portfolio-website/nandini-website:latest
       
-          # Push Docker image to ECR Public
+      # Push Docker image to ECR Public
       - name: Push Docker image to Amazon ECR Public
         run: |
           docker push public.ecr.aws/y9r8y8a8/portfolio-website/nandini-website:latest
