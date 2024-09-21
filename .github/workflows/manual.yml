@@ -25,6 +25,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2  # Replace with your region
 
+      # Set up BuildKit cache directory
+      - name: Create cache directory
+        run: |
+          mkdir -p /tmp/.buildx-cache
+
       # speed up docker build by caching docker layer
       - name: Cache Docker layers
         uses: actions/cache@v4
