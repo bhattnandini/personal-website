@@ -109,10 +109,10 @@ jobs:
       #     path: eslint-report.json
 
       # Step 4: Build the React app
-      # - name: Build React app
-      #   run: npm run build # Treating warnings as errors because process.env.CI = true, most CI servers set this as true by default but we need to turn it off because warnings should not be treated as errors 
-      #   env:
-      #     CI: false
+      - name: Build React app
+        run: npm run build # Treating warnings as errors because process.env.CI = true, most CI servers set this as true by default but we need to turn it off because warnings should not be treated as errors 
+        env:
+          CI: false
 
       # - name: Start the Web App (React)
       #   run: npm start &
@@ -153,19 +153,19 @@ jobs:
       #     name: zap-report
       #     path: zap-report.html
         
-      # - name: Deploy React app to AWS S3
-      #   run:
-      #     aws s3 sync build/ s3://nandinibhatt.me/ --delete --acl public-read --region us-east-2
-      #   env:
-      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Deploy React app to AWS S3
+        run:
+          aws s3 sync build/ s3://nandinibhatt.me/ --delete --acl public-read --region us-east-2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-      # - name: Invalidate CloudFront Cache
-      #   run:
-      #     aws cloudfront create-invalidation --distribution-id E1JHKWLDY7Q5ZL --paths "/*"
-      #   env:
-      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Invalidate CloudFront Cache
+        run:
+          aws cloudfront create-invalidation --distribution-id E1JHKWLDY7Q5ZL --paths "/*"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       # - name: Install JMeter
       #   run: |
@@ -177,28 +177,28 @@ jobs:
       #     echo "export JMETER_HOME=/opt/jmeter" >> $GITHUB_ENV --> for some reason, env variables are not working. jmeter not found in $PATH
       #     echo "export PATH=\$PATH:\$JMETER_HOME/bin" >> $GITHUB_ENV
 
-      - name: Download JMeter
-        run: wget https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.6.3.tgz
+      # - name: Download JMeter
+      #   run: wget https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.6.3.tgz
 
-      - name: Extract JMeter
-        run: tar -xzf apache-jmeter-5.6.3.tgz
+      # - name: Extract JMeter
+      #   run: tar -xzf apache-jmeter-5.6.3.tgz
 
       # To fix error thrown by older version of JMeter but it didn't work
       # - name: Create Custom XStream Properties
       #   run: echo "com.thoughtworks.xstream.security.NoTypePermission=org.apache.jmeter.save.ScriptWrapper" > Testing/JMeter/custom_xstream.properties
     
       # Use jmeter binary directly without adding it to path variable
-      - name: Run JMeter Test Plan
-        run: |
-          apache-jmeter-5.6.3/bin/jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG
+      # - name: Run JMeter Test Plan
+      #   run: |
+      #     apache-jmeter-5.6.3/bin/jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG
 
-      - name: Upload JMeter Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: jmeter-results
-          path: |
-            Testing/JMeter/results.jtl
-            Testing/JMeter/jmeter.log
+      # - name: Upload JMeter Results
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: jmeter-results
+      #     path: |
+      #       Testing/JMeter/results.jtl
+      #       Testing/JMeter/jmeter.log
 
       # - name: Notify on Failure
       #   if: failure() # Execute only if previous steps failed
