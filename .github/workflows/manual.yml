@@ -116,7 +116,7 @@ jobs:
       # Push Docker image to ECR Public
       - name: Push Docker image to Amazon ECR Public
         run: |
-          docker push public.ecr.aws/y9r8y8a8/portfolio-website/nandini-website:latest
+          docker push public.ecr.aws/portfolio-website/nandini-website:latest
       # # Debug steps
       # - name: Print Node.js version
       #   run: node --version
