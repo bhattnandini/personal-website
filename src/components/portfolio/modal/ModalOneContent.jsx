@@ -35,18 +35,18 @@ const ModalOneContent = () => {
             {/* End .col */}
 
             <div className="col-12 col-sm-12 mb-2">
-                <i className="fa fa-external-link pr-2"></i>
-                <a
-                    href="https://sciencescholar.us/journal/index.php/ijhs/article/view/13487"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+              <i className="fa fa-external-link pr-2"></i>
+              <a
+                href="https://sciencescholar.us/journal/index.php/ijhs/article/view/13487"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="project-label"><FormattedMessage
                   description="modalOneItem2"
                   id="Modalone.item2"
                   defaultMessage="Research paper"
                 /> </span> </a>
-                {/* :{" "}
+              {/* :{" "}
                 <span className="ft-wt-600 uppercase">
                  
                     https://sciencescholar.us/journal/index.php/ijhs/article/view/13487
@@ -72,14 +72,14 @@ const ModalOneContent = () => {
 
         {/*  Main Project Content Starts */}
         {/* <img src="img/projects/project-1.jpg" alt="Portolio" /> */}
-        <div className="position-relative" style={{ paddingBottom: '56.25%', height: 0 }}>
-        
-          {/* <iframe title="Paper Presentation" src="https://www.youtube.com/watch?v=REHOG4TIlS8&t=5s"
-            webkitallowfullscreen="true" mozallowfullscreen="true"
-            allowFullScreen className="position-absolute frame-border" style={{ top: 0, left: 0, width: '100%', height: '100%' }}>
-          </iframe> */}
 
-          <iframe title="Paper Presentation" width="560" height="315" src="https://www.youtube.com/embed/REHOG4TIlS8?si=DEicZ2wXqi97X7Jj&amp;start=2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div className="position-relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+          <iframe className="position-absolute frame-border" style={{ top: 0, left: 0, width: '100%', height: '100%' }}
+            src="https://www.youtube.com/embed/REHOG4TIlS8?si=DEicZ2wXqi97X7Jj"
+            title="Paper Presentation"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+          </iframe>
         </div>
         {/* Main Project Content Ends */}
       </figure>
