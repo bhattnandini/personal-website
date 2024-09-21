@@ -111,7 +111,7 @@ jobs:
       # Tag Docker image
       - name: Tag Docker image
         run: |
-          docker tag nandini-website:latest public.ecr.aws/y9r8y8a8/portfolio-website/nandini-website:latest
+          docker tag nandini-website:latest public.ecr.aws/portfolio-website/nandini-website:latest
       
       # Push Docker image to ECR Public
       - name: Push Docker image to Amazon ECR Public
