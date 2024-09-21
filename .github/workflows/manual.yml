@@ -90,7 +90,7 @@ jobs:
         run: |
           # docker buildx create --use
           # docker buildx build --cache-to type=local,dest=/tmp/.buildx-cache --cache-from type=local,src=/tmp/.buildx-cache -t nandini-website:latest .
-          docker build -t nandini-website:latest .
+          docker build -t portfolio-website .
 
       # - name: Run Trivy vulnerability scanner docker image 
       #   run:  trivy image --severity HIGH,CRITICAL --format json --output trivy-docker-results.json my-react-app
@@ -103,20 +103,20 @@ jobs:
       # Log in to Amazon ECR Public
       # Could not connect to the endpoint URL: "https://api.ecr-public.us-east-2.amazonaws.com/"
       # Error: Cannot perform an interactive login from a non TTY device
-      # Solution: Use region as us-east-1 as AWS supports public repos in us-east-1 not in othrer regions
+      # Solution: Use region as us-east-1 as AWS supports login in us-east-1 and public repos are available in all regions
       - name: Log in to Amazon ECR Public
         run: |
-          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/y9r8y8a8/portfolio-website
+          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/y9r8y8a8
 
       # Tag Docker image
       - name: Tag Docker image
         run: |
-          docker tag nandini-website:latest public.ecr.aws/portfolio-website/nandini-website:latest
+          docker tag portfolio-website:latest public.ecr.aws/y9r8y8a8/portfolio-website:latest
       
       # Push Docker image to ECR Public
       - name: Push Docker image to Amazon ECR Public
         run: |
-          docker push public.ecr.aws/portfolio-website/nandini-website:latest
+          docker push public.ecr.aws/y9r8y8a8/portfolio-website:latest
       # # Debug steps
       # - name: Print Node.js version
       #   run: node --version
