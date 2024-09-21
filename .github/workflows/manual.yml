@@ -25,6 +25,26 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2  # Replace with your region
 
+      # speed up docker build by caching docker layer
+      - name: Cache Docker layers
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-docker-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-docker-
+
+      # speed up pipeline by caching node modules 
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            ~/.cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       # - name: Install Newman
       #   run: npm install -g newman
 
@@ -61,9 +81,11 @@ jobs:
       #   with:
       #     sarif_file: 'trivy-terraform-results.sarif'
           
-      - name: Build docker image
-        run:  docker build -t nandini-website .
-      
+      - name: Build docker image with cache
+        run: |
+          docker buildx create --use
+           docker buildx build --cache-to type=local,dest=/tmp/.buildx-cache --cache-from type=local,src=/tmp/.buildx-cache -t nandini-website .
+
       # - name: Run Trivy vulnerability scanner docker image 
       #   run:  trivy image --severity HIGH,CRITICAL --format json --output trivy-docker-results.json my-react-app
         
@@ -75,10 +97,10 @@ jobs:
       # Log in to Amazon ECR Public
       # Could not connect to the endpoint URL: "https://api.ecr-public.us-east-2.amazonaws.com/"
       # Error: Cannot perform an interactive login from a non TTY device
-      # Solution: Use region as us-east-1 as it supports login other regions don't
+      # Solution: Use region as us-east-1 as AWS supports public repos in us-east-1 not in othrer regions
       - name: Log in to Amazon ECR Public
         run: |
-          aws ecr-public get-login-password --region us-east-2 | docker login --username AWS --password-stdin public.ecr.aws/y9r8y8a8/portfolio-website
+          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/y9r8y8a8/portfolio-website
 
       # Tag Docker image
       - name: Tag Docker image
@@ -104,17 +126,6 @@ jobs:
       #   uses: actions/setup-node@v4
       #   with:
       #     node-version: '20.15.0' # You can specify your preferred Node.js version
-
-      # speed up pipeline by caching node modules 
-      - name: Cache Node.js modules
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.npm
-            ~/.cache
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
             
       # - name: Upgrade AWS CLI
       #   run: pip install --upgrade awscli
