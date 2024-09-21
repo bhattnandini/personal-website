@@ -64,11 +64,13 @@ const ModalTwoContent = () => {
         {/*  Main Project Content Starts */}
         {/* <img src="img/projects/project-1.jpg" alt="Portolio" /> */}
         <div className="position-relative" style={{ paddingBottom: '56.25%', height: 0 }}>
-                  <iframe title="Paper Presentation" src="https://www.youtube.com/watch?v=cNkGS7Dv-UM" 
+                 
+                  {/* <iframe title="Paper Presentation" src="https://www.youtube.com/watch?v=cNkGS7Dv-UM" 
                   webkitallowfullscreen="true" mozallowfullscreen="true" 
                   allowFullScreen className="position-absolute frame-border" style={{top: 0, left: 0, width: '100%', height: '100%'}}>
-                  </iframe>
-                </div>
+                  </iframe> */}
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cNkGS7Dv-UM?si=oH4rteK3FDUTHHfp&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         {/* Main Project Content Ends */}
       </figure>
     </div>
