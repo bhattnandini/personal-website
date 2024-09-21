@@ -17,6 +17,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+        # configure AWS creds once, dont specify everytime in env: block, override it in env if needed
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2  # Replace with your region
+
       # - name: Install Newman
       #   run: npm install -g newman
 
@@ -53,8 +61,8 @@ jobs:
       #   with:
       #     sarif_file: 'trivy-terraform-results.sarif'
           
-      # - name: Build docker image
-      #   run:  docker build -t my-react-app .
+      - name: Build docker image
+        run:  docker build -t nandini-website .
       
       # - name: Run Trivy vulnerability scanner docker image 
       #   run:  trivy image --severity HIGH,CRITICAL --format json --output trivy-docker-results.json my-react-app
@@ -63,7 +71,21 @@ jobs:
       #   with:
       #     name: dockerimage-artifact
       #     path: trivy-docker-results.json
-   
+
+      # Log in to Amazon ECR Public
+      - name: Log in to Amazon ECR Public
+        run: |
+          aws ecr-public get-login-password --region us-east-2 | docker login --username AWS --password-stdin public.ecr.aws/y9r8y8a8/portfolio-website
+
+      # Tag Docker image
+      - name: Tag Docker image
+        run: |
+          docker tag nandini-website:latest public.ecr.aws/y9r8y8a8/portfolio-website/nandini-website:latest
+      
+          # Push Docker image to ECR Public
+      - name: Push Docker image to Amazon ECR Public
+        run: |
+          docker push public.ecr.aws/y9r8y8a8/portfolio-website/nandini-website:latest
       # # Debug steps
       # - name: Print Node.js version
       #   run: node --version
@@ -156,19 +178,12 @@ jobs:
       # - name: Deploy React app to AWS S3
       #   run:
       #     aws s3 sync build/ s3://nandinibhatt.me/ --delete --acl public-read --region us-east-2
-      #   env:
-      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       # Since GitHub Actions runners don’t have access to EC2’s instance metadata service, the AWS CLI cannot automatically retrieve the region from the environment. Explicitly specifying the region as shown above will bypass the need for IMDS.
-      - name: Invalidate CloudFront Cache
-        run:
-          aws cloudfront create-invalidation --distribution-id E1JHKWLDY7Q5ZL --paths "/*" --debug
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: us-east-2
-
+      # - name: Invalidate CloudFront Cache
+      #   run:
+      #     aws cloudfront create-invalidation --distribution-id E1JHKWLDY7Q5ZL --paths "/*" --debug
+        
       # - name: Install JMeter
       #   run: |
       #     # sudo apt-get update
@@ -206,7 +221,3 @@ jobs:
       #   if: failure() # Execute only if previous steps failed
       #   run: |
       #     aws sns publish --topic-arn arn:aws:sns:us-east-2:975050059984:codestar-notifications- --message "Your portfolio deployment has failed."
-      #   env:
-      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #     AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
