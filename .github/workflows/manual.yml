@@ -73,9 +73,12 @@ jobs:
       #     path: trivy-docker-results.json
 
       # Log in to Amazon ECR Public
+      # Could not connect to the endpoint URL: "https://api.ecr-public.us-east-2.amazonaws.com/"
+      # Error: Cannot perform an interactive login from a non TTY device
+      # Solution: Use region as us-east-1 as it supports login other regions don't
       - name: Log in to Amazon ECR Public
         run: |
-          aws ecr-public get-login-password --region us-east-2 | docker login --username AWS --password-stdin public.ecr.aws/y9r8y8a8/portfolio-website
+          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/y9r8y8a8/portfolio-website
 
       # Tag Docker image
       - name: Tag Docker image
