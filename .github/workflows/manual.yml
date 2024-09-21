@@ -25,19 +25,19 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2  # Replace with your region
 
-      # Set up BuildKit cache directory
-      - name: Create cache directory
-        run: |
-          mkdir -p /tmp/.buildx-cache
+      # # Set up BuildKit cache directory
+      # - name: Create cache directory
+      #   run: |
+      #     mkdir -p /tmp/.buildx-cache
 
-      # speed up docker build by caching docker layer
-      - name: Cache Docker layers
-        uses: actions/cache@v4
-        with:
-          path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-docker-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-docker-
+      # # speed up docker build by caching docker layer
+      # - name: Cache Docker layers
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: /tmp/.buildx-cache
+      #     key: ${{ runner.os }}-docker-${{ github.sha }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-docker-
 
       # speed up pipeline by caching node modules 
       - name: Cache Node.js modules
@@ -88,8 +88,9 @@ jobs:
           
       - name: Build docker image with cache
         run: |
-          docker buildx create --use
-          docker buildx build --cache-to type=local,dest=/tmp/.buildx-cache --cache-from type=local,src=/tmp/.buildx-cache -t nandini-website:latest .
+          # docker buildx create --use
+          # docker buildx build --cache-to type=local,dest=/tmp/.buildx-cache --cache-from type=local,src=/tmp/.buildx-cache -t nandini-website:latest .
+          docker build -t nandini-website:latest .
 
       # - name: Run Trivy vulnerability scanner docker image 
       #   run:  trivy image --severity HIGH,CRITICAL --format json --output trivy-docker-results.json my-react-app
