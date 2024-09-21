@@ -32,7 +32,7 @@ const ModalTenContent = () => {
               <FormattedMessage
                 description="Modal4.item1"
                 id="Modal4.item1"
-                defaultMessage="Verify ISTQB certificate"
+                defaultMessage="Verify my certificate"
               />
             </a>
             {/* <span className="ft-wt-600 uppercase">https://play.google.com/store/apps/details?id=com.appstasy1.hotfocus4</span> */}
@@ -66,7 +66,7 @@ const ModalTenContent = () => {
       {/* Project Details Ends */}
 
       {/*  Main Project Content Starts */}
-      <img src="img/projects/python.webp" alt="Nandini Bhatt's Data analysis with Python certification, data science, ML, AI, IBM" />
+      <img src="https://assets.nandinibhatt.me/certificates/data_analysis.jpg" alt="Nandini Bhatt's Data analysis with Python certification, data science, ML, AI, IBM" />
       {/* <Slider {...settings}>
         <div className="slide_item">
           <img src="img/projects/project-3.jpg" alt="slide 1" />

@@ -73,7 +73,7 @@ const ModalOneContent = () => {
         {/*  Main Project Content Starts */}
         {/* <img src="img/projects/project-1.jpg" alt="Portolio" /> */}
         <div className="position-relative" style={{ paddingBottom: '56.25%', height: 0 }}>
-          <iframe title="Paper Presentation" src="https://www.loom.com/embed/9871257224e849cfa096361389f8fae9"
+          <iframe title="Paper Presentation" src="https://www.youtube.com/watch?v=REHOG4TIlS8&t=5s"
             webkitallowfullscreen="true" mozallowfullscreen="true"
             allowFullScreen className="position-absolute frame-border" style={{ top: 0, left: 0, width: '100%', height: '100%' }}>
           </iframe>

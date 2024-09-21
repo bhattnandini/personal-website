@@ -170,11 +170,11 @@ jobs:
       # - name: Install JMeter
       #   run: |
       #     # sudo apt-get update
-      #     # sudo apt-get install -y jmeter
+      #     # sudo apt-get install -y jmeter --> this installs old version of JMeter which throws error
       #     wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
       #     tar -xzf apache-jmeter-5.6.3.tgz
       #     sudo mv apache-jmeter-5.6.3 /opt/jmeter
-      #     echo "export JMETER_HOME=/opt/jmeter" >> $GITHUB_ENV
+      #     echo "export JMETER_HOME=/opt/jmeter" >> $GITHUB_ENV --> for some reason, env variables are not working. jmeter not found in $PATH
       #     echo "export PATH=\$PATH:\$JMETER_HOME/bin" >> $GITHUB_ENV
 
       - name: Download JMeter
@@ -183,28 +183,14 @@ jobs:
       - name: Extract JMeter
         run: tar -xzf apache-jmeter-5.6.3.tgz
 
-      # - name: Move JMeter to /opt
-      #   run: sudo mv apache-jmeter-5.6.3 /opt/jmeter
-
-      # - name: Set JMeter Environment Variables
-      #   run: |
-      #     echo "export JMETER_HOME=/opt/jmeter" >> $GITHUB_ENV
-      #     echo "export PATH=\$PATH:\$JMETER_HOME/bin" >> $GITHUB_ENV
-
-      - name: Verify JMeter installation
-        run: |
-          echo "JMeter version:"
-          apache-jmeter-5.6.3/bin/jmeter --version
-          # jmeter --version
-
+      # To fix error thrown by older version of JMeter but it didn't work
       # - name: Create Custom XStream Properties
       #   run: echo "com.thoughtworks.xstream.security.NoTypePermission=org.apache.jmeter.save.ScriptWrapper" > Testing/JMeter/custom_xstream.properties
     
+      # Use jmeter binary directly without adding it to path variable
       - name: Run JMeter Test Plan
         run: |
-          # jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG -Jxstream.properties=Testing/JMeter/custom_xstream.properties
           apache-jmeter-5.6.3/bin/jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG
-          # jmeter -n -t Testing/JMeter/Test_Plan.jmx -l Testing/JMeter/results.jtl -j Testing/JMeter/jmeter.log -Jlog_level.jmeter=DEBUG
 
       - name: Upload JMeter Results
         uses: actions/upload-artifact@v4
