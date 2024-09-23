@@ -1,0 +1,39 @@
+name: Build, test and deploy Docker images 
+
+on:
+  push:
+    paths:
+      - 'terraform/**'  
+
+permissions:
+  security-events: write  # Allow writing to the Security tab (used by trivy for IaC)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws-region: us-east-2  # Replace with your region
+
+      - name: Install Trivy vulnerability scanner
+        run: |
+          sudo apt-get install wget apt-transport-https gnupg lsb-release
+          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+          echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+          sudo apt-get update
+          sudo apt-get install trivy
+
+      - name: Run Trivy vulnerability scanner in IaC mode to scan terraform file 
+        run:  trivy config --severity CRITICAL,HIGH --format sarif --output trivy-terraform-results.sarif ./terraform/main.tf
+
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: 'trivy-terraform-results.sarif'

@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - main  # Trigger the workflow on push to the main branch
+    paths-ignore:
+      - 'terraform/**'     # Ignore changes to folder X
+      - 'Dockerfile'       # Ignore changes to file Y
 
 permissions:
   issues: write  # Allow creating issues (used by ZAP)
-  security-events: write  # Allow writing to the Security tab (used by trivy for IaC)
 
 jobs:
   website-deploy:
@@ -24,20 +26,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2  # Replace with your region
-
-      # # Set up BuildKit cache directory
-      # - name: Create cache directory
-      #   run: |
-      #     mkdir -p /tmp/.buildx-cache
-
-      # # speed up docker build by caching docker layer
-      # - name: Cache Docker layers
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: /tmp/.buildx-cache
-      #     key: ${{ runner.os }}-docker-${{ github.sha }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-docker-
 
       # speed up pipeline by caching node modules 
       - name: Cache Node.js modules
@@ -69,54 +57,7 @@ jobs:
       #   with:
       #     name: newman-results
       #     path: newman-results.json
-          
-      # - name: Install Trivy vulnerability scanner
-      #   run: |
-      #     sudo apt-get install wget apt-transport-https gnupg lsb-release
-      #     wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
-      #     echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
-      #     sudo apt-get update
-      #     sudo apt-get install trivy
-
-      # - name: Run Trivy vulnerability scanner in IaC mode to scan terraform file 
-      #   run:  trivy config --severity CRITICAL,HIGH --format sarif --output trivy-terraform-results.sarif ./terraform/main.tf
-
-      # - name: Upload Trivy scan results to GitHub Security tab
-      #   uses: github/codeql-action/upload-sarif@v3
-      #   with:
-      #     sarif_file: 'trivy-terraform-results.sarif'
-          
-      - name: Build docker image with cache
-        run: |
-          # docker buildx create --use
-          # docker buildx build --cache-to type=local,dest=/tmp/.buildx-cache --cache-from type=local,src=/tmp/.buildx-cache -t nandini-website:latest .
-          docker build -t portfolio-website .
-
-      # - name: Run Trivy vulnerability scanner docker image 
-      #   run:  trivy image --severity HIGH,CRITICAL --format json --output trivy-docker-results.json my-react-app
-        
-      # - uses: actions/upload-artifact@v4
-      #   with:
-      #     name: dockerimage-artifact
-      #     path: trivy-docker-results.json
-
-      # Log in to Amazon ECR Public
-      # Could not connect to the endpoint URL: "https://api.ecr-public.us-east-2.amazonaws.com/"
-      # Error: Cannot perform an interactive login from a non TTY device
-      # Solution: Use region as us-east-1 as AWS supports login in us-east-1 and public repos are available in all regions
-      - name: Log in to Amazon ECR Public
-        run: |
-          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/y9r8y8a8
-
-      # Tag Docker image
-      - name: Tag Docker image
-        run: |
-          docker tag portfolio-website:latest public.ecr.aws/y9r8y8a8/portfolio-website:latest
-      
-      # Push Docker image to ECR Public
-      - name: Push Docker image to Amazon ECR Public
-        run: |
-          docker push public.ecr.aws/y9r8y8a8/portfolio-website:latest
+           
       # # Debug steps
       # - name: Print Node.js version
       #   run: node --version
@@ -126,18 +67,9 @@ jobs:
       
       # - name: Print environment variables
       #   run: printenv
-
-      # # Step 2: Set up Node.js environment
-      # - name: Set up Node.js
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: '20.15.0' # You can specify your preferred Node.js version
-            
-      # - name: Upgrade AWS CLI
-      #   run: pip install --upgrade awscli
-        
-      # - name: Install dependencies
-      #   run: npm ci  # npm ci is preferred over npm install for CI environments
+          
+      - name: Install dependencies
+        run: npm ci  # npm ci is preferred over npm install for CI environments
 
       # # Lint the code using ESLint
       # - name: Run ESLint
@@ -151,10 +83,10 @@ jobs:
       #     path: eslint-report.json
 
       # Step 4: Build the React app
-      # - name: Build React app
-      #   run: npm run build # Treating warnings as errors because process.env.CI = true, most CI servers set this as true by default but we need to turn it off because warnings should not be treated as errors 
-      #   env:
-      #     CI: false
+      - name: Build React app
+        run: npm run build # Treating warnings as errors because process.env.CI = true, most CI servers set this as true by default but we need to turn it off because warnings should not be treated as errors 
+        env:
+          CI: false
 
       # - name: Start the Web App (React)
       #   run: npm start &
@@ -195,14 +127,14 @@ jobs:
       #     name: zap-report
       #     path: zap-report.html
         
-      # - name: Deploy React app to AWS S3
-      #   run:
-      #     aws s3 sync build/ s3://nandinibhatt.me/ --delete --acl public-read --region us-east-2
+      - name: Deploy React app to AWS S3
+        run:
+          aws s3 sync build/ s3://nandinibhatt.me/ --delete --acl public-read --region us-east-2
 
       # Since GitHub Actions runners don’t have access to EC2’s instance metadata service, the AWS CLI cannot automatically retrieve the region from the environment. Explicitly specifying the region as shown above will bypass the need for IMDS.
-      # - name: Invalidate CloudFront Cache
-      #   run:
-      #     aws cloudfront create-invalidation --distribution-id E1JHKWLDY7Q5ZL --paths "/*" --debug
+      - name: Invalidate CloudFront Cache
+        run:
+          aws cloudfront create-invalidation --distribution-id E1JHKWLDY7Q5ZL --paths "/*" --debug
         
       # - name: Install JMeter
       #   run: |

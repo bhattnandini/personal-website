@@ -12,6 +12,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+         # # Set up BuildKit cache directory
+      # - name: Create cache directory
+      #   run: |
+      #     mkdir -p /tmp/.buildx-cache
+
+      # # speed up docker build by caching docker layer
+      # - name: Cache Docker layers
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: /tmp/.buildx-cache
+      #     key: ${{ runner.os }}-docker-${{ github.sha }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-docker-
+        
         # configure AWS creds once, dont specify everytime in env: block, override it in env if needed
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
