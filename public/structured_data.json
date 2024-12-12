@@ -163,6 +163,21 @@
     "blogPosts": [
       {
         "@type": "BlogPosting",
+        "headline": "Job Hunting in Canada",
+        "author": {
+          "@type": "Person",
+          "name": "Nandini Bhatt",
+          "url": "https://blogs.nandinibhatt.me"
+        },
+        "datePublished": "2024-10-15",
+        "url": "https://blogs.nandinibhatt.me/job-hunting-in-canada-2ec31557f575",
+        "description": "Nandini Bhatt's tips on job hunting",
+        "mainEntityOfPage": "https://blogs.nandinibhatt.me",
+        "image": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*z3axBvihaLAfYpDgFV-uKw.jpeg",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BlogPosting",
         "headline": "A bird’s eye view of Nandini Bhatt's professional and educational journey",
         "author": {
           "@type": "Person",

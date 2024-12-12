@@ -22,6 +22,37 @@ const Blog = () => {
 
   return (
     <>
+        {/* Blog 5 Starts */}
+        <div className="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+        <article className="post-container" onClick={toggleModalThree}>
+          <div className="post-thumb">
+            <div className="d-block position-relative overflow-hidden">
+              <img
+                src="img/blog/vivekananda.webp"
+                className="img-fluid"
+                alt="Nandini Bhatt's medium.com Blog post, Tester, QA, Cloud, DevOps, Automation, AWS"
+              />
+            </div>
+          </div>
+          {/* End .thumb */}
+          <div className="post-content">
+            <div className="entry-header">
+              <h3 data-cy="blog-5"> <a target="_blank" rel="noreferrer"
+              href="https://blogs.nandinibhatt.me/job-hunting-in-canada-2ec31557f575">
+              Job Hunting in Canada
+              </a></h3>
+            </div>
+            <div className="entry-content open-sans-font">
+              <p>
+              Albert Einstein’s Theory of Relativity is not just the property of the upper echelon of the erudite class but also of the class I...
+              </p>
+            </div>
+          </div>
+          {/* End .post-content */}
+        </article>
+      </div>
+      {/*  Blog 5 Ends */}
+
      {/* Blog 4 Starts */}
      <div className="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
         <article className="post-container" onClick={toggleModalThree}>
@@ -75,7 +106,7 @@ const Blog = () => {
             </div>
             <div className="entry-content open-sans-font">
               <p>
-              You must have come across hundreds of posts immediately after the Convocation Ceremony. Most of them ...
+              You must have come across hundreds of posts immediately after the Convocation ...
               </p>
             </div>
           </div>
@@ -103,7 +134,7 @@ const Blog = () => {
             </div>
             <div className="entry-content open-sans-font">
               <p>
-              Generative AI has dominated the industry [1]. It is hard to imagine a sector that AI has not touched. The bots are ...
+              Generative AI has dominated the industry [1]. It is hard to imagine a sector that AI has not touched. The bots are becoming...
               </p>
             </div>
           </div>
@@ -131,7 +162,7 @@ const Blog = () => {
             </div>
             <div className="entry-content open-sans-font">
               <p>
-              IA générative a dominé l’industrie [1]. Il est difficile de trouver un secteur qui l’IA n’a ...
+              IA générative a dominé l’industrie [1]. Il est difficile de trouver un secteur qui l’IA n’a pas touché. Les bots deviennent plus en plus...
               </p>
             </div>
           </div>
