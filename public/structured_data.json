@@ -163,6 +163,21 @@
     "blogPosts": [
       {
         "@type": "BlogPosting",
+        "headline": "A CI/CD pipeline to publish LaTeX documents",
+        "author": {
+          "@type": "Person",
+          "name": "Nandini Bhatt",
+          "url": "https://blogs.nandinibhatt.me"
+        },
+        "datePublished": "2024-12-12",
+        "url": "https://blogs.nandinibhatt.me/a-ci-cd-pipeline-to-publish-latex-documents-d35d9eba9300",
+        "description": "Nandini Bhatt's article on creating ci/cd pipeline for latex documents",
+        "mainEntityOfPage": "https://blogs.nandinibhatt.me",
+        "image": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*LmPWWym38syRcHV8BUZ5oQ.png",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BlogPosting",
         "headline": "Job Hunting in Canada",
         "author": {
           "@type": "Person",

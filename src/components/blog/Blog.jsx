@@ -22,6 +22,37 @@ const Blog = () => {
 
   return (
     <>
+        {/* Blog 6 Starts */}
+        <div className="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+        <article className="post-container" onClick={toggleModalThree}>
+          <div className="post-thumb">
+            <div className="d-block position-relative overflow-hidden">
+              <img
+                src="img/blog/latex_ci_cd.webp"
+                className="img-fluid"
+                alt="Nandini Bhatt's medium.com Blog post, Tester, QA, Cloud, DevOps, Automation, AWS"
+              />
+            </div>
+          </div>
+          {/* End .thumb */}
+          <div className="post-content">
+            <div className="entry-header">
+              <h3 data-cy="blog-5"> <a target="_blank" rel="noreferrer"
+              href="https://blogs.nandinibhatt.me/a-ci-cd-pipeline-to-publish-latex-documents-d35d9eba9300">
+              A CI/CD pipeline to publish LaTeX documents
+              </a></h3>
+            </div>
+            <div className="entry-content open-sans-font">
+              <p>
+              Just like the way the modern-day networks provide redundant links for fault tolerance...
+              </p>
+            </div>
+          </div>
+          {/* End .post-content */}
+        </article>
+      </div>
+      {/*  Blog 6 Ends */}
+      
         {/* Blog 5 Starts */}
         <div className="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
         <article className="post-container" onClick={toggleModalThree}>
@@ -75,7 +106,7 @@ const Blog = () => {
             </div>
             <div className="entry-content open-sans-font">
               <p>
-              As a recent graduate with a master’s degree in Quality Systems Engineering from ... 
+              As a recent graduate with a master’s degree in Quality Systems Engineering from... 
               </p>
             </div>
           </div>
@@ -106,7 +137,7 @@ const Blog = () => {
             </div>
             <div className="entry-content open-sans-font">
               <p>
-              You must have come across hundreds of posts immediately after the Convocation ...
+              You must have come across hundreds of posts immediately after the Convocation...
               </p>
             </div>
           </div>
@@ -134,7 +165,7 @@ const Blog = () => {
             </div>
             <div className="entry-content open-sans-font">
               <p>
-              Generative AI has dominated the industry [1]. It is hard to imagine a sector that AI has not touched. The bots are becoming...
+              Generative AI has dominated the industry [1]. It is hard to imagine a sector that AI has not...
               </p>
             </div>
           </div>
@@ -162,7 +193,7 @@ const Blog = () => {
             </div>
             <div className="entry-content open-sans-font">
               <p>
-              IA générative a dominé l’industrie [1]. Il est difficile de trouver un secteur qui l’IA n’a pas touché. Les bots deviennent plus en plus...
+              IA générative a dominé l’industrie [1]. Il est difficile de trouver un secteur qui l’IA n’a pas...
               </p>
             </div>
           </div>
